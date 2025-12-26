@@ -1,11 +1,6 @@
 {
     "lessons": [
         {
-            "name": "A1_Gramma_01.json",
-            "mapping": "mapping_A1_Gramma_01.json",
-            "audio": "audio_A1_Gramma_01"
-        },
-        {
             "name": "2000_Daily_English_01.json",
             "mapping": "mapping_2000_Daily_English_01.json",
             "audio": "audio_2000_Daily_English_01"
@@ -14,6 +9,11 @@
             "name": "2000_Daily_English_02.json",
             "mapping": "mapping_2000_Daily_English_02.json",
             "audio": "audio_2000_Daily_English_02"
+        },
+        {
+            "name": "2000_Daily_English_03.json",
+            "mapping": "mapping_2000_Daily_English_03.json",
+            "audio": "audio_2000_Daily_English_03"
         }
     ]
 }
