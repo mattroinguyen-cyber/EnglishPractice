@@ -1,24 +1,10 @@
 {
     "lessons": [
+        
         {
-            "name": "2000_Daily_English_01.json",
-            "mapping": "mapping_2000_Daily_English_01.json",
-            "audio": "audio_2000_Daily_English_01"
-        },
-        {
-            "name": "2000_Daily_English_02.json",
-            "mapping": "mapping_2000_Daily_English_02.json",
-            "audio": "audio_2000_Daily_English_02"
-        },
-        {
-            "name": "2000_Daily_English_03.json",
-            "mapping": "mapping_2000_Daily_English_03.json",
-            "audio": "audio_2000_Daily_English_03"
-        },
-        {
-            "name": "2000_Daily_English_04.json",
-            "mapping": "mapping_2000_Daily_English_04.json",
-            "audio": "audio_2000_Daily_English_04"
+            "name": "2000_Daily_English.json",
+            "mapping": "mapping_2000_Daily_English.json",
+            "audio": "audio_2000_Daily_English"
         }
     ]
 }

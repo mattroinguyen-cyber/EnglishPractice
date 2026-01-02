@@ -1,0 +1,2362 @@
+[
+  [
+    "How are you today?",
+    "haʊ ɑːr juː təˈdeɪ?",
+    "Hôm nay bạn thế nào?",
+    "I'm doing well, thank you.",
+    "aɪm ˈduːɪŋ wɛl, θæŋk juː.",
+    "Tôi khỏe, cảm ơn bạn."
+  ],
+  [
+    "How did you sleep last night?",
+    "haʊ dɪd juː sliːp læst naɪt?",
+    "Đêm qua bạn ngủ có ngon không?",
+    "I slept pretty well.",
+    "aɪ slɛpt ˈprɪti wɛl.",
+    "Tôi ngủ khá ngon."
+  ],
+  [
+    "Are you ready for today?",
+    "ɑːr juː ˈrɛdi fɔːr təˈdeɪ?",
+    "Bạn đã sẵn sàng cho ngày hôm nay chưa?",
+    "Yes, I'm ready.",
+    "jɛs, aɪm ˈrɛdi.",
+    "Vâng, tôi đã sẵn sàng."
+  ],
+  [
+    "What time did you wake up?",
+    "wʌt taɪm dɪd juː weɪk ʌp?",
+    "Bạn thức dậy lúc mấy giờ?",
+    "I woke up at 6 a.m.",
+    "aɪ woʊk ʌp æt sɪks eɪ.ɛm.",
+    "Tôi thức dậy lúc 6 giờ sáng."
+  ],
+  [
+    "Did you have breakfast?",
+    "dɪd juː hæv ˈbrɛkfəst?",
+    "Bạn đã ăn sáng chưa?",
+    "Yes, I had breakfast.",
+    "jɛs, aɪ hæd ˈbrɛkfəst.",
+    "Vâng, tôi đã ăn sáng."
+  ],
+  [
+    "What did you eat for breakfast?",
+    "wʌt dɪd juː iːt fɔːr ˈbrɛkfəst?",
+    "Bạn đã ăn gì cho bữa sáng?",
+    "I ate eggs and toast.",
+    "aɪ eɪt ɛɡz ænd toʊst.",
+    "Tôi đã ăn trứng và bánh mì nướng."
+  ],
+  [
+    "Are you hungry now?",
+    "ɑːr juː ˈhʌŋɡri naʊ?",
+    "Bây giờ bạn có đói không?",
+    "No, I'm not hungry.",
+    "noʊ, aɪm nɑːt ˈhʌŋɡri.",
+    "Không, tôi không đói."
+  ],
+  [
+    "Do you want some water?",
+    "duː juː wɑːnt sʌm ˈwɔːtər?",
+    "Bạn có muốn uống nước không?",
+    "Yes, I'd like some water, please.",
+    "jɛs, aɪd laɪk sʌm ˈwɔːtər, pliːz.",
+    "Vâng, làm ơn cho tôi một ít nước."
+  ],
+  [
+    "Where is your bag?",
+    "wɛər ɪz jʊər bæɡ?",
+    "Cái túi của bạn ở đâu?",
+    "My bag is on the chair.",
+    "maɪ bæɡ ɪz ɑːn ðə ʧɛər.",
+    "Cái túi của tôi ở trên ghế."
+  ],
+  [
+    "Is this your phone?",
+    "ɪz ðɪs jʊər foʊn?",
+    "Đây có phải là điện thoại của bạn không?",
+    "Yes, that's my phone.",
+    "jɛs, ðæts maɪ foʊn.",
+    "Vâng, đó là điện thoại của tôi."
+  ],
+  [
+    "Can I use your phone?",
+    "kæn aɪ juːz jʊər foʊn?",
+    "Tôi có thể dùng điện thoại của bạn không?",
+    "Sure, go ahead.",
+    "ʃʊər, ɡoʊ əˈhɛd.",
+    "Chắc chắn rồi, cứ tự nhiên."
+  ],
+  [
+    "What time is it now?",
+    "wʌt taɪm ɪz ɪt naʊ?",
+    "Bây giờ là mấy giờ?",
+    "It's almost 8:00.",
+    "ɪts ˈɔːlmoʊst eɪt əˈklɑːk.",
+    "Gần 8 giờ rồi."
+  ],
+  [
+    "Are you going to work today?",
+    "ɑːr juː ˈɡoʊɪŋ tuː wɜːrk təˈdeɪ?",
+    "Hôm nay bạn có đi làm không?",
+    "Yes, I'm going to work.",
+    "jɛs, aɪm ˈɡoʊɪŋ tuː wɜːrk.",
+    "Vâng, tôi sẽ đi làm."
+  ],
+  [
+    "How do you go to work?",
+    "haʊ duː juː ɡoʊ tuː wɜːrk?",
+    "Bạn đi làm bằng phương tiện gì?",
+    "I take the bus to work.",
+    "aɪ teɪk ðə bʌs tuː wɜːrk.",
+    "Tôi đi làm bằng xe buýt."
+  ],
+  [
+    "Is the bus usually crowded?",
+    "ɪz ðə bʌs ˈjuːʒuəli ˈkraʊdɪd?",
+    "Xe buýt có thường đông không?",
+    "Yes, it is usually crowded in the morning.",
+    "jɛs, ɪt ɪz ˈjuːʒuəli ˈkraʊdɪd ɪn ðə ˈmɔːrnɪŋ.",
+    "Vâng, nó thường đông vào buổi sáng."
+  ],
+  [
+    "Do you like taking the bus?",
+    "duː juː laɪk ˈteɪkɪŋ ðə bʌs?",
+    "Bạn có thích đi xe buýt không?",
+    "It's okay. Not too bad.",
+    "ɪts oʊˈkeɪ. nɑːt tuː bæd.",
+    "Cũng được. Không quá tệ."
+  ],
+  [
+    "Where do you work?",
+    "wɛər duː juː wɜːrk?",
+    "Bạn làm việc ở đâu?",
+    "I work in an office.",
+    "aɪ wɜːrk ɪn ən ˈɔːfɪs.",
+    "Tôi làm việc trong một văn phòng."
+  ],
+  [
+    "What do you do there?",
+    "wʌt duː juː duː ðɛər?",
+    "Bạn làm gì ở đó?",
+    "I work in customer service.",
+    "aɪ wɜːrk ɪn ˈkʌstəmər ˈsɜːrvɪs.",
+    "Tôi làm việc trong bộ phận dịch vụ khách hàng."
+  ],
+  [
+    "Do you like your job?",
+    "duː juː laɪk jʊər ʤɑːb?",
+    "Bạn có thích công việc của mình không?",
+    "Yes, I like my job.",
+    "jɛs, aɪ laɪk maɪ ʤɑːb.",
+    "Vâng, tôi thích công việc của mình."
+  ],
+  [
+    "Is your job difficult?",
+    "ɪz jʊər ʤɑːb ˈdɪfɪkəlt?",
+    "Công việc của bạn có khó không?",
+    "Sometimes it's difficult, but I can manage.",
+    "ˈsʌmtaɪmz ɪts ˈdɪfɪkəlt, bʌt aɪ kæn ˈmænɪʤ.",
+    "Đôi khi nó khó, nhưng tôi có thể xoay xở được."
+  ],
+  [
+    "Do you have friendly co-workers?",
+    "duː juː hæv ˈfrɛndli koʊ-ˈwɜːrkərz?",
+    "Bạn có những người đồng nghiệp thân thiện không?",
+    "Yes, my co-workers are friendly.",
+    "jɛs, maɪ koʊ-ˈwɜːrkərz ɑːr ˈfrɛndli.",
+    "Vâng, đồng nghiệp của tôi rất thân thiện."
+  ],
+  [
+    "Who do you sit next to at work?",
+    "huː duː juː sɪt nɛkst tuː æt wɜːrk?",
+    "Bạn ngồi cạnh ai ở nơi làm việc?",
+    "I sit next to my friend Lisa.",
+    "aɪ sɪt nɛkst tuː maɪ frɛnd ˈliːsə.",
+    "Tôi ngồi cạnh bạn tôi, Lisa."
+  ],
+  [
+    "Is she nice?",
+    "ɪz ʃiː naɪs?",
+    "Cô ấy có tốt bụng không?",
+    "Yes, she is very nice.",
+    "jɛs, ʃiː ɪz ˈvɛri naɪs.",
+    "Vâng, cô ấy rất tốt bụng."
+  ],
+  [
+    "Do you take a lunch break?",
+    "duː juː teɪk ə lʌnʧ breɪk?",
+    "Bạn có nghỉ trưa không?",
+    "Yes, I take a break at noon.",
+    "jɛs, aɪ teɪk ə breɪk æt nuːn.",
+    "Vâng, tôi nghỉ giải lao vào buổi trưa."
+  ],
+  [
+    "What do you usually eat for lunch?",
+    "wʌt duː juː ˈjuːʒuəli iːt fɔːr lʌnʧ?",
+    "Bạn thường ăn gì vào bữa trưa?",
+    "I usually eat rice and chicken.",
+    "aɪ ˈjuːʒuəli iːt raɪs ænd ˈʧɪkɪn.",
+    "Tôi thường ăn cơm và gà."
+  ],
+  [
+    "Do you bring food from home?",
+    "duː juː brɪŋ fuːd frʌm hoʊm?",
+    "Bạn có mang thức ăn từ nhà đi không?",
+    "Yes, sometimes I do.",
+    "jɛs, ˈsʌmtaɪmz aɪ duː.",
+    "Vâng, đôi khi tôi có mang đi."
+  ],
+  [
+    "Do you eat out sometimes?",
+    "duː juː iːt aʊt ˈsʌmtaɪmz?",
+    "Bạn có thỉnh thoảng đi ăn ngoài không?",
+    "Yes, I eat out when I'm busy.",
+    "jɛs, aɪ iːt aʊt wɛn aɪm ˈbɪzi.",
+    "Vâng, tôi đi ăn ngoài khi tôi bận."
+  ],
+  [
+    "Where do you like to eat?",
+    "wɛər duː juː laɪk tuː iːt?",
+    "Bạn thích ăn ở đâu?",
+    "I like to eat at a small local restaurant.",
+    "aɪ laɪk tuː iːt æt ə smɔːl ˈloʊkəl ˈrɛstərɑːnt.",
+    "Tôi thích ăn ở một nhà hàng nhỏ ở địa phương."
+  ],
+  [
+    "Is the food good there?",
+    "ɪz ðə fuːd ɡʊd ðɛər?",
+    "Đồ ăn ở đó có ngon không?",
+    "Yes, the food is very good.",
+    "jɛs, ðə fuːd ɪz ˈvɛri ɡʊd.",
+    "Vâng, đồ ăn rất ngon."
+  ],
+  [
+    "Is it expensive?",
+    "ɪz ɪt ɪkˈspɛnsɪv?",
+    "Nó có đắt không?",
+    "No, it's not expensive.",
+    "noʊ, ɪts nɑːt ɪkˈspɛnsɪv.",
+    "Không, nó không đắt."
+  ],
+  [
+    "What time do you finish work?",
+    "wʌt taɪm duː juː ˈfɪnɪʃ wɜːrk?",
+    "Mấy giờ bạn tan làm?",
+    "I finish at 5:00.",
+    "aɪ ˈfɪnɪʃ æt faɪv əˈklɑːk.",
+    "Tôi tan làm lúc 5 giờ."
+  ],
+  [
+    "Do you go home right away?",
+    "duː juː ɡoʊ hoʊm raɪt əˈweɪ?",
+    "Bạn có về nhà ngay không?",
+    "Yes, I usually go home right away.",
+    "jɛs, aɪ ˈjuːʒuəli ɡoʊ hoʊm raɪt əˈweɪ.",
+    "Vâng, tôi thường về nhà ngay."
+  ],
+  [
+    "How long does it take to go home?",
+    "haʊ lɔːŋ dʌz ɪt teɪk tuː ɡoʊ hoʊm?",
+    "Về nhà mất bao lâu?",
+    "It takes about 30 minutes.",
+    "ɪt teɪks əˈbaʊt ˈθɜːrti ˈmɪnɪts.",
+    "Mất khoảng 30 phút."
+  ],
+  [
+    "Do you feel tired after work?",
+    "duː juː fiːl ˈtaɪərd ˈæftər wɜːrk?",
+    "Bạn có cảm thấy mệt sau giờ làm không?",
+    "Yes, I sometimes feel tired.",
+    "jɛs, aɪ ˈsʌmtaɪmz fiːl ˈtaɪərd.",
+    "Vâng, đôi khi tôi cảm thấy mệt."
+  ],
+  [
+    "What do you do when you get home?",
+    "wʌt duː juː duː wɛn juː ɡɛt hoʊm?",
+    "Bạn làm gì khi về nhà?",
+    "I usually take a shower.",
+    "aɪ ˈjuːʒuəli teɪk ə ˈʃaʊər.",
+    "Tôi thường đi tắm."
+  ],
+  [
+    "Do you relax in the evening?",
+    "duː juː rɪˈlæks ɪn ðə ˈiːvnɪŋ?",
+    "Bạn có thư giãn vào buổi tối không?",
+    "Yes, I relax in the evening.",
+    "jɛs, aɪ rɪˈlæks ɪn ðə ˈiːvnɪŋ.",
+    "Vâng, tôi thư giãn vào buổi tối."
+  ],
+  [
+    "What do you do to relax?",
+    "wʌt duː juː duː tuː rɪˈlæks?",
+    "Bạn làm gì để thư giãn?",
+    "I listen to music.",
+    "aɪ ˈlɪsən tuː ˈmjuːzɪk.",
+    "Tôi nghe nhạc."
+  ],
+  [
+    "Do you watch TV?",
+    "duː juː wɑːʧ ˌtiːˈviː?",
+    "Bạn có xem TV không?",
+    "Yes, sometimes I watch TV.",
+    "jɛs, ˈsʌmtaɪmz aɪ wɑːʧ ˌtiːˈviː.",
+    "Vâng, thỉnh thoảng tôi có xem TV."
+  ],
+  [
+    "What shows do you like?",
+    "wʌt ʃoʊz duː juː laɪk?",
+    "Bạn thích chương trình nào?",
+    "I like watching simple dramas.",
+    "aɪ laɪk ˈwɑːʧɪŋ ˈsɪmpəl ˈdrɑːməz.",
+    "Tôi thích xem những bộ phim truyền hình đơn giản."
+  ],
+  [
+    "Do you talk to your family every day?",
+    "duː juː tɔːk tuː jʊər ˈfæməli ˈɛvri deɪ?",
+    "Bạn có nói chuyện với gia đình mỗi ngày không?",
+    "Yes, I talk to my family every day.",
+    "jɛs, aɪ tɔːk tuː maɪ ˈfæməli ˈɛvri deɪ.",
+    "Vâng, tôi nói chuyện với gia đình mỗi ngày."
+  ],
+  [
+    "Who do you call most often?",
+    "huː duː juː kɔːl moʊst ˈɔːfən?",
+    "Bạn thường gọi cho ai nhất?",
+    "I call my mother most often.",
+    "aɪ kɔːl maɪ ˈmʌðər moʊst ˈɔːfən.",
+    "Tôi thường gọi cho mẹ tôi nhất."
+  ],
+  [
+    "How is your mother?",
+    "haʊ ɪz jʊər ˈmʌðər?",
+    "Mẹ bạn có khỏe không?",
+    "She is doing well.",
+    "ʃiː ɪz ˈduːɪŋ wɛl.",
+    "Bà ấy vẫn khỏe."
+  ],
+  [
+    "Do you have siblings?",
+    "duː juː hæv ˈsɪblɪŋz?",
+    "Bạn có anh chị em không?",
+    "Yes, I have two siblings.",
+    "jɛs, aɪ hæv tuː ˈsɪblɪŋz.",
+    "Vâng, tôi có hai anh chị em."
+  ],
+  [
+    "When do you usually go to bed?",
+    "wɛn duː juː ˈjuːʒuəli ɡoʊ tuː bɛd?",
+    "Bạn thường đi ngủ lúc mấy giờ?",
+    "I usually go to bed at 11 p.m.",
+    "aɪ ˈjuːʒuəli ɡoʊ tuː bɛd æt ɪˈlɛvən ˌpiːˈɛm.",
+    "Tôi thường đi ngủ lúc 11 giờ tối."
+  ],
+  [
+    "Do you drink coffee?",
+    "duː juː drɪŋk ˈkɔːfi?",
+    "Bạn có uống cà phê không?",
+    "Yes, I drink coffee every morning.",
+    "jɛs, aɪ drɪŋk ˈkɔːfi ˈɛvri ˈmɔːrnɪŋ.",
+    "Vâng, tôi uống cà phê mỗi sáng."
+  ],
+  [
+    "How do you like your coffee?",
+    "haʊ duː juː laɪk jʊər ˈkɔːfi?",
+    "Bạn thích cà phê của mình như thế nào?",
+    "I like it black with no sugar.",
+    "aɪ laɪk ɪt blæk wɪθ noʊ ˈʃʊɡər.",
+    "Tôi thích cà phê đen không đường."
+  ],
+  [
+    "Do you cook often?",
+    "duː juː kʊk ˈɔːfən?",
+    "Bạn có thường xuyên nấu ăn không?",
+    "I cook a few times a week.",
+    "aɪ kʊk ə fjuː taɪmz ə wiːk.",
+    "Tôi nấu ăn vài lần một tuần."
+  ],
+  [
+    "What dishes can you cook?",
+    "wʌt ˈdɪʃɪz kæn juː kʊk?",
+    "Bạn có thể nấu những món gì?",
+    "I can cook noodles, soup, and fried rice.",
+    "aɪ kæn kʊk ˈnuːdəlz, suːp, ænd fraɪd raɪs.",
+    "Tôi có thể nấu mì, súp và cơm chiên."
+  ],
+  [
+    "Do you enjoy cooking?",
+    "duː juː ɛnˈʤɔɪ ˈkʊkɪŋ?",
+    "Bạn có thích nấu ăn không?",
+    "Yes, I enjoy cooking.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈkʊkɪŋ.",
+    "Vâng, tôi thích nấu ăn."
+  ],
+  [
+    "Do you like spicy food?",
+    "duː juː laɪk ˈspaɪsi fuːd?",
+    "Bạn có thích đồ ăn cay không?",
+    "Yes, I like spicy food.",
+    "jɛs, aɪ laɪk ˈspaɪsi fuːd.",
+    "Vâng, tôi thích đồ ăn cay."
+  ],
+  [
+    "Can you eat very spicy food?",
+    "kæn juː iːt ˈvɛri ˈspaɪsi fuːd?",
+    "Bạn có thể ăn đồ ăn rất cay không?",
+    "Not too spicy, but a little is okay.",
+    "nɑːt tuː ˈspaɪsi, bʌt ə ˈlɪtəl ɪz oʊˈkeɪ.",
+    "Không quá cay, nhưng một chút thì được."
+  ],
+  [
+    "What is your favorite dessert?",
+    "wʌt ɪz jʊər ˈfeɪvərɪt dɪˈzɜːrt?",
+    "Món tráng miệng yêu thích của bạn là gì?",
+    "My favorite dessert is chocolate cake.",
+    "maɪ ˈfeɪvərɪt dɪˈzɜːrt ɪz ˈʧɔːklət keɪk.",
+    "Món tráng miệng yêu thích của tôi là bánh sô cô la."
+  ],
+  [
+    "Do you exercise regularly?",
+    "duː juː ˈɛksərsaɪz ˈrɛɡjələrli?",
+    "Bạn có tập thể dục thường xuyên không?",
+    "Yes, I try to exercise three times a week.",
+    "jɛs, aɪ traɪ tuː ˈɛksərsaɪz θriː taɪmz ə wiːk.",
+    "Vâng, tôi cố gắng tập thể dục ba lần một tuần."
+  ],
+  [
+    "What exercise do you do?",
+    "wʌt ˈɛksərsaɪz duː juː duː?",
+    "Bạn tập môn thể dục gì?",
+    "I go for a run in the park.",
+    "aɪ ɡoʊ fɔːr ə rʌn ɪn ðə pɑːrk.",
+    "Tôi đi chạy bộ trong công viên."
+  ],
+  [
+    "What is your main hobby?",
+    "wʌt ɪz jʊər meɪn ˈhɑːbi?",
+    "Sở thích chính của bạn là gì?",
+    "My main hobby is reading.",
+    "maɪ meɪn ˈhɑːbi ɪz ˈriːdɪŋ.",
+    "Sở thích chính của tôi là đọc sách."
+  ],
+  [
+    "What do you like to read?",
+    "wʌt duː juː laɪk tuː riːd?",
+    "Bạn thích đọc gì?",
+    "I like to read simple English books.",
+    "aɪ laɪk tuː riːd ˈsɪmpəl ˈɪŋɡlɪʃ bʊks.",
+    "Tôi thích đọc những quyển sách tiếng Anh đơn giản."
+  ],
+  [
+    "What music do you like?",
+    "wʌt ˈmjuːzɪk duː juː laɪk?",
+    "Bạn thích thể loại nhạc nào?",
+    "I like soft music and pop music.",
+    "aɪ laɪk sɔːft ˈmjuːzɪk ænd pɑːp ˈmjuːzɪk.",
+    "Tôi thích nhạc nhẹ và nhạc pop."
+  ],
+  [
+    "Why are you learning English?",
+    "waɪ ɑːr juː ˈlɜːrnɪŋ ˈɪŋɡlɪʃ?",
+    "Tại sao bạn lại học tiếng Anh?",
+    "I'm learning English to improve my skills.",
+    "aɪm ˈlɜːrnɪŋ ˈɪŋɡlɪʃ tuː ɪmˈpruːv maɪ skɪlz.",
+    "Tôi học tiếng Anh để nâng cao kỹ năng của mình."
+  ],
+  [
+    "How do you practice?",
+    "haʊ duː juː ˈpræktɪs?",
+    "Bạn luyện tập như thế nào?",
+    "I listen, repeat, and speak slowly.",
+    "aɪ ˈlɪsən, rɪˈpiːt, ænd spiːk ˈsloʊli.",
+    "Tôi nghe, lặp lại và nói chậm."
+  ],
+  [
+    "Do you feel your English improving?",
+    "duː juː fiːl jʊər ˈɪŋɡlɪʃ ɪmˈpruːvɪŋ?",
+    "Bạn có cảm thấy tiếng Anh của mình đang cải thiện không?",
+    "Yes, slowly but surely.",
+    "jɛs, ˈsloʊli bʌt ˈʃʊrli.",
+    "Có, chậm mà chắc."
+  ],
+  [
+    "Do you like studying alone?",
+    "duː juː laɪk ˈstʌdiɪŋ əˈloʊn?",
+    "Bạn có thích học một mình không?",
+    "Yes, I like studying alone sometimes.",
+    "jɛs, aɪ laɪk ˈstʌdiɪŋ əˈloʊn ˈsʌmtaɪmz.",
+    "Vâng, thỉnh thoảng tôi thích học một mình."
+  ],
+  [
+    "Do you prefer studying with friends?",
+    "duː juː prɪˈfɜːr ˈstʌdiɪŋ wɪθ frɛndz?",
+    "Bạn thích học cùng bạn bè hơn không?",
+    "Yes, studying with friends can be helpful, too.",
+    "jɛs, ˈstʌdiɪŋ wɪθ frɛndz kæn biː ˈhɛlpfəl, tuː.",
+    "Vâng, học cùng bạn bè cũng có thể hữu ích."
+  ],
+  [
+    "Do you take notes when you study?",
+    "duː juː teɪk noʊts wɛn juː ˈstʌdi?",
+    "Bạn có ghi chép khi học không?",
+    "Yes, I always take notes.",
+    "jɛs, aɪ ˈɔːlweɪz teɪk noʊts.",
+    "Vâng, tôi luôn ghi chép."
+  ],
+  [
+    "Do notes help you remember things?",
+    "duː noʊts hɛlp juː rɪˈmɛmbər θɪŋz?",
+    "Ghi chép có giúp bạn nhớ mọi thứ không?",
+    "Yes, they help me remember better.",
+    "jɛs, ðeɪ hɛlp miː rɪˈmɛmbər ˈbɛtər.",
+    "Vâng, chúng giúp tôi nhớ tốt hơn."
+  ],
+  [
+    "Do you use a dictionary?",
+    "duː juː juːz ə ˈdɪkʃəˌnɛri?",
+    "Bạn có dùng từ điển không?",
+    "Yes, I use an online dictionary.",
+    "jɛs, aɪ juːz ən ˈɒnˌlaɪn ˈdɪkʃəˌnɛri.",
+    "Vâng, tôi dùng từ điển trực tuyến."
+  ],
+  [
+    "Do you look up new words often?",
+    "duː juː lʊk ʌp njuː wɜːrdz ˈɔːfən?",
+    "Bạn có thường tra từ mới không?",
+    "Yes, I look up new words every day.",
+    "jɛs, aɪ lʊk ʌp njuː wɜːrdz ˈɛvri deɪ.",
+    "Vâng, tôi tra từ mới mỗi ngày."
+  ],
+  [
+    "Do you like traveling?",
+    "duː juː laɪk ˈtrævəlɪŋ?",
+    "Bạn có thích đi du lịch không?",
+    "Yes, I love traveling.",
+    "jɛs, aɪ lʌv ˈtrævəlɪŋ.",
+    "Vâng, tôi rất thích đi du lịch."
+  ],
+  [
+    "Where do you want to travel?",
+    "wɛər duː juː wɑːnt tuː ˈtrævəl?",
+    "Bạn muốn đi du lịch ở đâu?",
+    "I want to travel to many countries.",
+    "aɪ wɑːnt tuː ˈtrævəl tuː ˈmɛni ˈkʌntriz.",
+    "Tôi muốn đi du lịch nhiều nước."
+  ],
+  [
+    "Do you enjoy beaches?",
+    "duː juː ɛnˈʤɔɪ ˈbiːʧɪz?",
+    "Bạn có thích biển không?",
+    "Oh, yes, I love beaches.",
+    "oʊ, jɛs, aɪ lʌv ˈbiːʧɪz.",
+    "Ồ, vâng, tôi yêu biển."
+  ],
+  [
+    "Do you enjoy mountains?",
+    "duː juː ɛnˈʤɔɪ ˈmaʊntənz?",
+    "Bạn có thích núi không?",
+    "Yes, I enjoy hiking in the mountains.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈhaɪkɪŋ ɪn ðə ˈmaʊntənz.",
+    "Vâng, tôi thích đi bộ đường dài trên núi."
+  ],
+  [
+    "Do you like cold weather?",
+    "duː juː laɪk koʊld ˈwɛðər?",
+    "Bạn có thích thời tiết lạnh không?",
+    "Not really. I prefer warm weather.",
+    "nɑːt ˈriːəli. aɪ prɪˈfɜːr wɔːrm ˈwɛðər.",
+    "Không hẳn. Tôi thích thời tiết ấm áp hơn."
+  ],
+  [
+    "Do you like snow?",
+    "duː juː laɪk snoʊ?",
+    "Bạn có thích tuyết không?",
+    "Snow looks beautiful, but it is very cold.",
+    "snoʊ lʊks ˈbjuːtəfəl, bʌt ɪt ɪz ˈvɛri koʊld.",
+    "Tuyết trông rất đẹp, nhưng nó rất lạnh."
+  ],
+  [
+    "Do you like rain?",
+    "duː juː laɪk reɪn?",
+    "Bạn có thích mưa không?",
+    "Rain is relaxing, but sometimes inconvenient.",
+    "reɪn ɪz rɪˈlæksɪŋ, bʌt ˈsʌmtaɪmz ˌɪnkənˈviːniənt.",
+    "Mưa thì thư giãn, nhưng đôi khi bất tiện."
+  ],
+  [
+    "Do you have a best friend?",
+    "duː juː hæv ə bɛst frɛnd?",
+    "Bạn có bạn thân không?",
+    "Yes, I have a best friend.",
+    "jɛs, aɪ hæv ə bɛst frɛnd.",
+    "Vâng, tôi có một người bạn thân."
+  ],
+  [
+    "Where did you meet your best friend?",
+    "wɛər dɪd juː miːt jʊər bɛst frɛnd?",
+    "Bạn đã gặp bạn thân của mình ở đâu?",
+    "We met in school.",
+    "wiː mɛt ɪn skuːl.",
+    "Chúng tôi gặp nhau ở trường."
+  ],
+  [
+    "Do you talk often?",
+    "duː juː tɔːk ˈɔːfən?",
+    "Hai bạn có thường xuyên nói chuyện không?",
+    "Yes, we talk almost every day.",
+    "jɛs, wiː tɔːk ˈɔːlmoʊst ˈɛvri deɪ.",
+    "Vâng, chúng tôi nói chuyện gần như mỗi ngày."
+  ],
+  [
+    "Do you live in a big city?",
+    "duː juː lɪv ɪn ə bɪɡ ˈsɪti?",
+    "Bạn có sống ở một thành phố lớn không?",
+    "No, I live in a small town.",
+    "noʊ, aɪ lɪv ɪn ə smɔːl taʊn.",
+    "Không, tôi sống ở một thị trấn nhỏ."
+  ],
+  [
+    "Is your town quiet?",
+    "ɪz jʊər taʊn ˈkwaɪət?",
+    "Thị trấn của bạn có yên tĩnh không?",
+    "Yes, it's quiet and peaceful.",
+    "jɛs, ɪts ˈkwaɪət ænd ˈpiːsfəl.",
+    "Vâng, nó yên tĩnh và thanh bình."
+  ],
+  [
+    "Do you know your neighbors?",
+    "duː juː noʊ jʊər ˈneɪbərz?",
+    "Bạn có biết hàng xóm của mình không?",
+    "Yes, I know most of my neighbors.",
+    "jɛs, aɪ noʊ moʊst əv maɪ ˈneɪbərz.",
+    "Vâng, tôi biết hầu hết hàng xóm của mình."
+  ],
+  [
+    "Do you have pets?",
+    "duː juː hæv pɛts?",
+    "Bạn có nuôi thú cưng không?",
+    "No, I don't have any pets right now.",
+    "noʊ, aɪ doʊnt hæv ˈɛni pɛts raɪt naʊ.",
+    "Không, hiện tại tôi không có thú cưng nào."
+  ],
+  [
+    "Would you like a pet?",
+    "wʊd juː laɪk ə pɛt?",
+    "Bạn có muốn nuôi một con thú cưng không?",
+    "Yes, I would like a dog.",
+    "jɛs, aɪ wʊd laɪk ə dɔːɡ.",
+    "Vâng, tôi muốn có một con chó."
+  ],
+  [
+    "Do you use social media?",
+    "duː juː juːz ˈsoʊʃəl ˈmiːdiə?",
+    "Bạn có dùng mạng xã hội không?",
+    "Yes, I use social media daily.",
+    "jɛs, aɪ juːz ˈsoʊʃəl ˈmiːdiə ˈdeɪli.",
+    "Vâng, tôi dùng mạng xã hội hàng ngày."
+  ],
+  [
+    "Do you shop online?",
+    "duː juː ʃɑːp ˈɒnˌlaɪn?",
+    "Bạn có mua sắm trực tuyến không?",
+    "Yes, I shop online frequently.",
+    "jɛs, aɪ ʃɑːp ˈɒnˌlaɪn ˈfriːkwəntli.",
+    "Vâng, tôi thường xuyên mua sắm trực tuyến."
+  ],
+  [
+    "Do you think online shopping is convenient?",
+    "duː juː θɪŋk ˈɒnˌlaɪn ˈʃɑːpɪŋ ɪz kənˈviːniənt?",
+    "Bạn có nghĩ mua sắm trực tuyến tiện lợi không?",
+    "Yes, it is very convenient.",
+    "jɛs, ɪt ɪz ˈvɛri kənˈviːniənt.",
+    "Vâng, nó rất tiện lợi."
+  ],
+  [
+    "Do you watch YouTube often?",
+    "duː juː wɑːʧ ˈjuːˌtuːb ˈɔːfən?",
+    "Bạn có thường xem YouTube không?",
+    "Yes, I watch YouTube daily.",
+    "jɛs, aɪ wɑːʧ ˈjuːˌtuːb ˈdeɪli.",
+    "Vâng, tôi xem YouTube hàng ngày."
+  ],
+  [
+    "Do you learn English on YouTube?",
+    "duː juː lɜːrn ˈɪŋɡlɪʃ ɑːn ˈjuːˌtuːb?",
+    "Bạn có học tiếng Anh trên YouTube không?",
+    "Yes, it's very helpful.",
+    "jɛs, ɪts ˈvɛri ˈhɛlpfəl.",
+    "Vâng, nó rất hữu ích."
+  ],
+  [
+    "Do you enjoy going outside?",
+    "duː juː ɛnˈʤɔɪ ˈɡoʊɪŋ ˌaʊtˈsaɪd?",
+    "Bạn có thích ra ngoài không?",
+    "Yes, I enjoy going outside.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈɡoʊɪŋ ˌaʊtˈsaɪd.",
+    "Vâng, tôi thích ra ngoài."
+  ],
+  [
+    "Do you go to the park?",
+    "duː juː ɡoʊ tuː ðə pɑːrk?",
+    "Bạn có đi công viên không?",
+    "Yes, the park is near my home.",
+    "jɛs, ðə pɑːrk ɪz nɪər maɪ hoʊm.",
+    "Vâng, công viên ở gần nhà tôi."
+  ],
+  [
+    "Do you like meeting new people?",
+    "duː juː laɪk ˈmiːtɪŋ njuː ˈpiːpəl?",
+    "Bạn có thích gặp gỡ những người mới không?",
+    "Yes, I enjoy meeting new people.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈmiːtɪŋ njuː ˈpiːpəl.",
+    "Vâng, tôi thích gặp gỡ những người mới."
+  ],
+  [
+    "Do you enjoy learning languages?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ ˈlæŋɡwɪʤɪz?",
+    "Bạn có thích học ngoại ngữ không?",
+    "Yes, I enjoy learning languages.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈlɜːrnɪŋ ˈlæŋɡwɪʤɪz.",
+    "Vâng, tôi thích học ngoại ngữ."
+  ],
+  [
+    "What other languages do you want to learn?",
+    "wʌt ˈʌðər ˈlæŋɡwɪʤɪz duː juː wɑːnt tuː lɜːrn?",
+    "Bạn muốn học thêm ngôn ngữ nào khác?",
+    "I want to learn Spanish and Korean.",
+    "aɪ wɑːnt tuː lɜːrn ˈspænɪʃ ænd kəˈriːən.",
+    "Tôi muốn học tiếng Tây Ban Nha và tiếng Hàn."
+  ],
+  [
+    "Do you like foreign cultures?",
+    "duː juː laɪk ˈfɔːrən ˈkʌlʧərz?",
+    "Bạn có thích văn hóa nước ngoài không?",
+    "Yes, I love learning about other cultures.",
+    "jɛs, aɪ lʌv ˈlɜːrnɪŋ əˈbaʊt ˈʌðər ˈkʌlʧərz.",
+    "Vâng, tôi thích tìm hiểu về các nền văn hóa khác."
+  ],
+  [
+    "Do you enjoy watching international movies?",
+    "duː juː ɛnˈʤɔɪ ˈwɑːʧɪŋ ˌɪntərˈnæʃənəl ˈmuːviz?",
+    "Bạn có thích xem phim quốc tế không?",
+    "Yes, I enjoy them very much.",
+    "jɛs, aɪ ɛnˈʤɔɪ ðɛm ˈvɛri mʌʧ.",
+    "Vâng, tôi rất thích xem chúng."
+  ],
+  [
+    "Do you use subtitles?",
+    "duː juː juːz ˈsʌbˌtaɪtəlz?",
+    "Bạn có dùng phụ đề không?",
+    "Yes, subtitles help me understand.",
+    "jɛs, ˈsʌbˌtaɪtəlz hɛlp miː ˌʌndərˈstænd.",
+    "Vâng, phụ đề giúp tôi hiểu."
+  ],
+  [
+    "Do you have a computer?",
+    "duː juː hæv ə kəmˈpjuːtər?",
+    "Bạn có máy tính không?",
+    "Yes, I have a laptop.",
+    "jɛs, aɪ hæv ə ˈlæpˌtɑːp.",
+    "Vâng, tôi có một chiếc máy tính xách tay."
+  ],
+  [
+    "Do you enjoy quiet mornings?",
+    "duː juː ɛnˈʤɔɪ ˈkwaɪət ˈmɔːrnɪŋz?",
+    "Bạn có thích những buổi sáng yên tĩnh không?",
+    "Yes, I enjoy peaceful mornings.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈpiːsfəl ˈmɔːrnɪŋz.",
+    "Vâng, tôi thích những buổi sáng yên bình."
+  ],
+  [
+    "Do you feel more productive in the morning?",
+    "duː juː fiːl mɔːr prəˈdʌktɪv ɪn ðə ˈmɔːrnɪŋ?",
+    "Bạn có cảm thấy năng suất hơn vào buổi sáng không?",
+    "Yes, mornings help me focus.",
+    "jɛs, ˈmɔːrnɪŋz hɛlp miː ˈfoʊkəs.",
+    "Vâng, buổi sáng giúp tôi tập trung."
+  ],
+  [
+    "Do you drink water first thing in the morning?",
+    "duː juː drɪŋk ˈwɔːtər fɜːrst θɪŋ ɪn ðə ˈmɔːrnɪŋ?",
+    "Bạn có uống nước đầu tiên vào buổi sáng không?",
+    "Yes, I always drink a glass of water.",
+    "jɛs, aɪ ˈɔːlweɪz drɪŋk ə ɡlæs əv ˈwɔːtər.",
+    "Vâng, tôi luôn uống một ly nước."
+  ],
+  [
+    "Do you like your daily routine?",
+    "duː juː laɪk jʊər ˈdeɪli ruːˈtiːn?",
+    "Bạn có thích thói quen hàng ngày của mình không?",
+    "Yes, my routine keeps me organized.",
+    "jɛs, maɪ ruːˈtiːn kiːps miː ˈɔːrɡəˌnaɪzd.",
+    "Vâng, thói quen giúp tôi ngăn nắp."
+  ],
+  [
+    "Do you feel stressed sometimes?",
+    "duː juː fiːl strɛst ˈsʌmtaɪmz?",
+    "Bạn có đôi khi cảm thấy căng thẳng không?",
+    "Yes, I feel stressed sometimes.",
+    "jɛs, aɪ fiːl strɛst ˈsʌmtaɪmz.",
+    "Vâng, đôi khi tôi cảm thấy căng thẳng."
+  ],
+  [
+    "How do you reduce stress?",
+    "haʊ duː juː rɪˈduːs strɛs?",
+    "Bạn làm thế nào để giảm căng thẳng?",
+    "I breathe deeply and take short breaks.",
+    "aɪ briːð ˈdiːpli ænd teɪk ʃɔːrt breɪks.",
+    "Tôi hít thở sâu và nghỉ ngơi ngắn."
+  ],
+  [
+    "Does listening to music help you?",
+    "dʌz ˈlɪsənɪŋ tuː ˈmjuːzɪk hɛlp juː?",
+    "Nghe nhạc có giúp bạn không?",
+    "Yes, music helps me relax.",
+    "jɛs, ˈmjuːzɪk hɛlps miː rɪˈlæks.",
+    "Vâng, âm nhạc giúp tôi thư giãn."
+  ],
+  [
+    "Do you eat healthy food?",
+    "duː juː iːt ˈhɛlθi fuːd?",
+    "Bạn có ăn thực phẩm lành mạnh không?",
+    "Yes, I try to eat healthy food.",
+    "jɛs, aɪ traɪ tuː iːt ˈhɛlθi fuːd.",
+    "Vâng, tôi cố gắng ăn thực phẩm lành mạnh."
+  ],
+  [
+    "Do you eat vegetables every day?",
+    "duː juː iːt ˈvɛʤtəbəlz ˈɛvri deɪ?",
+    "Bạn có ăn rau mỗi ngày không?",
+    "Yes, I eat vegetables daily.",
+    "jɛs, aɪ iːt ˈvɛʤtəbəlz ˈdeɪli.",
+    "Vâng, tôi ăn rau hàng ngày."
+  ],
+  [
+    "What fruit do you like the most?",
+    "wʌt fruːt duː juː laɪk ðə moʊst?",
+    "Bạn thích loại trái cây nào nhất?",
+    "I like apples and bananas.",
+    "aɪ laɪk ˈæpəlz ænd bəˈnænəz.",
+    "Tôi thích táo và chuối."
+  ],
+  [
+    "Do you enjoy weekends?",
+    "duː juː ɛnˈʤɔɪ ˈwiːkˌɛndz?",
+    "Bạn có thích cuối tuần không?",
+    "Yes, I love weekends.",
+    "jɛs, aɪ lʌv ˈwiːkˌɛndz.",
+    "Vâng, tôi yêu cuối tuần."
+  ],
+  [
+    "Do you go out on weekends?",
+    "duː juː ɡoʊ aʊt ɑːn ˈwiːkˌɛndz?",
+    "Bạn có ra ngoài vào cuối tuần không?",
+    "Yes, sometimes I go out.",
+    "jɛs, ˈsʌmtaɪmz aɪ ɡoʊ aʊt.",
+    "Vâng, thỉnh thoảng tôi có ra ngoài."
+  ],
+  [
+    "Do you clean your house on weekends?",
+    "duː juː kliːn jʊər haʊs ɑːn ˈwiːkˌɛndz?",
+    "Bạn có dọn dẹp nhà cửa vào cuối tuần không?",
+    "Yes, I clean and organize my room.",
+    "jɛs, aɪ kliːn ænd ˈɔːrɡəˌnaɪz maɪ ruːm.",
+    "Vâng, tôi dọn dẹp và sắp xếp phòng của mình."
+  ],
+  [
+    "Do you like going shopping?",
+    "duː juː laɪk ˈɡoʊɪŋ ˈʃɑːpɪŋ?",
+    "Bạn có thích đi mua sắm không?",
+    "Yes, I enjoy shopping.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈʃɑːpɪŋ.",
+    "Vâng, tôi thích mua sắm."
+  ],
+  [
+    "Do you enjoy grocery shopping?",
+    "duː juː ɛnˈʤɔɪ ˈɡroʊsəri ˈʃɑːpɪŋ?",
+    "Bạn có thích đi mua sắm thực phẩm không?",
+    "Yes, grocery shopping is relaxing.",
+    "jɛs, ˈɡroʊsəri ˈʃɑːpɪŋ ɪz rɪˈlæksɪŋ.",
+    "Vâng, mua sắm thực phẩm rất thư giãn."
+  ],
+  [
+    "Do you go to the library?",
+    "duː juː ɡoʊ tuː ðə ˈlaɪˌbrɛri?",
+    "Bạn có đến thư viện không?",
+    "Yes, I go to the library often.",
+    "jɛs, aɪ ɡoʊ tuː ðə ˈlaɪˌbrɛri ˈɔːfən.",
+    "Vâng, tôi thường đến thư viện."
+  ],
+  [
+    "Do you borrow books?",
+    "duː juː ˈbɑːroʊ bʊks?",
+    "Bạn có mượn sách không?",
+    "Yes, I borrow books every week.",
+    "jɛs, aɪ ˈbɑːroʊ bʊks ˈɛvri wiːk.",
+    "Vâng, tôi mượn sách mỗi tuần."
+  ],
+  [
+    "Do you go to the cafe?",
+    "duː juː ɡoʊ tuː ðə kæˈfeɪ?",
+    "Bạn có đến quán cà phê không?",
+    "Yes, I like small cafes.",
+    "jɛs, aɪ laɪk smɔːl kæˈfeɪz.",
+    "Vâng, tôi thích những quán cà phê nhỏ."
+  ],
+  [
+    "Do you enjoy parks?",
+    "duː juː ɛnˈʤɔɪ pɑːrks?",
+    "Bạn có thích công viên không?",
+    "Yes, I like walking in parks.",
+    "jɛs, aɪ laɪk ˈwɔːkɪŋ ɪn pɑːrks.",
+    "Vâng, tôi thích đi dạo trong công viên."
+  ],
+  [
+    "Do you prefer the train?",
+    "duː juː prɪˈfɜːr ðə treɪn?",
+    "Bạn thích đi tàu hơn không?",
+    "Yes, the train is comfortable.",
+    "jɛs, ðə treɪn ɪz ˈkʌmfərtəbəl.",
+    "Vâng, tàu hỏa rất thoải mái."
+  ],
+  [
+    "Do you enjoy sharing small stories?",
+    "duː juː ɛnˈʤɔɪ ˈʃɛrɪŋ smɔːl ˈstɔːriz?",
+    "Bạn có thích chia sẻ những câu chuyện nhỏ không?",
+    "Yes, small stories make conversations easy.",
+    "jɛs, smɔːl ˈstɔːriz meɪk ˌkɑːnvərˈseɪʃənz ˈiːzi.",
+    "Vâng, những câu chuyện nhỏ giúp cuộc trò chuyện dễ dàng hơn."
+  ],
+  [
+    "Do you listen to English daily?",
+    "duː juː ˈlɪsən tuː ˈɪŋɡlɪʃ ˈdeɪli?",
+    "Bạn có nghe tiếng Anh hàng ngày không?",
+    "Yes, I listen every day.",
+    "jɛs, aɪ ˈlɪsən ˈɛvri deɪ.",
+    "Vâng, tôi nghe mỗi ngày."
+  ],
+  [
+    "Do you try to think in English?",
+    "duː juː traɪ tuː θɪŋk ɪn ˈɪŋɡlɪʃ?",
+    "Bạn có cố gắng suy nghĩ bằng tiếng Anh không?",
+    "Yes, I try to think in English slowly.",
+    "jɛs, aɪ traɪ tuː θɪŋk ɪn ˈɪŋɡlɪʃ ˈsloʊli.",
+    "Vâng, tôi cố gắng suy nghĩ bằng tiếng Anh một cách chậm rãi."
+  ],
+  [
+    "Do you speak English with friends?",
+    "duː juː spiːk ˈɪŋɡlɪʃ wɪθ frɛndz?",
+    "Bạn có nói tiếng Anh với bạn bè không?",
+    "Yes, I practice with them.",
+    "jɛs, aɪ ˈpræktɪs wɪθ ðɛm.",
+    "Vâng, tôi luyện tập với họ."
+  ],
+  [
+    "Do you enjoy peaceful nights?",
+    "duː juː ɛnˈʤɔɪ ˈpiːsfəl naɪts?",
+    "Bạn có thích những đêm yên bình không?",
+    "Yes, nights are relaxing.",
+    "jɛs, naɪts ɑːr rɪˈlæksɪŋ.",
+    "Vâng, ban đêm rất thư giãn."
+  ],
+  [
+    "Do you like dim lights?",
+    "duː juː laɪk dɪm laɪts?",
+    "Bạn có thích ánh sáng mờ không?",
+    "Yes, dim lights help me relax.",
+    "jɛs, dɪm laɪts hɛlp miː rɪˈlæks.",
+    "Vâng, ánh sáng mờ giúp tôi thư giãn."
+  ],
+  [
+    "Do you read books before sleeping?",
+    "duː juː riːd bʊks bɪˈfɔːr ˈsliːpɪŋ?",
+    "Bạn có đọc sách trước khi ngủ không?",
+    "Yes, reading helps me sleep better.",
+    "jɛs, ˈriːdɪŋ hɛlps miː sliːp ˈbɛtər.",
+    "Vâng, đọc sách giúp tôi ngủ ngon hơn."
+  ],
+  [
+    "Do you prepare your clothes the night before?",
+    "duː juː prɪˈpɛər jʊər kloʊðz ðə naɪt bɪˈfɔːr?",
+    "Bạn có chuẩn bị quần áo vào tối hôm trước không?",
+    "Yes, I prepare them to save time in the morning.",
+    "jɛs, aɪ prɪˈpɛər ðɛm tuː seɪv taɪm ɪn ðə ˈmɔːrnɪŋ.",
+    "Vâng, tôi chuẩn bị chúng để tiết kiệm thời gian vào buổi sáng."
+  ],
+  [
+    "Do you like wearing comfortable clothes?",
+    "duː juː laɪk ˈwɛrɪŋ ˈkʌmfərtəbəl kloʊðz?",
+    "Bạn có thích mặc quần áo thoải mái không?",
+    "Yes, comfort is important to me.",
+    "jɛs, ˈkʌmfərt ɪz ɪmˈpɔːrtənt tuː miː.",
+    "Vâng, sự thoải mái rất quan trọng đối với tôi."
+  ],
+  [
+    "Do you like taking showers at night?",
+    "duː juː laɪk ˈteɪkɪŋ ˈʃaʊərz æt naɪt?",
+    "Bạn có thích tắm vào buổi tối không?",
+    "Yes, evening showers help me relax.",
+    "jɛs, ˈiːvnɪŋ ˈʃaʊərz hɛlp miː rɪˈlæks.",
+    "Vâng, tắm buổi tối giúp tôi thư giãn."
+  ],
+  [
+    "Do you have a daily planner?",
+    "duː juː hæv ə ˈdeɪli ˈplænər?",
+    "Bạn có sổ kế hoạch hàng ngày không?",
+    "Yes, I use a planner to organize my day.",
+    "jɛs, aɪ juːz ə ˈplænər tuː ˈɔːrɡəˌnaɪz maɪ deɪ.",
+    "Vâng, tôi dùng sổ kế hoạch để tổ chức một ngày của mình."
+  ],
+  [
+    "Do you set goals for yourself?",
+    "duː juː sɛt ɡoʊlz fɔːr jərˈsɛlf?",
+    "Bạn có tự đặt mục tiêu cho mình không?",
+    "Yes, setting goals keeps me motivated.",
+    "jɛs, ˈsɛtɪŋ ɡoʊlz kiːps miː ˈmoʊtɪˌveɪtɪd.",
+    "Vâng, đặt mục tiêu giúp tôi có động lực."
+  ],
+  [
+    "Do you enjoy peaceful environments?",
+    "duː juː ɛnˈʤɔɪ ˈpiːsfəl ɪnˈvaɪrənmənts?",
+    "Bạn có thích môi trường yên tĩnh không?",
+    "Yes, peaceful places make me calm.",
+    "jɛs, ˈpiːsfəl ˈpleɪsɪz meɪk miː kɑːm.",
+    "Vâng, những nơi yên tĩnh làm tôi bình tĩnh."
+  ],
+  [
+    "Do you enjoy using technology?",
+    "duː juː ɛnˈʤɔɪ ˈjuːzɪŋ tɛkˈnɑːləʤi?",
+    "Bạn có thích sử dụng công nghệ không?",
+    "Yes, technology helps me with many things.",
+    "jɛs, tɛkˈnɑːləʤi hɛlps miː wɪθ ˈmɛni θɪŋz.",
+    "Vâng, công nghệ giúp tôi rất nhiều việc."
+  ],
+  [
+    "Do you try to limit your screen time?",
+    "duː juː traɪ tuː ˈlɪmɪt jʊər skriːn taɪm?",
+    "Bạn có cố gắng giới hạn thời gian sử dụng màn hình không?",
+    "Yes, I try to control it.",
+    "jɛs, aɪ traɪ tuː kənˈtroʊl ɪt.",
+    "Vâng, tôi cố gắng kiểm soát nó."
+  ],
+  [
+    "Do you listen to audio books?",
+    "duː juː ˈlɪsən tuː ˈɔːdiˌoʊ bʊks?",
+    "Bạn có nghe sách nói không?",
+    "Sometimes I listen when I'm busy.",
+    "ˈsʌmtaɪmz aɪ ˈlɪsən wɛn aɪm ˈbɪzi.",
+    "Thỉnh thoảng tôi nghe khi tôi bận."
+  ],
+  [
+    "Do you talk to yourself in English?",
+    "duː juː tɔːk tuː jərˈsɛlf ɪn ˈɪŋɡlɪʃ?",
+    "Bạn có tự nói chuyện với mình bằng tiếng Anh không?",
+    "Yes, talking to myself helps me practice.",
+    "jɛs, ˈtɔːkɪŋ tuː maɪˈsɛlf hɛlps miː ˈpræktɪs.",
+    "Vâng, tự nói chuyện giúp tôi luyện tập."
+  ],
+  [
+    "Do you practice pronunciation often?",
+    "duː juː ˈpræktɪs prəˌnʌnsiˈeɪʃən ˈɔːfən?",
+    "Bạn có thường xuyên luyện phát âm không?",
+    "Yes, I practice every day.",
+    "jɛs, aɪ ˈpræktɪs ˈɛvri deɪ.",
+    "Vâng, tôi luyện tập mỗi ngày."
+  ],
+  [
+    "Do you enjoy entertainment in English?",
+    "duː juː ɛnˈʤɔɪ ˌɛntərˈteɪnmənt ɪn ˈɪŋɡlɪʃ?",
+    "Bạn có thích giải trí bằng tiếng Anh không?",
+    "Yes, entertainment helps me learn.",
+    "jɛs, ˌɛntərˈteɪnmənt hɛlps miː lɜːrn.",
+    "Vâng, giải trí giúp tôi học hỏi."
+  ],
+  [
+    "Do you like sports?",
+    "duː juː laɪk spɔːrts?",
+    "Bạn có thích thể thao không?",
+    "Yes, I like sports.",
+    "jɛs, aɪ laɪk spɔːrts.",
+    "Vâng, tôi thích thể thao."
+  ],
+  [
+    "Do you like going for walks?",
+    "duː juː laɪk ˈɡoʊɪŋ fɔːr wɔːks?",
+    "Bạn có thích đi dạo không?",
+    "Yes, walking makes me feel good.",
+    "jɛs, ˈwɔːkɪŋ meɪks miː fiːl ɡʊd.",
+    "Vâng, đi dạo làm tôi cảm thấy tốt."
+  ],
+  [
+    "Do you enjoy sunsets?",
+    "duː juː ɛnˈʤɔɪ ˈsʌnˌsɛts?",
+    "Bạn có thích hoàng hôn không?",
+    "Yes, sunsets are beautiful and calming.",
+    "jɛs, ˈsʌnˌsɛts ɑːr ˈbjuːtəfəl ænd ˈkɑːmɪŋ.",
+    "Vâng, hoàng hôn thật đẹp và yên bình."
+  ],
+  [
+    "Do you like spending time at home?",
+    "duː juː laɪk ˈspɛndɪŋ taɪm æt hoʊm?",
+    "Bạn có thích dành thời gian ở nhà không?",
+    "Yes, I enjoy staying home.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈsteɪɪŋ hoʊm.",
+    "Vâng, tôi thích ở nhà."
+  ],
+  [
+    "Do you keep plants at home?",
+    "duː juː kiːp plænts æt hoʊm?",
+    "Bạn có trồng cây ở nhà không?",
+    "Yes, I have a few small plants.",
+    "jɛs, aɪ hæv ə fjuː smɔːl plænts.",
+    "Vâng, tôi có một vài cây nhỏ."
+  ],
+  [
+    "Do you enjoy cooking for family?",
+    "duː juː ɛnˈʤɔɪ ˈkʊkɪŋ fɔːr ˈfæməli?",
+    "Bạn có thích nấu ăn cho gia đình không?",
+    "Yes, cooking for family feels nice.",
+    "jɛs, ˈkʊkɪŋ fɔːr ˈfæməli fiːlz naɪs.",
+    "Vâng, nấu ăn cho gia đình cảm thấy thật tuyệt."
+  ],
+  [
+    "Do you follow recipes?",
+    "duː juː ˈfɑːloʊ ˈrɛsəˌpiz?",
+    "Bạn có làm theo công thức nấu ăn không?",
+    "Yes, I follow simple recipes.",
+    "jɛs, aɪ ˈfɑːloʊ ˈsɪmpəl ˈrɛsəˌpiz.",
+    "Vâng, tôi làm theo những công thức đơn giản."
+  ],
+  [
+    "Do you enjoy dining out?",
+    "duː juː ɛnˈʤɔɪ ˈdaɪnɪŋ aʊt?",
+    "Bạn có thích đi ăn ngoài không?",
+    "Yes, dining out is enjoyable.",
+    "jɛs, ˈdaɪnɪŋ aʊt ɪz ɛnˈʤɔɪəbəl.",
+    "Vâng, đi ăn ngoài rất thú vị."
+  ],
+  [
+    "Do you like small restaurants?",
+    "duː juː laɪk smɔːl ˈrɛstərɑːnts?",
+    "Bạn có thích những nhà hàng nhỏ không?",
+    "Yes, small restaurants feel cozy.",
+    "jɛs, smɔːl ˈrɛstərɑːnts fiːl ˈkoʊzi.",
+    "Vâng, những nhà hàng nhỏ cho cảm giác ấm cúng."
+  ],
+  [
+    "Do you enjoy traveling with friends?",
+    "duː juː ɛnˈʤɔɪ ˈtrævəlɪŋ wɪθ frɛndz?",
+    "Bạn có thích đi du lịch cùng bạn bè không?",
+    "Yes, traveling with friends is fun.",
+    "jɛs, ˈtrævəlɪŋ wɪθ frɛndz ɪz fʌn.",
+    "Vâng, đi du lịch cùng bạn bè rất vui."
+  ],
+  [
+    "Do you take photos when traveling?",
+    "duː juː teɪk ˈfoʊtoʊz wɛn ˈtrævəlɪŋ?",
+    "Bạn có chụp ảnh khi đi du lịch không?",
+    "Yes, I take many photos.",
+    "jɛs, aɪ teɪk ˈmɛni ˈfoʊtoʊz.",
+    "Vâng, tôi chụp rất nhiều ảnh."
+  ],
+  [
+    "Do you enjoy collecting souvenirs?",
+    "duː juː ɛnˈʤɔɪ kəˈlɛktɪŋ ˌsuːvəˈnɪrz?",
+    "Bạn có thích sưu tầm đồ lưu niệm không?",
+    "Yes, small souvenirs make me happy.",
+    "jɛs, smɔːl ˌsuːvəˈnɪrz meɪk miː ˈhæpi.",
+    "Vâng, những món quà lưu niệm nhỏ làm tôi vui."
+  ],
+  [
+    "Do you enjoy learning new skills?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ njuː skɪlz?",
+    "Bạn có thích học những kỹ năng mới không?",
+    "Yes, I enjoy learning new skills.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈlɜːrnɪŋ njuː skɪlz.",
+    "Vâng, tôi thích học những kỹ năng mới."
+  ],
+  [
+    "Do you enjoy spending time alone?",
+    "duː juː ɛnˈʤɔɪ ˈspɛndɪŋ taɪm əˈloʊn?",
+    "Bạn có thích dành thời gian một mình không?",
+    "Yes, sometimes I enjoy quiet time alone.",
+    "jɛs, ˈsʌmtaɪmz aɪ ɛnˈʤɔɪ ˈkwaɪət taɪm əˈloʊn.",
+    "Vâng, đôi khi tôi thích có thời gian yên tĩnh một mình."
+  ],
+  [
+    "Do you enjoy silence?",
+    "duː juː ɛnˈʤɔɪ ˈsaɪləns?",
+    "Bạn có thích sự im lặng không?",
+    "Yes, silence is peaceful.",
+    "jɛs, ˈsaɪləns ɪz ˈpiːsfəl.",
+    "Vâng, sự im lặng thật yên bình."
+  ],
+  [
+    "Do you enjoy helping others?",
+    "duː juː ɛnˈʤɔɪ ˈhɛlpɪŋ ˈʌðərz?",
+    "Bạn có thích giúp đỡ người khác không?",
+    "Yes, I enjoy helping people.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈhɛlpɪŋ ˈpiːpəl.",
+    "Vâng, tôi thích giúp đỡ mọi người."
+  ],
+  [
+    "Do you help your family often?",
+    "duː juː hɛlp jʊər ˈfæməli ˈɔːfən?",
+    "Bạn có thường xuyên giúp đỡ gia đình không?",
+    "Yes, I help them whenever I can.",
+    "jɛs, aɪ hɛlp ðɛm wɛnˈɛvər aɪ kæn.",
+    "Vâng, tôi giúp họ bất cứ khi nào tôi có thể."
+  ],
+  [
+    "Do you believe helping others is important?",
+    "duː juː bɪˈliːv ˈhɛlpɪŋ ˈʌðərz ɪz ɪmˈpɔːrtənt?",
+    "Bạn có tin rằng giúp đỡ người khác là quan trọng không?",
+    "Yes, helping others builds kindness.",
+    "jɛs, ˈhɛlpɪŋ ˈʌðərz bɪldz ˈkaɪndnəs.",
+    "Vâng, giúp đỡ người khác xây dựng lòng tốt."
+  ],
+  [
+    "Do you feel happy when you help?",
+    "duː juː fiːl ˈhæpi wɛn juː hɛlp?",
+    "Bạn có cảm thấy vui khi giúp đỡ không?",
+    "Yes, helping makes me happy.",
+    "jɛs, ˈhɛlpɪŋ meɪks miː ˈhæpi.",
+    "Vâng, giúp đỡ làm tôi vui."
+  ],
+  [
+    "Do you enjoy relaxing after a long day?",
+    "duː juː ɛnˈʤɔɪ rɪˈlæksɪŋ ˈæftər ə lɔːŋ deɪ?",
+    "Bạn có thích thư giãn sau một ngày dài không?",
+    "Yes, relaxation is important.",
+    "jɛs, ˌriːlækˈseɪʃən ɪz ɪmˈpɔːrtənt.",
+    "Vâng, thư giãn là quan trọng."
+  ],
+  [
+    "Do you enjoy a quiet evening at home?",
+    "duː juː ɛnˈʤɔɪ ə ˈkwaɪət ˈiːvnɪŋ æt hoʊm?",
+    "Bạn có thích một buổi tối yên tĩnh ở nhà không?",
+    "Yes, quiet evenings are peaceful.",
+    "jɛs, ˈkwaɪət ˈiːvnɪŋz ɑːr ˈpiːsfəl.",
+    "Vâng, những buổi tối yên tĩnh thật yên bình."
+  ],
+  [
+    "Do you enjoy reading motivational books?",
+    "duː juː ɛnˈʤɔɪ ˈriːdɪŋ ˌmoʊtɪˈveɪʃənəl bʊks?",
+    "Bạn có thích đọc sách truyền động lực không?",
+    "Yes, motivational books inspire me.",
+    "jɛs, ˌmoʊtɪˈveɪʃənəl bʊks ɪnˈspaɪər miː.",
+    "Vâng, sách truyền động lực truyền cảm hứng cho tôi."
+  ],
+  [
+    "Do you enjoy writing?",
+    "duː juː ɛnˈʤɔɪ ˈraɪtɪŋ?",
+    "Bạn có thích viết không?",
+    "Yes, I enjoy writing a little.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈraɪtɪŋ ə ˈlɪtəl.",
+    "Vâng, tôi thích viết một chút."
+  ],
+  [
+    "Do you write in a journal?",
+    "duː juː raɪt ɪn ə ˈʤɜːrnəl?",
+    "Bạn có viết nhật ký không?",
+    "Yes, I sometimes write in a journal.",
+    "jɛs, aɪ ˈsʌmtaɪmz raɪt ɪn ə ˈʤɜːrnəl.",
+    "Vâng, tôi thỉnh thoảng có viết nhật ký."
+  ],
+  [
+    "Do you like planning your next day?",
+    "duː juː laɪk ˈplænɪŋ jʊər nɛkst deɪ?",
+    "Bạn có thích lên kế hoạch cho ngày hôm sau không?",
+    "Yes, planning makes tomorrow easier.",
+    "jɛs, ˈplænɪŋ meɪks təˈmɑːroʊ ˈiːziər.",
+    "Vâng, lên kế hoạch làm cho ngày mai dễ dàng hơn."
+  ],
+  [
+    "Do you feel better when you're organized?",
+    "duː juː fiːl ˈbɛtər wɛn jʊər ˈɔːrɡəˌnaɪzd?",
+    "Bạn có cảm thấy tốt hơn khi bạn ngăn nắp không?",
+    "Yes, being organized reduces stress.",
+    "jɛs, ˈbiːɪŋ ˈɔːrɡəˌnaɪzd rɪˈduːsɪz strɛs.",
+    "Vâng, ngăn nắp giúp giảm căng thẳng."
+  ],
+  [
+    "Do you enjoy watching the night sky?",
+    "duː juː ɛnˈʤɔɪ ˈwɑːʧɪŋ ðə naɪt skaɪ?",
+    "Bạn có thích ngắm bầu trời đêm không?",
+    "Yes, the night sky is beautiful.",
+    "jɛs, ðə naɪt skaɪ ɪz ˈbjuːtəfəl.",
+    "Vâng, bầu trời đêm rất đẹp."
+  ],
+  [
+    "Do you enjoy cleaning your home?",
+    "duː juː ɛnˈʤɔɪ ˈkliːnɪŋ jʊər hoʊm?",
+    "Bạn có thích dọn dẹp nhà cửa không?",
+    "Not really, but it feels good afterward.",
+    "nɑːt ˈriːəli, bʌt ɪt fiːlz ɡʊd ˈæftərwərd.",
+    "Không hẳn, nhưng cảm giác sau đó rất tuyệt."
+  ],
+  [
+    "Do you keep your desk tidy?",
+    "duː juː kiːp jʊər dɛsk ˈtaɪdi?",
+    "Bạn có giữ bàn làm việc của mình gọn gàng không?",
+    "Yes, a tidy desk helps me study.",
+    "jɛs, ə ˈtaɪdi dɛsk hɛlps miː ˈstʌdi.",
+    "Vâng, một chiếc bàn gọn gàng giúp tôi học tập."
+  ],
+  [
+    "Do you enjoy learning from mistakes?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ frʌm mɪsˈteɪks?",
+    "Bạn có thích học hỏi từ những sai lầm không?",
+    "Yes, mistakes help me improve.",
+    "jɛs, mɪsˈteɪks hɛlp miː ɪmˈpruːv.",
+    "Vâng, sai lầm giúp tôi tiến bộ."
+  ],
+  [
+    "Do you believe practice makes perfect?",
+    "duː juː bɪˈliːv ˈpræktɪs meɪks ˈpɜːrfɪkt?",
+    "Bạn có tin rằng luyện tập tạo nên sự hoàn hảo không?",
+    "Yes, practice improves everything.",
+    "jɛs, ˈpræktɪs ɪmˈpruːvz ˈɛvriˌθɪŋ.",
+    "Vâng, luyện tập cải thiện mọi thứ."
+  ],
+  [
+    "Do you enjoy meeting new cultures online?",
+    "duː juː ɛnˈʤɔɪ ˈmiːtɪŋ njuː ˈkʌlʧərz ˈɒnˌlaɪn?",
+    "Bạn có thích gặp gỡ các nền văn hóa mới trực tuyến không?",
+    "Yes, the internet connects the world.",
+    "jɛs, ðə ˈɪntərˌnɛt kəˈnɛkts ðə wɜːrld.",
+    "Vâng, internet kết nối thế giới."
+  ],
+  [
+    "Do you enjoy hearing different accents?",
+    "duː juː ɛnˈʤɔɪ ˈhɪərɪŋ ˈdɪfərənt ˈæksɛnts?",
+    "Bạn có thích nghe các giọng khác nhau không?",
+    "Yes, accents are interesting.",
+    "jɛs, ˈæksɛnts ɑːr ˈɪntrəstɪŋ.",
+    "Vâng, các giọng rất thú vị."
+  ],
+  [
+    "Do you share your own culture?",
+    "duː juː ʃɛər jʊər oʊn ˈkʌlʧər?",
+    "Bạn có chia sẻ văn hóa của riêng mình không?",
+    "Yes, I share when people ask.",
+    "jɛs, aɪ ʃɛər wɛn ˈpiːpəl æsk.",
+    "Vâng, tôi chia sẻ khi mọi người hỏi."
+  ],
+  [
+    "Do you enjoy simple conversations?",
+    "duː juː ɛnˈʤɔɪ ˈsɪmpəl ˌkɑːnvərˈseɪʃənz?",
+    "Bạn có thích những cuộc trò chuyện đơn giản không?",
+    "Yes, simple conversations keep me motivated.",
+    "jɛs, ˈsɪmpəl ˌkɑːnvərˈseɪʃənz kiːp miː ˈmoʊtɪˌveɪtɪd.",
+    "Vâng, những cuộc trò chuyện đơn giản giúp tôi có động lực."
+  ],
+  [
+    "Do you practice speaking slowly?",
+    "duː juː ˈpræktɪs ˈspiːkɪŋ ˈsloʊli?",
+    "Bạn có luyện nói chậm không?",
+    "Yes, slow speaking helps me be clear.",
+    "jɛs, sloʊ ˈspiːkɪŋ hɛlps miː biː klɪər.",
+    "Vâng, nói chậm giúp tôi nói rõ ràng."
+  ],
+  [
+    "Do you enjoy learning through listening?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ θruː ˈlɪsənɪŋ?",
+    "Bạn có thích học qua việc nghe không?",
+    "Yes, listening helps me understand natural English.",
+    "jɛs, ˈlɪsənɪŋ hɛlps miː ˌʌndərˈstænd ˈnæʧərəl ˈɪŋɡlɪʃ.",
+    "Vâng, nghe giúp tôi hiểu tiếng Anh tự nhiên."
+  ],
+  [
+    "Do you listen to English every day?",
+    "duː juː ˈlɪsən tuː ˈɪŋɡlɪʃ ˈɛvri deɪ?",
+    "Bạn có nghe tiếng Anh mỗi ngày không?",
+    "Yes, I try to listen a little every day.",
+    "jɛs, aɪ traɪ tuː ˈlɪsən ə ˈlɪtəl ˈɛvri deɪ.",
+    "Vâng, tôi cố gắng nghe một chút mỗi ngày."
+  ],
+  [
+    "Do you like learning with repetition?",
+    "duː juː laɪk ˈlɜːrnɪŋ wɪθ ˌrɛpɪˈtɪʃən?",
+    "Bạn có thích học bằng cách lặp lại không?",
+    "Yes, repeating sentences makes them easier to remember.",
+    "jɛs, rɪˈpiːtɪŋ ˈsɛntənsɪz meɪks ðɛm ˈiːziər tuː rɪˈmɛmbər.",
+    "Vâng, lặp lại các câu giúp chúng dễ nhớ hơn."
+  ],
+  [
+    "Do you like practicing with real life topics?",
+    "duː juː laɪk ˈpræktəsɪŋ wɪθ riːəl laɪf ˈtɑːpɪks?",
+    "Bạn có thích thực hành với các chủ đề đời thực không?",
+    "Yes, everyday topics feel natural.",
+    "jɛs, ˈɛvriˌdeɪ ˈtɑːpɪks fiːl ˈnæʧərəl.",
+    "Vâng, các chủ đề hàng ngày cho cảm giác tự nhiên."
+  ],
+  [
+    "Do you enjoy daily routines?",
+    "duː juː ɛnˈʤɔɪ ˈdeɪli ruːˈtiːnz?",
+    "Bạn có thích các thói quen hàng ngày không?",
+    "Yes, routines help me stay organized.",
+    "jɛs, ruːˈtiːnz hɛlp miː steɪ ˈɔːrɡəˌnaɪzd.",
+    "Vâng, các thói quen giúp tôi ngăn nắp."
+  ],
+  [
+    "Do you enjoy slow mornings?",
+    "duː juː ɛnˈʤɔɪ sloʊ ˈmɔːrnɪŋz?",
+    "Bạn có thích những buổi sáng chậm rãi không?",
+    "Yes, slow mornings feel peaceful.",
+    "jɛs, sloʊ ˈmɔːrnɪŋz fiːl ˈpiːsfəl.",
+    "Vâng, những buổi sáng chậm rãi cho cảm giác yên bình."
+  ],
+  [
+    "Do you enjoy going to work?",
+    "duː juː ɛnˈʤɔɪ ˈɡoʊɪŋ tuː wɜːrk?",
+    "Bạn có thích đi làm không?",
+    "Yes, going to work gives structure to my day.",
+    "jɛs, ˈɡoʊɪŋ tuː wɜːrk ɡɪvz ˈstrʌkʧər tuː maɪ deɪ.",
+    "Vâng, đi làm tạo ra cấu trúc cho ngày của tôi."
+  ],
+  [
+    "Do you enjoy working as a team?",
+    "duː juː ɛnˈʤɔɪ ˈwɜːrkɪŋ æz ə tiːm?",
+    "Bạn có thích làm việc nhóm không?",
+    "Yes, teamwork makes tasks easier.",
+    "jɛs, ˈtiːmˌwɜːrk meɪks tæsks ˈiːziər.",
+    "Vâng, làm việc nhóm giúp công việc dễ dàng hơn."
+  ],
+  [
+    "Do you like finishing your tasks on time?",
+    "duː juː laɪk ˈfɪnɪʃɪŋ jʊər tæsks ɑːn taɪm?",
+    "Bạn có thích hoàn thành công việc đúng giờ không?",
+    "Yes, finishing on time feels good.",
+    "jɛs, ˈfɪnɪʃɪŋ ɑːn taɪm fiːlz ɡʊd.",
+    "Vâng, hoàn thành đúng giờ cảm thấy rất tuyệt."
+  ],
+  [
+    "Do you enjoy lunchtime?",
+    "duː juː ɛnˈʤɔɪ ˈlʌnʧˌtaɪm?",
+    "Bạn có thích giờ ăn trưa không?",
+    "Yes, lunchtime is a nice break.",
+    "jɛs, ˈlʌnʧˌtaɪm ɪz ə naɪs breɪk.",
+    "Vâng, giờ ăn trưa là một khoảng thời gian nghỉ ngơi tuyệt vời."
+  ],
+  [
+    "Do you enjoy simple meals?",
+    "duː juː ɛnˈʤɔɪ ˈsɪmpəl miːlz?",
+    "Bạn có thích những bữa ăn đơn giản không?",
+    "Yes, simple meals are satisfying.",
+    "jɛs, ˈsɪmpəl miːlz ɑːr ˈsætɪsˌfaɪɪŋ.",
+    "Vâng, những bữa ăn đơn giản rất thỏa mãn."
+  ],
+  [
+    "Do you enjoy finishing your workday?",
+    "duː juː ɛnˈʤɔɪ ˈfɪnɪʃɪŋ jʊər ˈwɜːrkˌdeɪ?",
+    "Bạn có thích kết thúc ngày làm việc của mình không?",
+    "Yes, it feels good to complete the day.",
+    "jɛs, ɪt fiːlz ɡʊd tuː kəmˈpliːt ðə deɪ.",
+    "Vâng, cảm giác thật tuyệt khi hoàn thành một ngày."
+  ],
+  [
+    "Do you enjoy going home?",
+    "duː juː ɛnˈʤɔɪ ˈɡoʊɪŋ hoʊm?",
+    "Bạn có thích về nhà không?",
+    "Yes, home is my comfortable place.",
+    "jɛs, hoʊm ɪz maɪ ˈkʌmfərtəbəl pleɪs.",
+    "Vâng, nhà là nơi thoải mái của tôi."
+  ],
+  [
+    "Do you enjoy evenings?",
+    "duː juː ɛnˈʤɔɪ ˈiːvnɪŋz?",
+    "Bạn có thích buổi tối không?",
+    "Yes, evenings are peaceful.",
+    "jɛs, ˈiːvnɪŋz ɑːr ˈpiːsfəl.",
+    "Vâng, buổi tối thật yên bình."
+  ],
+  [
+    "Do you enjoy dinner time?",
+    "duː juː ɛnˈʤɔɪ ˈdɪnər taɪm?",
+    "Bạn có thích giờ ăn tối không?",
+    "Yes, dinner time is relaxing.",
+    "jɛs, ˈdɪnər taɪm ɪz rɪˈlæksɪŋ.",
+    "Vâng, giờ ăn tối thật thư giãn."
+  ],
+  [
+    "Do you cook your own dinner?",
+    "duː juː kʊk jʊər oʊn ˈdɪnər?",
+    "Bạn có tự nấu bữa tối không?",
+    "Yes, I cook most nights.",
+    "jɛs, aɪ kʊk moʊst naɪts.",
+    "Vâng, tôi nấu ăn hầu hết các buổi tối."
+  ],
+  [
+    "Do you enjoy quiet nights?",
+    "duː juː ɛnˈʤɔɪ ˈkwaɪət naɪts?",
+    "Bạn có thích những đêm yên tĩnh không?",
+    "Yes, quiet nights help me unwind.",
+    "jɛs, ˈkwaɪət naɪts hɛlp miː ənˈwaɪnd.",
+    "Vâng, những đêm yên tĩnh giúp tôi thư giãn."
+  ],
+  [
+    "Do you listen to relaxing music?",
+    "duː juː ˈlɪsən tuː rɪˈlæksɪŋ ˈmjuːzɪk?",
+    "Bạn có nghe nhạc thư giãn không?",
+    "Yes, I listen to soft music.",
+    "jɛs, aɪ ˈlɪsən tuː sɔːft ˈmjuːzɪk.",
+    "Vâng, tôi nghe nhạc nhẹ."
+  ],
+  [
+    "Do you read before sleeping?",
+    "duː juː riːd bɪˈfɔːr ˈsliːpɪŋ?",
+    "Bạn có đọc sách trước khi ngủ không?",
+    "Yes, reading helps me fall asleep.",
+    "jɛs, ˈriːdɪŋ hɛlps miː fɔːl əˈsliːp.",
+    "Vâng, đọc sách giúp tôi dễ ngủ."
+  ],
+  [
+    "Do you feel rested in the morning?",
+    "duː juː fiːl ˈrɛstɪd ɪn ðə ˈmɔːrnɪŋ?",
+    "Bạn có cảm thấy sảng khoái vào buổi sáng không?",
+    "Yes, when I sleep well.",
+    "jɛs, wɛn aɪ sliːp wɛl.",
+    "Vâng, khi tôi ngủ ngon."
+  ],
+  [
+    "Do you enjoy learning English at night?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ ˈɪŋɡlɪʃ æt naɪt?",
+    "Bạn có thích học tiếng Anh vào buổi tối không?",
+    "Yes, night learning is peaceful.",
+    "jɛs, naɪt ˈlɜːrnɪŋ ɪz ˈpiːsfəl.",
+    "Vâng, học buổi tối rất yên bình."
+  ],
+  [
+    "Do you listen to English podcasts?",
+    "duː juː ˈlɪsən tuː ˈɪŋɡlɪʃ ˈpɑːdˌkæsts?",
+    "Bạn có nghe podcast tiếng Anh không?",
+    "Yes, podcasts are helpful.",
+    "jɛs, ˈpɑːdˌkæsts ɑːr ˈhɛlpfəl.",
+    "Vâng, podcast rất hữu ích."
+  ],
+  [
+    "Do you believe nightly practice helps?",
+    "duː juː bɪˈliːv ˈnaɪtli ˈpræktɪs hɛlps?",
+    "Bạn có tin rằng luyện tập hàng đêm có ích không?",
+    "Yes, nightly practice improves consistency.",
+    "jɛs, ˈnaɪtli ˈpræktɪs ɪmˈpruːvz kənˈsɪstənsi.",
+    "Vâng, luyện tập hàng đêm cải thiện sự nhất quán."
+  ],
+  [
+    "Do you enjoy learning through reading?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ θruː ˈriːdɪŋ?",
+    "Bạn có thích học qua việc đọc không?",
+    "Yes, reading helps me understand new vocabulary.",
+    "jɛs, ˈriːdɪŋ hɛlps miː ˌʌndərˈstænd njuː voʊˈkæbjəˌlɛri.",
+    "Vâng, đọc giúp tôi hiểu từ vựng mới."
+  ],
+  [
+    "Do you study in the same place every day?",
+    "duː juː ˈstʌdi ɪn ðə seɪm pleɪs ˈɛvri deɪ?",
+    "Bạn có học ở cùng một nơi mỗi ngày không?",
+    "Yes, having one study spot helps.",
+    "jɛs, ˈhævɪŋ wʌn ˈstʌdi spɑːt hɛlps.",
+    "Vâng, có một chỗ học tập cố định sẽ hữu ích."
+  ],
+  [
+    "Do you enjoy practicing speaking?",
+    "duː juː ɛnˈʤɔɪ ˈpræktəsɪŋ ˈspiːkɪŋ?",
+    "Bạn có thích luyện nói không?",
+    "Yes, speaking practice is important.",
+    "jɛs, ˈspiːkɪŋ ˈpræktɪs ɪz ɪmˈpɔːrtənt.",
+    "Vâng, luyện nói rất quan trọng."
+  ],
+  [
+    "Do you enjoy using English at work?",
+    "duː juː ɛnˈʤɔɪ ˈjuːzɪŋ ˈɪŋɡlɪʃ æt wɜːrk?",
+    "Bạn có thích sử dụng tiếng Anh trong công việc không?",
+    "Yes, using English helps me improve.",
+    "jɛs, ˈjuːzɪŋ ˈɪŋɡlɪʃ hɛlps miː ɪmˈpruːv.",
+    "Vâng, sử dụng tiếng Anh giúp tôi tiến bộ."
+  ],
+  [
+    "Do you feel nervous speaking English?",
+    "duː juː fiːl ˈnɜːrvəs ˈspiːkɪŋ ˈɪŋɡlɪʃ?",
+    "Bạn có cảm thấy lo lắng khi nói tiếng Anh không?",
+    "A little, but I try to stay confident.",
+    "ə ˈlɪtəl, bʌt aɪ traɪ tuː steɪ ˈkɑːnfɪdənt.",
+    "Một chút, nhưng tôi cố gắng giữ tự tin."
+  ],
+  [
+    "Do you worry about mistakes?",
+    "duː juː ˈwɜːri əˈbaʊt mɪsˈteɪks?",
+    "Bạn có lo lắng về những sai lầm không?",
+    "Not too much, because mistakes help me learn.",
+    "nɑːt tuː mʌʧ, bɪˈkɔːz mɪsˈteɪks hɛlp miː lɜːrn.",
+    "Không quá nhiều, vì sai lầm giúp tôi học hỏi."
+  ],
+  [
+    "Do you enjoy learning new expressions?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ njuː ɪkˈsprɛʃənz?",
+    "Bạn có thích học những thành ngữ mới không?",
+    "Yes, new expressions make conversations natural.",
+    "jɛs, njuː ɪkˈsprɛʃənz meɪk ˌkɑːnvərˈseɪʃənz ˈnæʧərəl.",
+    "Vâng, những thành ngữ mới làm cho cuộc trò chuyện tự nhiên hơn."
+  ],
+  [
+    "Do you enjoy asking questions?",
+    "duː juː ɛnˈʤɔɪ ˈæskɪŋ ˈkwɛsʧənz?",
+    "Bạn có thích đặt câu hỏi không?",
+    "Yes, questions help me understand.",
+    "jɛs, ˈkwɛsʧənz hɛlp miː ˌʌndərˈstænd.",
+    "Vâng, câu hỏi giúp tôi hiểu."
+  ],
+  [
+    "Do you enjoy small talk?",
+    "duː juː ɛnˈʤɔɪ smɔːl tɔːk?",
+    "Bạn có thích những cuộc nói chuyện phiếm không?",
+    "Yes, small talk helps build connection.",
+    "jɛs, smɔːl tɔːk hɛlps bɪld kəˈnɛkʃən.",
+    "Vâng, nói chuyện phiếm giúp xây dựng kết nối."
+  ],
+  [
+    "Do you enjoy spending time with your family?",
+    "duː juː ɛnˈʤɔɪ ˈspɛndɪŋ taɪm wɪθ jʊər ˈfæməli?",
+    "Bạn có thích dành thời gian với gia đình không?",
+    "Yes, family time is important.",
+    "jɛs, ˈfæməli taɪm ɪz ɪmˈpɔːrtənt.",
+    "Vâng, thời gian dành cho gia đình rất quan trọng."
+  ],
+  [
+    "Do you enjoy outdoor activities?",
+    "duː juː ɛnˈʤɔɪ ˈaʊtˌdɔːr ækˈtɪvətiz?",
+    "Bạn có thích các hoạt động ngoài trời không?",
+    "Yes, outdoor activities refresh my mind.",
+    "jɛs, ˈaʊtˌdɔːr ækˈtɪvətiz rɪˈfrɛʃ maɪ maɪnd.",
+    "Vâng, các hoạt động ngoài trời làm tôi sảng khoái tinh thần."
+  ],
+  [
+    "Do you enjoy visiting new places?",
+    "duː juː ɛnˈʤɔɪ ˈvɪzɪtɪŋ njuː ˈpleɪsɪz?",
+    "Bạn có thích đến thăm những nơi mới không?",
+    "Yes, visiting new places is exciting.",
+    "jɛs, ˈvɪzɪtɪŋ njuː ˈpleɪsɪz ɪz ɪkˈsaɪtɪŋ.",
+    "Vâng, đến thăm những nơi mới thật thú vị."
+  ],
+  [
+    "Do you enjoy cultural activities?",
+    "duː juː ɛnˈʤɔɪ ˈkʌlʧərəl ækˈtɪvətiz?",
+    "Bạn có thích các hoạt động văn hóa không?",
+    "Yes, I enjoy events and exhibitions.",
+    "jɛs, aɪ ɛnˈʤɔɪ ɪˈvɛnts ænd ˌɛksəˈbɪʃənz.",
+    "Vâng, tôi thích các sự kiện và triển lãm."
+  ],
+  [
+    "Do you enjoy listening to conversations?",
+    "duː juː ɛnˈʤɔɪ ˈlɪsənɪŋ tuː ˌkɑːnvərˈseɪʃənz?",
+    "Bạn có thích nghe các cuộc trò chuyện không?",
+    "Yes, listening helps me understand natural speech.",
+    "jɛs, ˈlɪsənɪŋ hɛlps miː ˌʌndərˈstænd ˈnæʧərəl spiːʧ.",
+    "Vâng, nghe giúp tôi hiểu lời nói tự nhiên."
+  ],
+  [
+    "Do you enjoy talking about food?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt fuːd?",
+    "Bạn có thích nói chuyện về đồ ăn không?",
+    "Yes, food is a fun topic.",
+    "jɛs, fuːd ɪz ə fʌn ˈtɑːpɪk.",
+    "Vâng, đồ ăn là một chủ đề thú vị."
+  ],
+  [
+    "Do you enjoy practicing English daily?",
+    "duː juː ɛnˈʤɔɪ ˈpræktəsɪŋ ˈɪŋɡlɪʃ ˈdeɪli?",
+    "Bạn có thích luyện tập tiếng Anh hàng ngày không?",
+    "Yes, daily practice is the best.",
+    "jɛs, ˈdeɪli ˈpræktɪs ɪz ðə bɛst.",
+    "Vâng, luyện tập hàng ngày là tốt nhất."
+  ],
+  [
+    "Do you feel more confident now?",
+    "duː juː fiːl mɔːr ˈkɑːnfɪdənt naʊ?",
+    "Bây giờ bạn có cảm thấy tự tin hơn không?",
+    "Yes, I feel more confident each day.",
+    "jɛs, aɪ fiːl mɔːr ˈkɑːnfɪdənt iːʧ deɪ.",
+    "Vâng, tôi cảm thấy tự tin hơn mỗi ngày."
+  ],
+  [
+    "Do you enjoy talking about your hobbies?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈhɑːbiz?",
+    "Bạn có thích nói về sở thích của mình không?",
+    "Yes, hobbies are easy to talk about.",
+    "jɛs, ˈhɑːbiz ɑːr ˈiːzi tuː tɔːk əˈbaʊt.",
+    "Vâng, sở thích là chủ đề dễ nói."
+  ],
+  [
+    "Do you enjoy watching travel videos?",
+    "duː juː ɛnˈʤɔɪ ˈwɑːʧɪŋ ˈtrævəl ˈvɪdioʊz?",
+    "Bạn có thích xem video du lịch không?",
+    "Yes, travel videos inspire me.",
+    "jɛs, ˈtrævəl ˈvɪdioʊz ɪnˈspaɪər miː.",
+    "Vâng, video du lịch truyền cảm hứng cho tôi."
+  ],
+  [
+    "Do you enjoy spending your weekends outside?",
+    "duː juː ɛnˈʤɔɪ ˈspɛndɪŋ jʊər ˈwiːkˌɛndz ˌaʊtˈsaɪd?",
+    "Bạn có thích dành cuối tuần ở ngoài trời không?",
+    "Yes, I like going outside on weekends.",
+    "jɛs, aɪ laɪk ˈɡoʊɪŋ ˌaʊtˈsaɪd ɑːn ˈwiːkˌɛndz.",
+    "Vâng, tôi thích ra ngoài vào cuối tuần."
+  ],
+  [
+    "Do you enjoy working on personal projects?",
+    "duː juː ɛnˈʤɔɪ ˈwɜːrkɪŋ ɑːn ˈpɜːrsənəl ˈprɑːʤɛkts?",
+    "Bạn có thích làm việc với các dự án cá nhân không?",
+    "Yes, personal projects motivate me.",
+    "jɛs, ˈpɜːrsənəl ˈprɑːʤɛkts ˈmoʊtɪˌveɪt miː.",
+    "Vâng, các dự án cá nhân tạo động lực cho tôi."
+  ],
+  [
+    "Do you enjoy communicating with people from different cultures?",
+    "duː juː ɛnˈʤɔɪ kəmˈjuːnəˌkeɪtɪŋ wɪθ ˈpiːpəl frʌm ˈdɪfərənt ˈkʌlʧərz?",
+    "Bạn có thích giao tiếp với những người từ các nền văn hóa khác nhau không?",
+    "Yes, it's exciting and eye-opening.",
+    "jɛs, ɪts ɪkˈsaɪtɪŋ ænd aɪ-ˈoʊpənɪŋ.",
+    "Vâng, điều đó thật thú vị và mở mang tầm mắt."
+  ],
+  [
+    "Do you enjoy practicing English with others?",
+    "duː juː ɛnˈʤɔɪ ˈpræktəsɪŋ ˈɪŋɡlɪʃ wɪθ ˈʌðərz?",
+    "Bạn có thích luyện tiếng Anh với người khác không?",
+    "Yes, practicing with friends makes learning easier.",
+    "jɛs, ˈpræktəsɪŋ wɪθ frɛndz meɪks ˈlɜːrnɪŋ ˈiːziər.",
+    "Vâng, luyện tập với bạn bè giúp việc học dễ dàng hơn."
+  ],
+  [
+    "Do you enjoy movies in English?",
+    "duː juː ɛnˈʤɔɪ ˈmuːviz ɪn ˈɪŋɡlɪʃ?",
+    "Bạn có thích xem phim bằng tiếng Anh không?",
+    "Yes, movies are fun and educational.",
+    "jɛs, ˈmuːviz ɑːr fʌn ænd ˌɛʤəˈkeɪʃənəl.",
+    "Vâng, phim vừa vui vừa mang tính giáo dục."
+  ],
+  [
+    "Do you enjoy comedy shows?",
+    "duː juː ɛnˈʤɔɪ ˈkɑːmədi ʃoʊz?",
+    "Bạn có thích các chương trình hài kịch không?",
+    "Yes, comedy makes me laugh.",
+    "jɛs, ˈkɑːmədi meɪks miː læf.",
+    "Vâng, hài kịch làm tôi cười."
+  ],
+  [
+    "Do you enjoy peaceful mornings on weekends?",
+    "duː juː ɛnˈʤɔɪ ˈpiːsfəl ˈmɔːrnɪŋz ɑːn ˈwiːkˌɛndz?",
+    "Bạn có thích những buổi sáng yên bình vào cuối tuần không?",
+    "Yes, weekend mornings are slow and peaceful.",
+    "jɛs, ˈwiːkˌɛnd ˈmɔːrnɪŋz ɑːr sloʊ ænd ˈpiːsfəl.",
+    "Vâng, buổi sáng cuối tuần thật chậm rãi và yên bình."
+  ],
+  [
+    "Do you enjoy organizing your home?",
+    "duː juː ɛnˈʤɔɪ ˈɔːrɡəˌnaɪzɪŋ jʊər hoʊm?",
+    "Bạn có thích sắp xếp nhà cửa không?",
+    "Yes, organizing helps me relax.",
+    "jɛs, ˈɔːrɡəˌnaɪzɪŋ hɛlps miː rɪˈlæks.",
+    "Vâng, việc sắp xếp giúp tôi thư giãn."
+  ],
+  [
+    "Do you like minimal decoration?",
+    "duː juː laɪk ˈmɪnəməl ˌdɛkəˈreɪʃən?",
+    "Bạn có thích trang trí tối giản không?",
+    "Yes, minimal decoration feels clean and simple.",
+    "jɛs, ˈmɪnəməl ˌdɛkəˈreɪʃən fiːlz kliːn ænd ˈsɪmpəl.",
+    "Vâng, trang trí tối giản cho cảm giác sạch sẽ và đơn giản."
+  ],
+  [
+    "Do you enjoy grocery shopping?",
+    "duː juː ɛnˈʤɔɪ ˈɡroʊsəri ˈʃɑːpɪŋ?",
+    "Bạn có thích đi mua sắm hàng tạp hóa không?",
+    "Yes, grocery shopping is relaxing.",
+    "jɛs, ˈɡroʊsəri ˈʃɑːpɪŋ ɪz rɪˈlæksɪŋ.",
+    "Vâng, đi mua sắm hàng tạp hóa thật thư giãn."
+  ],
+  [
+    "Do you enjoy cooking new meals?",
+    "duː juː ɛnˈʤɔɪ ˈkʊkɪŋ njuː miːlz?",
+    "Bạn có thích nấu những món ăn mới không?",
+    "Yes, cooking new meals is exciting.",
+    "jɛs, ˈkʊkɪŋ njuː miːlz ɪz ɪkˈsaɪtɪŋ.",
+    "Vâng, nấu những món ăn mới thật thú vị."
+  ],
+  [
+    "Do you enjoy sharing food with family and friends?",
+    "duː juː ɛnˈʤɔɪ ˈʃɛrɪŋ fuːd wɪθ ˈfæməli ænd frɛndz?",
+    "Bạn có thích chia sẻ đồ ăn với gia đình và bạn bè không?",
+    "Yes, sharing food feels warm and loving.",
+    "jɛs, ˈʃɛrɪŋ fuːd fiːlz wɔːrm ænd ˈlʌvɪŋ.",
+    "Vâng, chia sẻ đồ ăn cho cảm giác ấm áp và yêu thương."
+  ],
+  [
+    "Do you enjoy caring for your health?",
+    "duː juː ɛnˈʤɔɪ ˈkɛrɪŋ fɔːr jʊər hɛlθ?",
+    "Bạn có thích chăm sóc sức khỏe của mình không?",
+    "Yes, health is important.",
+    "jɛs, hɛlθ ɪz ɪmˈpɔːrtənt.",
+    "Vâng, sức khỏe là quan trọng."
+  ],
+  [
+    "Do you drink enough water each day?",
+    "duː juː drɪŋk ɪˈnʌf ˈwɔːtər iːʧ deɪ?",
+    "Bạn có uống đủ nước mỗi ngày không?",
+    "Yes, I try to drink plenty of water.",
+    "jɛs, aɪ traɪ tuː drɪŋk ˈplɛnti əv ˈwɔːtər.",
+    "Vâng, tôi cố gắng uống nhiều nước."
+  ],
+  [
+    "Do you enjoy learning about nutrition?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ əˈbaʊt nuːˈtrɪʃən?",
+    "Bạn có thích tìm hiểu về dinh dưỡng không?",
+    "Yes, nutrition helps me choose better foods.",
+    "jɛs, nuːˈtrɪʃən hɛlps miː ʧuːz ˈbɛtər fuːdz.",
+    "Vâng, dinh dưỡng giúp tôi chọn thực phẩm tốt hơn."
+  ],
+  [
+    "Do you enjoy managing your time?",
+    "duː juː ɛnˈʤɔɪ ˈmænɪʤɪŋ jʊər taɪm?",
+    "Bạn có thích quản lý thời gian của mình không?",
+    "Yes, time management is useful.",
+    "jɛs, taɪm ˈmænəʤmənt ɪz ˈjuːsfəl.",
+    "Vâng, quản lý thời gian rất hữu ích."
+  ],
+  [
+    "Do you avoid procrastination?",
+    "duː juː əˈvɔɪd proʊˌkræstɪˈneɪʃən?",
+    "Bạn có tránh sự trì hoãn không?",
+    "Yes, I try to avoid delaying tasks.",
+    "jɛs, aɪ traɪ tuː əˈvɔɪd dɪˈleɪɪŋ tæsks.",
+    "Vâng, tôi cố gắng tránh trì hoãn công việc."
+  ],
+  [
+    "Do you enjoy learning through videos?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ θruː ˈvɪdioʊz?",
+    "Bạn có thích học qua video không?",
+    "Yes, videos help me learn faster.",
+    "jɛs, ˈvɪdioʊz hɛlp miː lɜːrn ˈfæstər.",
+    "Vâng, video giúp tôi học nhanh hơn."
+  ],
+  [
+    "Do you enjoy conversations about daily life?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt ˈdeɪli laɪf?",
+    "Bạn có thích những cuộc trò chuyện về cuộc sống hàng ngày không?",
+    "Yes, daily life topics are simple and helpful.",
+    "jɛs, ˈdeɪli laɪf ˈtɑːpɪks ɑːr ˈsɪmpəl ænd ˈhɛlpfəl.",
+    "Vâng, các chủ đề cuộc sống hàng ngày đơn giản và hữu ích."
+  ],
+  [
+    "Do you enjoy talking about your day?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər deɪ?",
+    "Bạn có thích nói về ngày của mình không?",
+    "Yes, talking about my day helps me reflect.",
+    "jɛs, ˈtɔːkɪŋ əˈbaʊt maɪ deɪ hɛlps miː rɪˈflɛkt.",
+    "Vâng, nói về ngày của tôi giúp tôi suy ngẫm."
+  ],
+  [
+    "Do you talk about your feelings?",
+    "duː juː tɔːk əˈbaʊt jʊər ˈfiːlɪŋz?",
+    "Bạn có nói về cảm xúc của mình không?",
+    "Yes, sharing feelings helps me connect with others.",
+    "jɛs, ˈʃɛrɪŋ ˈfiːlɪŋz hɛlps miː kəˈnɛkt wɪθ ˈʌðərz.",
+    "Vâng, chia sẻ cảm xúc giúp tôi kết nối với người khác."
+  ],
+  [
+    "Do you enjoy asking polite questions?",
+    "duː juː ɛnˈʤɔɪ ˈæskɪŋ pəˈlaɪt ˈkwɛsʧənz?",
+    "Bạn có thích đặt những câu hỏi lịch sự không?",
+    "Yes, polite questions make conversation smooth.",
+    "jɛs, pəˈlaɪt ˈkwɛsʧənz meɪk ˌkɑːnvərˈseɪʃən smuːð.",
+    "Vâng, những câu hỏi lịch sự giúp cuộc trò chuyện trôi chảy."
+  ],
+  [
+    "Do you enjoy practicing English outside?",
+    "duː juː ɛnˈʤɔɪ ˈpræktəsɪŋ ˈɪŋɡlɪʃ ˌaʊtˈsaɪd?",
+    "Bạn có thích luyện tiếng Anh ở ngoài trời không?",
+    "Yes, practicing outside helps me use real English.",
+    "jɛs, ˈpræktəsɪŋ ˌaʊtˈsaɪd hɛlps miː juːz riːəl ˈɪŋɡlɪʃ.",
+    "Vâng, luyện tập ngoài trời giúp tôi sử dụng tiếng Anh thực tế."
+  ],
+  [
+    "Do you like learning travel vocabulary?",
+    "duː juː laɪk ˈlɜːrnɪŋ ˈtrævəl voʊˈkæbjəˌlɛri?",
+    "Bạn có thích học từ vựng du lịch không?",
+    "Yes, travel vocabulary is useful.",
+    "jɛs, ˈtrævəl voʊˈkæbjəˌlɛri ɪz ˈjuːsfəl.",
+    "Vâng, từ vựng du lịch rất hữu ích."
+  ],
+  [
+    "Do you enjoy simple conversations with strangers?",
+    "duː juː ɛnˈʤɔɪ ˈsɪmpəl ˌkɑːnvərˈseɪʃənz wɪθ ˈstreɪnʤərz?",
+    "Bạn có thích những cuộc trò chuyện đơn giản với người lạ không?",
+    "Yes, simple conversations feel friendly.",
+    "jɛs, ˈsɪmpəl ˌkɑːnvərˈseɪʃənz fiːl ˈfrɛndli.",
+    "Vâng, những cuộc trò chuyện đơn giản cho cảm giác thân thiện."
+  ],
+  [
+    "Do you enjoy learning English expressions through daily life?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ ˈɪŋɡlɪʃ ɪkˈsprɛʃənz θruː ˈdeɪli laɪf?",
+    "Bạn có thích học các thành ngữ tiếng Anh qua cuộc sống hàng ngày không?",
+    "Yes, daily life gives real examples.",
+    "jɛs, ˈdeɪli laɪf ɡɪvz riːəl ɪɡˈzæmpəlz.",
+    "Vâng, cuộc sống hàng ngày cho những ví dụ thực tế."
+  ],
+  [
+    "Do you enjoy conversations about the weather?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt ðə ˈwɛðər?",
+    "Bạn có thích những cuộc trò chuyện về thời tiết không?",
+    "Yes, weather is a simple topic.",
+    "jɛs, ˈwɛðər ɪz ə ˈsɪmpəl ˈtɑːpɪk.",
+    "Vâng, thời tiết là một chủ đề đơn giản."
+  ],
+  [
+    "Do you enjoy talking about food and drinks?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt fuːd ænd drɪŋks?",
+    "Bạn có thích nói chuyện về đồ ăn và thức uống không?",
+    "Yes, food is a fun and easy topic.",
+    "jɛs, fuːd ɪz ə fʌn ænd ˈiːzi ˈtɑːpɪk.",
+    "Vâng, đồ ăn là một chủ đề vui và dễ nói."
+  ],
+  [
+    "Do you enjoy asking about other people's hobbies?",
+    "duː juː ɛnˈʤɔɪ ˈæskɪŋ əˈbaʊt ˈʌðər ˈpiːpəlz ˈhɑːbiz?",
+    "Bạn có thích hỏi về sở thích của người khác không?",
+    "Yes, hobbies show a person's personality.",
+    "jɛs, ˈhɑːbiz ʃoʊ ə ˈpɜːrsənz ˌpɜːrsəˈnælɪti.",
+    "Vâng, sở thích cho thấy tính cách của một người."
+  ],
+  [
+    "Do you ask what books they read?",
+    "duː juː æsk wʌt bʊks ðeɪ riːd?",
+    "Bạn có hỏi họ đọc sách gì không?",
+    "Yes, book talk is interesting.",
+    "jɛs, bʊk tɔːk ɪz ˈɪntrəstɪŋ.",
+    "Vâng, nói chuyện về sách rất thú vị."
+  ],
+  [
+    "Do you ask if they like sports?",
+    "duː juː æsk ɪf ðeɪ laɪk spɔːrts?",
+    "Bạn có hỏi họ có thích thể thao không?",
+    "Yes, sports is a common topic.",
+    "jɛs, spɔːrts ɪz ə ˈkɑːmən ˈtɑːpɪk.",
+    "Vâng, thể thao là một chủ đề phổ biến."
+  ],
+  [
+    "Do you enjoy practicing English while walking?",
+    "duː juː ɛnˈʤɔɪ ˈpræktəsɪŋ ˈɪŋɡlɪʃ waɪl ˈwɔːkɪŋ?",
+    "Bạn có thích luyện tiếng Anh khi đi bộ không?",
+    "Yes, walking helps me think and speak.",
+    "jɛs, ˈwɔːkɪŋ hɛlps miː θɪŋk ænd spiːk.",
+    "Vâng, đi bộ giúp tôi suy nghĩ và nói."
+  ],
+  [
+    "Do you enjoy describing places?",
+    "duː juː ɛnˈʤɔɪ dɪˈskraɪbɪŋ ˈpleɪsɪz?",
+    "Bạn có thích miêu tả các địa điểm không?",
+    "Yes, describing places helps me practice adjectives.",
+    "jɛs, dɪˈskraɪbɪŋ ˈpleɪsɪz hɛlps miː ˈpræktɪs ˈæʤɪktɪvz.",
+    "Vâng, miêu tả các địa điểm giúp tôi luyện tập tính từ."
+  ],
+  [
+    "Do you enjoy small daily tasks?",
+    "duː juː ɛnˈʤɔɪ smɔːl ˈdeɪli tæsks?",
+    "Bạn có thích những công việc nhỏ hàng ngày không?",
+    "Yes, small tasks help me stay organized.",
+    "jɛs, smɔːl tæsks hɛlp miː steɪ ˈɔːrɡəˌnaɪzd.",
+    "Vâng, những công việc nhỏ giúp tôi ngăn nắp."
+  ],
+  [
+    "Do you enjoy taking care of your space?",
+    "duː juː ɛnˈʤɔɪ ˈteɪkɪŋ kɛər əv jʊər speɪs?",
+    "Bạn có thích chăm sóc không gian của mình không?",
+    "Yes, taking care of my space makes me feel calm.",
+    "jɛs, ˈteɪkɪŋ kɛər əv maɪ speɪs meɪks miː fiːl kɑːm.",
+    "Vâng, chăm sóc không gian của tôi làm tôi cảm thấy bình tĩnh."
+  ],
+  [
+    "Do you enjoy learning English expressions about feelings?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ ˈɪŋɡlɪʃ ɪkˈsprɛʃənz əˈbaʊt ˈfiːlɪŋz?",
+    "Bạn có thích học các thành ngữ tiếng Anh về cảm xúc không?",
+    "Yes, feelings help me express myself clearly.",
+    "jɛs, ˈfiːlɪŋz hɛlp miː ɪkˈsprɛs maɪˈsɛlf ˈklɪrli.",
+    "Vâng, cảm xúc giúp tôi thể hiện bản thân một cách rõ ràng."
+  ],
+  [
+    "Do you enjoy talking about your schedule?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈskɛʤʊl?",
+    "Bạn có thích nói về lịch trình của mình không?",
+    "Yes, talking about my schedule helps me stay organized.",
+    "jɛs, ˈtɔːkɪŋ əˈbaʊt maɪ ˈskɛʤʊl hɛlps miː steɪ ˈɔːrɡəˌnaɪzd.",
+    "Vâng, nói về lịch trình giúp tôi ngăn nắp."
+  ],
+  [
+    "Do you enjoy planning your goals?",
+    "duː juː ɛnˈʤɔɪ ˈplænɪŋ jʊər ɡoʊlz?",
+    "Bạn có thích lên kế hoạch cho mục tiêu của mình không?",
+    "Yes, planning goals keeps me motivated.",
+    "jɛs, ˈplænɪŋ ɡoʊlz kiːps miː ˈmoʊtɪˌveɪtɪd.",
+    "Vâng, lên kế hoạch mục tiêu giúp tôi có động lực."
+  ],
+  [
+    "Do you enjoy conversations about school or work?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt skuːl ɔːr wɜːrk?",
+    "Bạn có thích những cuộc trò chuyện về trường học hoặc công việc không?",
+    "Yes, school and work topics are common.",
+    "jɛs, skuːl ænd wɜːrk ˈtɑːpɪks ɑːr ˈkɑːmən.",
+    "Vâng, các chủ đề về trường học và công việc rất phổ biến."
+  ],
+  [
+    "Do you enjoy talking about your hobbies?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈhɑːbiz?",
+    "Bạn có thích nói về sở thích của mình không?",
+    "Yes, hobbies help start good conversations.",
+    "jɛs, ˈhɑːbiz hɛlp stɑːrt ɡʊd ˌkɑːnvərˈseɪʃənz.",
+    "Vâng, sở thích giúp bắt đầu những cuộc trò chuyện thú vị."
+  ],
+  [
+    "Do you enjoy using English to describe your feelings?",
+    "duː juː ɛnˈʤɔɪ ˈjuːzɪŋ ˈɪŋɡlɪʃ tuː dɪˈskraɪb jʊər ˈfiːlɪŋz?",
+    "Bạn có thích dùng tiếng Anh để miêu tả cảm xúc của mình không?",
+    "Yes, describing feelings helps me communicate well.",
+    "jɛs, dɪˈskraɪbɪŋ ˈfiːlɪŋz hɛlps miː kəmˈjuːnəˌkeɪt wɛl.",
+    "Vâng, miêu tả cảm xúc giúp tôi giao tiếp tốt."
+  ],
+  [
+    "Do you enjoy talking about your health?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər hɛlθ?",
+    "Bạn có thích nói về sức khỏe của mình không?",
+    "Yes, health is important.",
+    "jɛs, hɛlθ ɪz ɪmˈpɔːrtənt.",
+    "Vâng, sức khỏe là quan trọng."
+  ],
+  [
+    "Do you enjoy discussing food?",
+    "duː juː ɛnˈʤɔɪ dɪˈskʌsɪŋ fuːd?",
+    "Bạn có thích thảo luận về đồ ăn không?",
+    "Yes, food is a very easy topic.",
+    "jɛs, fuːd ɪz ə ˈvɛri ˈiːzi ˈtɑːpɪk.",
+    "Vâng, đồ ăn là một chủ đề rất dễ nói."
+  ],
+  [
+    "Do you enjoy giving polite compliments?",
+    "duː juː ɛnˈʤɔɪ ˈɡɪvɪŋ pəˈlaɪt ˈkɑːmpləmənts?",
+    "Bạn có thích đưa ra những lời khen lịch sự không?",
+    "Yes, compliments make people happy.",
+    "jɛs, ˈkɑːmpləmənts meɪk ˈpiːpəl ˈhæpi.",
+    "Vâng, lời khen làm cho mọi người vui."
+  ],
+  [
+    "Do you enjoy small social interactions?",
+    "duː juː ɛnˈʤɔɪ smɔːl ˈsoʊʃəl ˌɪntəˈrækʃənz?",
+    "Bạn có thích những tương tác xã hội nhỏ không?",
+    "Yes, small interactions brighten my day.",
+    "jɛs, smɔːl ˌɪntəˈrækʃənz ˈbraɪtən maɪ deɪ.",
+    "Vâng, những tương tác nhỏ làm bừng sáng một ngày của tôi."
+  ],
+  [
+    "Do you enjoy conversations about the weekend?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt ðə ˈwiːkˌɛnd?",
+    "Bạn có thích những cuộc trò chuyện về cuối tuần không?",
+    "Yes, weekend plans are fun to share.",
+    "jɛs, ˈwiːkˌɛnd plænz ɑːr fʌn tuː ʃɛər.",
+    "Vâng, kế hoạch cuối tuần rất vui để chia sẻ."
+  ],
+  [
+    "Do you enjoy talking about your surroundings?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər səˈraʊndɪŋz?",
+    "Bạn có thích nói về môi trường xung quanh mình không?",
+    "Yes, surroundings are easy to describe.",
+    "jɛs, səˈraʊndɪŋz ɑːr ˈiːzi tuː dɪˈskraɪb.",
+    "Vâng, môi trường xung quanh rất dễ miêu tả."
+  ],
+  [
+    "Do you enjoy talking about travel dreams?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈtrævəl driːmz?",
+    "Bạn có thích nói về những giấc mơ du lịch không?",
+    "Yes, travel dreams make me excited.",
+    "jɛs, ˈtrævəl driːmz meɪk miː ɪkˈsaɪtɪd.",
+    "Vâng, những giấc mơ du lịch làm tôi phấn khích."
+  ],
+  [
+    "Do you enjoy talking about weather changes?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈwɛðər ˈʧeɪnʤɪz?",
+    "Bạn có thích nói về những thay đổi thời tiết không?",
+    "Yes, weather changes are simple to discuss.",
+    "jɛs, ˈwɛðər ˈʧeɪnʤɪz ɑːr ˈsɪmpəl tuː dɪˈskʌs.",
+    "Vâng, những thay đổi thời tiết rất đơn giản để thảo luận."
+  ],
+  [
+    "Do you enjoy giving short responses in English?",
+    "duː juː ɛnˈʤɔɪ ˈɡɪvɪŋ ʃɔːrt rɪˈspɑːnsɪz ɪn ˈɪŋɡlɪʃ?",
+    "Bạn có thích đưa ra những câu trả lời ngắn bằng tiếng Anh không?",
+    "Yes, short responses make conversation smooth.",
+    "jɛs, ʃɔːrt rɪˈspɑːnsɪz meɪk ˌkɑːnvərˈseɪʃən smuːð.",
+    "Vâng, những câu trả lời ngắn giúp cuộc trò chuyện trôi chảy."
+  ],
+  [
+    "Do you enjoy conversations during meals?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz ˈdʊrɪŋ miːlz?",
+    "Bạn có thích trò chuyện trong bữa ăn không?",
+    "Yes, meals are a great time to talk.",
+    "jɛs, miːlz ɑːr ə ɡreɪt taɪm tuː tɔːk.",
+    "Vâng, bữa ăn là thời điểm tuyệt vời để nói chuyện."
+  ],
+  [
+    "Do you enjoy ending the day with reflection?",
+    "duː juː ɛnˈʤɔɪ ˈɛndɪŋ ðə deɪ wɪθ rɪˈflɛkʃən?",
+    "Bạn có thích kết thúc một ngày bằng việc suy ngẫm không?",
+    "Yes, reflection helps me learn from the day.",
+    "jɛs, rɪˈflɛkʃən hɛlps miː lɜːrn frʌm ðə deɪ.",
+    "Vâng, suy ngẫm giúp tôi học hỏi từ một ngày đã qua."
+  ],
+  [
+    "Do you enjoy talking about daily routines?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈdeɪli ruːˈtiːnz?",
+    "Bạn có thích nói về các thói quen hàng ngày không?",
+    "Yes, daily routines are simple to talk about.",
+    "jɛs, ˈdeɪli ruːˈtiːnz ɑːr ˈsɪmpəl tuː tɔːk əˈbaʊt.",
+    "Vâng, các thói quen hàng ngày rất đơn giản để nói về."
+  ],
+  [
+    "Do you enjoy talking about tasks you do every day?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt tæsks juː duː ˈɛvri deɪ?",
+    "Bạn có thích nói về những công việc bạn làm mỗi ngày không?",
+    "Yes, everyday tasks are easy to describe.",
+    "jɛs, ˈɛvriˌdeɪ tæsks ɑːr ˈiːzi tuː dɪˈskraɪb.",
+    "Vâng, những công việc hàng ngày rất dễ miêu tả."
+  ],
+  [
+    "Do you enjoy talking about transportation?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˌtrænspərˈteɪʃən?",
+    "Bạn có thích nói về phương tiện giao thông không?",
+    "Yes, transportation is a common topic.",
+    "jɛs, ˌtrænspərˈteɪʃən ɪz ə ˈkɑːmən ˈtɑːpɪk.",
+    "Vâng, phương tiện giao thông là một chủ đề phổ biến."
+  ],
+  [
+    "Do you enjoy conversations during your commute?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz ˈdʊrɪŋ jʊər kəmˈjuːt?",
+    "Bạn có thích trò chuyện trong lúc đi lại không?",
+    "Yes, short conversations make the commute pleasant.",
+    "jɛs, ʃɔːrt ˌkɑːnvərˈseɪʃənz meɪk ðə kəmˈjuːt ˈplɛzənt.",
+    "Vâng, những cuộc trò chuyện ngắn giúp việc đi lại trở nên dễ chịu."
+  ],
+  [
+    "Do you enjoy talking about lunchtime?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈlʌnʧˌtaɪm?",
+    "Bạn có thích nói về giờ ăn trưa không?",
+    "Yes, lunch is a relaxing moment in the day.",
+    "jɛs, lʌnʧ ɪz ə rɪˈlæksɪŋ ˈmoʊmənt ɪn ðə deɪ.",
+    "Vâng, bữa trưa là một khoảnh khắc thư giãn trong ngày."
+  ],
+  [
+    "Do you enjoy talking about your afternoon?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˌæftərˈnuːn?",
+    "Bạn có thích nói về buổi chiều của mình không?",
+    "Yes, afternoons are productive.",
+    "jɛs, ˌæftərˈnuːnz ɑːr prəˈdʌktɪv.",
+    "Vâng, buổi chiều rất năng suất."
+  ],
+  [
+    "Do you enjoy talking about evenings?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈiːvnɪŋz?",
+    "Bạn có thích nói về buổi tối không?",
+    "Yes, evenings are calm and peaceful.",
+    "jɛs, ˈiːvnɪŋz ɑːr kɑːm ænd ˈpiːsfəl.",
+    "Vâng, buổi tối thật yên tĩnh và thanh bình."
+  ],
+  [
+    "Do you enjoy talking about cleaning and chores?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈkliːnɪŋ ænd ʧɔːrz?",
+    "Bạn có thích nói về việc dọn dẹp và làm việc nhà không?",
+    "Yes, chores are daily activities.",
+    "jɛs, ʧɔːrz ɑːr ˈdeɪli ækˈtɪvətiz.",
+    "Vâng, việc nhà là hoạt động hàng ngày."
+  ],
+  [
+    "Do you enjoy talking about shopping?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈʃɑːpɪŋ?",
+    "Bạn có thích nói về mua sắm không?",
+    "Yes, shopping is an easy topic.",
+    "jɛs, ˈʃɑːpɪŋ ɪz ən ˈiːzi ˈtɑːpɪk.",
+    "Vâng, mua sắm là một chủ đề dễ nói."
+  ],
+  [
+    "Do you enjoy talking about your weekends?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈwiːkˌɛndz?",
+    "Bạn có thích nói về cuối tuần của mình không?",
+    "Yes, weekends are fun to discuss.",
+    "jɛs, ˈwiːkˌɛndz ɑːr fʌn tuː dɪˈskʌs.",
+    "Vâng, cuối tuần là chủ đề thú vị để thảo luận."
+  ],
+  [
+    "Do you enjoy talking about money habits?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈmʌni ˈhæbɪts?",
+    "Bạn có thích nói về thói quen tiền bạc không?",
+    "Yes, money habits are important.",
+    "jɛs, ˈmʌni ˈhæbɪts ɑːr ɪmˈpɔːrtənt.",
+    "Vâng, thói quen tiền bạc rất quan trọng."
+  ],
+  [
+    "Do you enjoy talking about technology?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt tɛkˈnɑːləʤi?",
+    "Bạn có thích nói về công nghệ không?",
+    "Yes, technology affects everyday life.",
+    "jɛs, tɛkˈnɑːləʤi əˈfɛkts ˈɛvriˌdeɪ laɪf.",
+    "Vâng, công nghệ ảnh hưởng đến cuộc sống hàng ngày."
+  ],
+  [
+    "Do you enjoy conversations about social media?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt ˈsoʊʃəl ˈmiːdiə?",
+    "Bạn có thích những cuộc trò chuyện về mạng xã hội không?",
+    "Yes, social media is very common.",
+    "jɛs, ˈsoʊʃəl ˈmiːdiə ɪz ˈvɛri ˈkɑːmən.",
+    "Vâng, mạng xã hội rất phổ biến."
+  ],
+  [
+    "Do you enjoy talking about your feelings at night?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈfiːlɪŋz æt naɪt?",
+    "Bạn có thích nói về cảm xúc của mình vào ban đêm không?",
+    "Yes, nighttime feels calm.",
+    "jɛs, ˈnaɪtˌtaɪm fiːlz kɑːm.",
+    "Vâng, ban đêm cho cảm giác yên tĩnh."
+  ],
+  [
+    "Do you enjoy talking about your long-term dreams?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈlɔːŋtɜːrm driːmz?",
+    "Bạn có thích nói về những giấc mơ dài hạn của mình không?",
+    "Yes, dreams give life direction.",
+    "jɛs, driːmz ɡɪv laɪf dəˈrɛkʃən.",
+    "Vâng, ước mơ mang lại phương hướng cho cuộc sống."
+  ],
+  [
+    "Do you enjoy learning English every day?",
+    "duː juː ɛnˈʤɔɪ ˈlɜːrnɪŋ ˈɪŋɡlɪʃ ˈɛvri deɪ?",
+    "Bạn có thích học tiếng Anh mỗi ngày không?",
+    "Yes, daily learning builds strong habits.",
+    "jɛs, ˈdeɪli ˈlɜːrnɪŋ bɪldz strɔːŋ ˈhæbɪts.",
+    "Vâng, học hàng ngày xây dựng thói quen tốt."
+  ],
+  [
+    "Do you enjoy ending your day with calm activities?",
+    "duː juː ɛnˈʤɔɪ ˈɛndɪŋ jʊər deɪ wɪθ kɑːm ækˈtɪvətiz?",
+    "Bạn có thích kết thúc một ngày với các hoạt động nhẹ nhàng không?",
+    "Yes, calm activities help me relax.",
+    "jɛs, kɑːm ækˈtɪvətiz hɛlp miː rɪˈlæks.",
+    "Vâng, các hoạt động nhẹ nhàng giúp tôi thư giãn."
+  ],
+  [
+    "Do you enjoy preparing for the next day?",
+    "duː juː ɛnˈʤɔɪ prɪˈpɛrɪŋ fɔːr ðə nɛkst deɪ?",
+    "Bạn có thích chuẩn bị cho ngày hôm sau không?",
+    "Yes, it keeps me organized.",
+    "jɛs, ɪt kiːps miː ˈɔːrɡəˌnaɪzd.",
+    "Vâng, nó giúp tôi ngăn nắp."
+  ],
+  [
+    "Do you enjoy simple conversations about home life?",
+    "duː juː ɛnˈʤɔɪ ˈsɪmpəl ˌkɑːnvərˈseɪʃənz əˈbaʊt hoʊm laɪf?",
+    "Bạn có thích những cuộc trò chuyện đơn giản về cuộc sống gia đình không?",
+    "Yes, home life is comfortable to talk about.",
+    "jɛs, hoʊm laɪf ɪz ˈkʌmfərtəbəl tuː tɔːk əˈbaʊt.",
+    "Vâng, cuộc sống gia đình là chủ đề thoải mái để nói chuyện."
+  ],
+  [
+    "Do you enjoy talking about family members?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈfæməli ˈmɛmbərz?",
+    "Bạn có thích nói về các thành viên trong gia đình không?",
+    "Yes, family is an important topic.",
+    "jɛs, ˈfæməli ɪz ən ɪmˈpɔːrtənt ˈtɑːpɪk.",
+    "Vâng, gia đình là một chủ đề quan trọng."
+  ],
+  [
+    "Do you enjoy talking about friendships?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈfrɛndʃɪps?",
+    "Bạn có thích nói về tình bạn không?",
+    "Yes, friendships are meaningful.",
+    "jɛs, ˈfrɛndʃɪps ɑːr ˈmiːnɪŋfəl.",
+    "Vâng, tình bạn rất có ý nghĩa."
+  ],
+  [
+    "Do you enjoy conversations about self-improvement?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt sɛlf-ɪmˈpruːvmənt?",
+    "Bạn có thích những cuộc trò chuyện về hoàn thiện bản thân không?",
+    "Yes, self-improvement motivates me.",
+    "jɛs, sɛlf-ɪmˈpruːvmənt ˈmoʊtɪˌveɪts miː.",
+    "Vâng, việc hoàn thiện bản thân tạo động lực cho tôi."
+  ],
+  [
+    "Do you enjoy talking about travel experiences?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈtrævəl ɪkˈspɪriənsɪz?",
+    "Bạn có thích nói về trải nghiệm du lịch không?",
+    "Yes, travel stories are exciting.",
+    "jɛs, ˈtrævəl ˈstɔːriz ɑːr ɪkˈsaɪtɪŋ.",
+    "Vâng, những câu chuyện du lịch rất thú vị."
+  ],
+  [
+    "Do you enjoy talking about holidays?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈhɑːləˌdeɪz?",
+    "Bạn có thích nói về các ngày lễ không?",
+    "Yes, holidays create happy moments.",
+    "jɛs, ˈhɑːləˌdeɪz kriːˈeɪt ˈhæpi ˈmoʊmənts.",
+    "Vâng, các ngày lễ tạo ra những khoảnh khắc hạnh phúc."
+  ],
+  [
+    "Do you enjoy conversations about the future?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt ðə ˈfjuːʧər?",
+    "Bạn có thích những cuộc trò chuyện về tương lai không?",
+    "Yes, the future gives me hope.",
+    "jɛs, ðə ˈfjuːʧər ɡɪvz miː hoʊp.",
+    "Vâng, tương lai cho tôi hy vọng."
+  ],
+  [
+    "Do you enjoy talking about your personal beliefs?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt jʊər ˈpɜːrsənəl bɪˈliːfs?",
+    "Bạn có thích nói về niềm tin cá nhân của mình không?",
+    "Yes, beliefs show who we are.",
+    "jɛs, bɪˈliːfs ʃoʊ huː wiː ɑːr.",
+    "Vâng, niềm tin cho thấy chúng ta là ai."
+  ],
+  [
+    "Do you believe in lifelong learning?",
+    "duː juː bɪˈliːv ɪn ˈlaɪˌflɔŋ ˈlɜːrnɪŋ?",
+    "Bạn có tin vào việc học tập suốt đời không?",
+    "Yes, learning never ends.",
+    "jɛs, ˈlɜːrnɪŋ ˈnɛvər ɛndz.",
+    "Vâng, học không bao giờ kết thúc."
+  ],
+  [
+    "Do you enjoy talking about nature?",
+    "duː juː ɛnˈʤɔɪ ˈtɔːkɪŋ əˈbaʊt ˈneɪʧər?",
+    "Bạn có thích nói về thiên nhiên không?",
+    "Yes, nature makes me feel peaceful.",
+    "jɛs, ˈneɪʧər meɪks miː fiːl ˈpiːsfəl.",
+    "Vâng, thiên nhiên làm tôi cảm thấy yên bình."
+  ],
+  [
+    "Do you enjoy conversations about dreams and imagination?",
+    "duː juː ɛnˈʤɔɪ ˌkɑːnvərˈseɪʃənz əˈbaʊt driːmz ænd ɪˌmæʤəˈneɪʃən?",
+    "Bạn có thích những cuộc trò chuyện về ước mơ và trí tưởng tượng không?",
+    "Yes, dreams make life interesting.",
+    "jɛs, driːmz meɪk laɪf ˈɪntrəstɪŋ.",
+    "Vâng, ước mơ làm cho cuộc sống thú vị."
+  ],
+  [
+    "Do you enjoy practicing English every day?",
+    "duː juː ɛnˈʤɔɪ ˈpræktəsɪŋ ˈɪŋɡlɪʃ ˈɛvri deɪ?",
+    "Bạn có thích luyện tập tiếng Anh mỗi ngày không?",
+    "Yes, daily practice builds confidence.",
+    "jɛs, ˈdeɪli ˈpræktɪs bɪldz ˈkɑːnfɪdəns.",
+    "Vâng, luyện tập hàng ngày xây dựng sự tự tin."
+  ],
+  [
+    "Do you want to sound natural in English?",
+    "duː juː wɑːnt tuː saʊnd ˈnæʧərəl ɪn ˈɪŋɡlɪʃ?",
+    "Bạn có muốn nói tiếng Anh tự nhiên không?",
+    "Yes, sounding natural is my goal.",
+    "jɛs, ˈsaʊndɪŋ ˈnæʧərəl ɪz maɪ ɡoʊl.",
+    "Vâng, nói tự nhiên là mục tiêu của tôi.```"
+  ]
+]

@@ -115,6 +115,7 @@
       <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
       <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
       <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Writing Test)">Writing Test</button>
+      <button class="tab" id="tabDictation" title="Chế độ: Dictation">Dictation</button>
       <button class="tab" id="tabRolePlaying" title="Role Playing">Role Playing</button>
     </div>
 
@@ -140,6 +141,7 @@
 
     <div id="pagination" class="pagination hide">
       <span id="pageInfo" style="font-weight: 600;">1 / 1</span>
+      <span id="statusBar" style="font-weight:700; color:var(--muted);">Trạng thái: Idle</span>
     </div>
 
     <div id="mainControlPanel" class="control-panel">
@@ -245,6 +247,9 @@
     let listeningAutoLoop = false; // auto-loop session when reaching end
     let readingAutoLoop = false; // auto-loop for Reading Test
     let sentenceAutoLoop = false; // auto-loop for Sentence/Writing Test
+    // Dictation mode: automatically play next sentence after correct answer
+    let dictationAutoAdvance = true;
+    let dictationScheduledPlay = false;
 
     // Server lesson metadata and audio mapping
     let lessonsMeta = [];
@@ -512,10 +517,21 @@
     });
 
     function setStatus(text, color) {
-      const el = document.getElementById('statusLabel');
-      if (!el) return;
-      el.textContent = 'Trạng thái: ' + text;
-      el.style.color = color || 'var(--muted)';
+      const label = document.getElementById('statusLabel');
+      if (label) {
+        label.textContent = 'Trạng thái: ' + text;
+        label.style.color = color || 'var(--muted)';
+      }
+      const sb = document.getElementById('statusBar');
+      if (sb) {
+        sb.textContent = 'Trạng thái: ' + text;
+        sb.style.color = color || 'var(--muted)';
+      }
+      const rsb = document.getElementById('readingStatusBar');
+      if (rsb) {
+        rsb.textContent = 'Trạng thái: ' + text;
+        rsb.style.color = color || 'var(--muted)';
+      }
     }
 
     function initSpeechRecognition() {
@@ -620,7 +636,11 @@
       currentExIdx = 0;
       render();
       try {
-        if (!isRecognitionRunning) recognition.start();
+        // For Dictation mode we want to play the sentence first and then start recognition
+        // so defer auto-start of the recognizer to the renderer which handles playback coordination.
+        if (currentMode !== 'dictation') {
+          if (!isRecognitionRunning) recognition.start();
+        }
       } catch (e) {
         console.log("Recognition already started:", e);
       }
@@ -645,9 +665,10 @@
       const item = data[currentExIdx];
       if (!item) return;
 
-      const answer = item.answer_en || item.answer;
-      const fb = document.getElementById(`fb_${currentExIdx}`);
-      if (!fb) return;
+      const answer = item.answer_en || item.answer || item.prompt || '';
+      // Try to find feedback element used by different modes (sentence vs dictation)
+      const fb = document.getElementById(`fb_${currentExIdx}`) || document.getElementById(`fb_dict_${currentExIdx}`) || document.getElementById('fb_reading');
+      // if no fb element exists, still continue silently
 
       const clean = (str) => str.toLowerCase()
         .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"']/g,"")
@@ -656,24 +677,42 @@
 
       if (similarity(text, answer) >= matchThreshold) {
         const viTrans = item.prompt_vi || "";
+        if (fb) {
+          fb.className = 'feedback success';
+          fb.innerHTML = `✅ Chính xác!${viTrans ? `<br><span class="translation-hint"> Nghĩa: ${viTrans}</span>` : ''}`;
+        }
 
-        fb.className = 'feedback success';
-        fb.innerHTML = `✅ Chính xác!${viTrans ? `<br><span class="translation-hint"> Nghĩa: ${viTrans}</span>` : ''}`;
-
-        const textToSpeak = answer;
-        playAudioFor(textToSpeak);
+        playAudioFor(answer);
 
         clearTimeout(delayTimer);
         delayTimer = setTimeout(() => {
-          if (currentExIdx < data.length - 1) {
-            currentExIdx++;
-            render();
+          // Advance similarly to Dictation Enter behaviour when in dictation mode
+          if (currentMode === 'dictation') {
+            if (currentExIdx < sessionEnd) {
+              currentExIdx++;
+              if (dictationAutoAdvance) dictationScheduledPlay = true;
+              renderDictation();
+            } else {
+              if (sentenceAutoLoop) {
+                currentExIdx = sessionStart;
+                if (dictationAutoAdvance) dictationScheduledPlay = true;
+                renderDictation();
+              } else setStatus('Hoàn thành phiên', 'var(--muted)');
+            }
+          } else {
+            // default behaviour for sentence mode
+            if (currentExIdx < data.length - 1) {
+              currentExIdx++;
+              render();
+            }
           }
         }, parseInt(delayRange.value));
       } else {
-        fb.className = 'feedback error';
-        fb.innerHTML = `❌ Bạn nói: "<span>${text}</span>"<br>Đáp án đúng: ${answer}`;
-        // phát đáp án để người học có thể nghe và nhắc lại
+        if (fb) {
+          fb.className = 'feedback error';
+          fb.innerHTML = `❌ Bạn nói: "<span>${text}</span>"<br>Đáp án đúng: ${answer}`;
+        }
+        // play correct answer for user to repeat
         playAudioFor(answer);
       }
     }
@@ -769,6 +808,7 @@
       currentMode = 'sentence';
       document.getElementById('tabSentence').classList.add('active');
       document.getElementById('tabReading').classList.remove('active');
+      const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
       isReadingModeActive = false;
       // show main controls, hide RolePlay area
       const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
@@ -786,6 +826,7 @@
       currentMode = 'reading';
       document.getElementById('tabReading').classList.add('active');
       document.getElementById('tabSentence').classList.remove('active');
+      const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
       // show main controls, hide RolePlay area
       const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
       const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
@@ -807,6 +848,7 @@
         tabListeningPreview.classList.add('active');
         document.getElementById('tabReading').classList.remove('active');
         document.getElementById('tabSentence').classList.remove('active');
+          const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
         // show main controls, hide RolePlay area
         const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
         const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
@@ -829,6 +871,7 @@
         const tListen = document.getElementById('tabListeningPreview'); if (tListen) tListen.classList.remove('active');
         const tRead = document.getElementById('tabReading'); if (tRead) tRead.classList.remove('active');
         const tSent = document.getElementById('tabSentence'); if (tSent) tSent.classList.remove('active');
+        const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
         // hide main exercise area and pagination
         const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.add('hide');
         const pg = document.getElementById('pagination'); if (pg) pg.classList.add('hide');
@@ -914,6 +957,10 @@
         renderListeningPreview();
         return;
       }
+      if (currentMode === 'dictation') {
+        renderDictation();
+        return;
+      }
       exerciseArea.innerHTML = '';
       if (currentLessonIdx === -1) {
         exerciseArea.innerHTML = '<div style="text-align:center; padding: 50px; color: var(--muted);">Vui lòng chọn bài học để bắt đầu.</div>';
@@ -957,6 +1004,24 @@
       }
     }
 
+    // Dictation tab
+    const tabDict = document.getElementById('tabDictation');
+    if (tabDict) {
+      tabDict.addEventListener('click', () => {
+        currentMode = 'dictation';
+        tabDict.classList.add('active');
+        const tListen = document.getElementById('tabListeningPreview'); if (tListen) tListen.classList.remove('active');
+        const tRead = document.getElementById('tabReading'); if (tRead) tRead.classList.remove('active');
+        const tSent = document.getElementById('tabSentence'); if (tSent) tSent.classList.remove('active');
+        const tRole = document.getElementById('tabRolePlaying'); if (tRole) tRole.classList.remove('active');
+        const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
+        const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
+        const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.remove('hide');
+        const pg = document.getElementById('pagination'); if (pg) pg.classList.remove('hide');
+        renderDictation();
+      });
+    }
+
     function renderReading() {
       exerciseArea.innerHTML = '';
       if (currentLessonIdx === -1) {
@@ -981,22 +1046,40 @@
       const card = document.createElement('div');
       card.className = 'exercise-item';
       card.innerHTML = `
-        <div id="reading_eng" style="font-size:1.6rem; font-weight:700; text-align:center; margin-bottom:8px;">${currentExIdx+1}. ${item.prompt || item.answer}</div>
-        <div id="reading_ipa" style="font-size:0.98rem; font-style:italic; color:var(--muted); margin-bottom:8px; text-align:center;">${item.ipa || ''}</div>
-        <div id="reading_vn" style="font-size:1.18rem; color:var(--primary); margin-bottom:8px; text-align:center;">${item.prompt_vi || ''}</div>
-        <div class="feedback" id="fb_reading"></div>
+        <div id="reading_eng" style="font-size:1.6rem; font-weight:700; text-align:center; margin-bottom:6px; line-height:1.05">${currentExIdx+1}. ${item.prompt || item.answer}</div>
+        <div id="reading_ipa" style="font-size:0.98rem; font-style:italic; color:var(--muted); margin-bottom:6px; text-align:center; line-height:1.05">${item.ipa || ''}</div>
+        <div id="reading_vn" style="font-size:0.98rem; color:var(--primary); margin-bottom:6px; text-align:center; line-height:1.05">${item.prompt_vi || ''}</div>
+        <div class="feedback" id="fb_reading" style="margin-top:4px;"></div>
       `;
       exerciseArea.appendChild(card);
 
+      // Make Reading Test card match Listening Preview: use min-height so it can grow with zoom
+      card.style.display = 'flex';
+      card.style.flexDirection = 'column';
+      card.style.alignItems = 'center';
+      card.style.justifyContent = 'center';
+      card.style.textAlign = 'center';
+      card.style.minHeight = '120px';
+      card.style.padding = '12px';
+
       // Hide global pagination for Reading (we display progress under the card)
       const pg = document.getElementById('pagination'); if (pg) pg.classList.add('hide');
-      // create a separate progress element below the card (outside the exercise-item)
+      // create a separate progress + status row below the card (outside the exercise-item)
       let rpInfo = document.getElementById('readingPageInfo');
       if (!rpInfo) {
-        rpInfo = document.createElement('div');
+        const rpRow = document.createElement('div');
+        rpRow.id = 'readingProgressRow';
+        rpRow.style.cssText = 'display:flex; gap:12px; justify-content:center; align-items:center; margin-top:12px; margin-bottom:40px; font-weight:700;';
+        rpInfo = document.createElement('span');
         rpInfo.id = 'readingPageInfo';
-        rpInfo.style.cssText = 'text-align:center; margin-top:12px; font-weight:700;';
-        exerciseArea.appendChild(rpInfo);
+        rpInfo.style.fontWeight = '700';
+        const rStatus = document.createElement('span');
+        rStatus.id = 'readingStatusBar';
+        rStatus.style.fontWeight = '700';
+        rStatus.style.color = 'var(--muted)';
+        rpRow.appendChild(rpInfo);
+        rpRow.appendChild(rStatus);
+        exerciseArea.appendChild(rpRow);
       }
       const visibleCount = sessionEnd - sessionStart + 1;
       rpInfo.textContent = `${currentExIdx - sessionStart + 1} / ${visibleCount} (tổng ${total})`;
@@ -1162,6 +1245,109 @@
       }
     }
 
+    // Dictation renderer: play audio and ask user to type what they hear
+    function renderDictation() {
+      exerciseArea.innerHTML = '';
+      if (currentLessonIdx === -1) {
+        exerciseArea.innerHTML = '<div style="text-align:center; padding: 50px; color: var(--muted);">Vui lòng chọn bài học để bắt đầu Dictation.</div>';
+        document.getElementById('pagination').classList.add('hide');
+        return;
+      }
+      const lesson = lessons[currentLessonIdx];
+      const data = lesson.sentence || [];
+      const total = data.length;
+      sessionStart = Math.max(0, Math.min(sessionStart, Math.max(0, total - 1)));
+      sessionEnd = Math.max(sessionStart, Math.min(sessionEnd, total - 1));
+      currentExIdx = Math.max(sessionStart, Math.min(currentExIdx, sessionEnd));
+      if (data.length === 0) {
+        exerciseArea.innerHTML = '<div style="text-align:center; padding: 50px; color: var(--muted);">Không có câu để luyện Dictation trong bài học này.</div>';
+        return;
+      }
+      document.getElementById('pagination').classList.remove('hide');
+
+      const item = data[currentExIdx];
+      const card = document.createElement('div');
+      card.className = 'exercise-item';
+      card.innerHTML = `
+        <input type="text" id="dict_input" style="font-size:1.18rem; padding:14px; margin-top:12px;" placeholder="Gõ câu bạn nghe được..." autocomplete="off">
+        <div class="feedback" id="fb_dict_${currentExIdx}"></div>
+      `;
+      exerciseArea.appendChild(card);
+      document.getElementById('pageInfo').textContent = `${currentExIdx - sessionStart + 1} / ${sessionEnd - sessionStart + 1} (tổng ${total})`;
+
+      // No per-card Play button; centralPlay controls playback. Ensure input is visible.
+
+      const input = document.getElementById('dict_input');
+      if (input) {
+        setTimeout(() => { try { input.focus(); } catch(e){} }, 80);
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            const val = input.value || '';
+            const correct = item.answer_en || item.answer || item.prompt || '';
+            const fb = document.getElementById(`fb_dict_${currentExIdx}`);
+            const ok = checkLogic(val, correct);
+            if (ok) {
+              if (fb) { fb.className = 'feedback success'; fb.innerHTML = '✅ Chính xác!'; }
+              playAudioFor(correct);
+              clearTimeout(delayTimer);
+              delayTimer = setTimeout(() => {
+                if (currentExIdx < sessionEnd) {
+                  currentExIdx++;
+                  // schedule auto-play of next sentence
+                  if (dictationAutoAdvance) dictationScheduledPlay = true;
+                  renderDictation();
+                }
+                else {
+                  if (sentenceAutoLoop) {
+                    currentExIdx = sessionStart;
+                    if (dictationAutoAdvance) dictationScheduledPlay = true;
+                    renderDictation();
+                  } else setStatus('Hoàn thành phiên', 'var(--muted)');
+                }
+              }, parseInt(delayRange.value));
+            } else {
+              if (fb) { fb.className = 'feedback error'; fb.innerHTML = `❌ Sai. Đáp án: ${correct}`; }
+              playAudioFor(correct);
+            }
+          }
+        });
+      }
+      // If speaking mode is active, play the sentence then start recognition (allowing user to speak instead of typing)
+      if (isSpeakingMode) {
+        try { if (input) input.placeholder = '🎤 Nói câu bạn nghe được...'; } catch(e){}
+        const textToPlay = item.answer_en || item.answer || item.prompt || '';
+        // ensure any previously scheduled auto-play doesn't conflict
+        dictationScheduledPlay = false;
+        // Wait until any current audio is idle, then play. Do NOT start recognition here;
+        // `playAudioFor` will resume recognition after `pauseSeconds`, avoiding cutting audio.
+        waitForAudioIdle().then(() => {
+          try { const ii = document.getElementById('dict_input'); if (ii) { ii.focus(); ii.select(); } } catch(e){}
+          playAudioFor(textToPlay, () => { try { const ii = document.getElementById('dict_input'); if (ii) { ii.focus(); } } catch(e){} });
+        }).catch(() => {
+          // fallback: play immediately if wait fails
+          try { const ii = document.getElementById('dict_input'); if (ii) { ii.focus(); ii.select(); } } catch(e){}
+          playAudioFor(textToPlay, () => { try { const ii = document.getElementById('dict_input'); if (ii) { ii.focus(); } } catch(e){} });
+        });
+      } else {
+        // if a play was scheduled (from previous correct answer), perform it now
+        if (dictationScheduledPlay) {
+          dictationScheduledPlay = false;
+          // Wait for any currently playing audio to finish before auto-playing next
+          waitForAudioIdle().then(() => {
+            // short delay to allow UI to settle
+            setTimeout(() => {
+              try {
+                const textToPlay = item.answer_en || item.answer || item.prompt || '';
+                try { const ii = document.getElementById('dict_input'); if (ii) { ii.focus(); ii.select(); } } catch(e){}
+                playAudioFor(textToPlay);
+                setTimeout(() => { try { const ii = document.getElementById('dict_input'); if (ii) ii.focus(); } catch(e){} }, 300);
+              } catch (e) { console.warn('Auto-play dictation failed', e); }
+            }, 180);
+          }).catch(() => {/* ignore */});
+        }
+      }
+    }
+
     // global keyboard shortcuts for Listening Preview and Role Playing
     window.addEventListener('keydown', (ev) => {
       // handle keys only when in listeningPreview or roleplaying
@@ -1218,6 +1404,8 @@
           if (currentExIdx > sessionStart) { currentExIdx--; renderReading(); }
         } else if (currentMode === 'sentence') {
           if (currentExIdx > sessionStart) { currentExIdx--; render(); }
+        } else if (currentMode === 'dictation') {
+          if (currentExIdx > sessionStart) { currentExIdx--; renderDictation(); }
         } else if (currentMode === 'roleplaying') {
           try { if (window.rolePlayInstance) { window.rolePlayInstance.setState({ currentIndex: Math.max(0, (window.rolePlayInstance.state.currentIndex || 0) - 1) }); window.rolePlayInstance.processCurrentLine(); } } catch(e){}
         }
@@ -1236,6 +1424,11 @@
           const data = (lesson.sentence || []);
           const maxIdx = Math.min(sessionEnd, data.length - 1);
           if (currentExIdx < maxIdx) { currentExIdx++; render(); }
+        } else if (currentMode === 'dictation') {
+          const lesson = lessons[currentLessonIdx] || {};
+          const data = (lesson.sentence || []);
+          const maxIdx = Math.min(sessionEnd, data.length - 1);
+          if (currentExIdx < maxIdx) { currentExIdx++; renderDictation(); }
         } else if (currentMode === 'roleplaying') {
           try { if (window.rolePlayInstance) { window.rolePlayInstance.setState({ currentIndex: (window.rolePlayInstance.state.currentIndex || 0) + 1 }); window.rolePlayInstance.processCurrentLine(); } } catch(e){}
         }
@@ -1264,6 +1457,18 @@
           if (!item) return;
           const ans = item.answer_en || item.answer || item.prompt || '';
           playAudioFor(ans);
+        } else if (currentMode === 'dictation') {
+          if (currentLessonIdx === -1) return;
+          const lesson = lessons[currentLessonIdx] || {};
+          const data = lesson.sentence || [];
+          const item = data[currentExIdx];
+          if (!item) return;
+          const ans = item.answer_en || item.answer || item.prompt || '';
+          // focus input before playback
+          try { const inp = document.getElementById('dict_input'); if (inp) { inp.focus(); inp.select(); } } catch(e){}
+          playAudioFor(ans);
+          // ensure focus after a short delay (playback may steal focus)
+          setTimeout(() => { try { const inp = document.getElementById('dict_input'); if (inp) inp.focus(); } catch(e){} }, 300);
         } else if (currentMode === 'roleplaying') {
           try { if (window.rolePlayInstance) { window.rolePlayInstance.toggleAutoPlay(); setPlayLabel(window.rolePlayInstance.state.isAutoPlaying ? '⏸ Dừng' : '▶ Phát'); } } catch(e){}
         }
@@ -1273,6 +1478,7 @@
         if (currentMode === 'listeningPreview') { playPreviewAt(listeningIndex, false); }
         else if (currentMode === 'reading') { const lesson = lessons[currentLessonIdx] || {}; const item = (lesson.sentence||[])[currentExIdx]; if (item) playAudioFor(item.answer || item.prompt || ''); }
         else if (currentMode === 'sentence') { const lesson = lessons[currentLessonIdx] || {}; const item = (lesson.sentence||[])[currentExIdx]; if (item) playAudioFor(item.answer || item.prompt || ''); }
+        else if (currentMode === 'dictation') { const lesson = lessons[currentLessonIdx] || {}; const item = (lesson.sentence||[])[currentExIdx]; if (item) playAudioFor(item.answer || item.prompt || ''); }
         else if (currentMode === 'roleplaying') {
           try {
             // Play sample for the partner/closed role of the current pair (keep label 'Lặp lại')
@@ -1290,6 +1496,7 @@
         if (currentMode === 'listeningPreview') { listeningIndex = sessionStart; updateListeningCard(listeningIndex); playPreviewAt(listeningIndex, true); setPlayLabel('⏸ Dừng'); }
         else if (currentMode === 'reading') { currentExIdx = sessionStart; renderReading(); if (!isReadingModeActive) { /* do not auto-start recognition */ } }
         else if (currentMode === 'sentence') { currentExIdx = sessionStart; render(); }
+        else if (currentMode === 'dictation') { currentExIdx = sessionStart; renderDictation(); }
         else if (currentMode === 'roleplaying') { try { if (window.rolePlayInstance) window.rolePlayInstance.resetSession(); } catch(e){} }
       });
 
@@ -1318,6 +1525,23 @@
         <div class="feedback" id="fb_${idx}"></div>
       `;
       exerciseArea.appendChild(div);
+
+      // Make Writing Test card match Listening Preview dimensions and spacing
+      div.style.display = 'flex';
+      div.style.flexDirection = 'column';
+      div.style.alignItems = 'center';
+      div.style.justifyContent = 'center';
+      div.style.textAlign = 'center';
+      div.style.minHeight = '120px';
+      div.style.padding = '12px';
+
+      // Tighter styles for input to reduce card height
+      const inputEl = document.getElementById(inputId);
+      if (inputEl) {
+        inputEl.style.padding = '10px';
+        inputEl.style.fontSize = '1.02rem';
+        inputEl.style.width = '90%';
+      }
 
       const input = document.getElementById(inputId);
       input.addEventListener('keydown', (e) => {
@@ -1463,6 +1687,28 @@
       }
     }
 
+    // Wait until current audio (Howl or ttsAudio) is idle before resolving
+    function waitForAudioIdle(timeout = 15000) {
+      return new Promise((resolve) => {
+        const start = Date.now();
+        const check = () => {
+          try {
+            // If Howl is playing
+            if (currentHowl && typeof currentHowl.playing === 'function' && currentHowl.playing()) {
+              // still playing
+            } else if (ttsAudio && !ttsAudio.paused) {
+              // TTS playing
+            } else {
+              resolve(); return;
+            }
+          } catch (e) { resolve(); return; }
+          if (Date.now() - start > timeout) { resolve(); return; }
+          setTimeout(check, 180);
+        };
+        check();
+      });
+    }
+
     // prevEx / nextEx removed — use the unified central control bar instead
     // populate server lesson list on load
     loadLessonList();
@@ -1489,24 +1735,58 @@
     .roleplay-container * { box-sizing: border-box; }
     .roleplay-container body { margin:0; }
     .roleplay-container { text-align: center; }
-    .roleplay-container .container { max-width:1100px; margin: 24px auto; padding: 18px; width:100%; }
+    .roleplay-container .container { max-width:1100px; margin: 36px auto; padding: 20px; width:100%; }
     .roleplay-container header { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
     .roleplay-container .logo { width:48px; height:48px; background:linear-gradient(135deg,var(--primary),var(--accent)); border-radius:10px; display:flex; align-items:center; justify-content:center; color:#071022; font-weight:800; font-size:1rem; box-shadow:var(--soft-shadow); }
     .roleplay-container .control-panel { display:flex; flex-wrap:wrap; gap:8px; background:var(--card-bg); padding:8px 10px; border-radius:8px; box-shadow:var(--soft-shadow); border:1px solid var(--border); align-items:center; width:100%; max-width:1100px; margin:0 auto; }
     .roleplay-container .control-panel { position: -webkit-sticky; position: sticky; top: 20px; z-index:50; }
     .roleplay-container main { width:100%; max-width:1100px; margin:0 auto; }
+    .roleplay-container .exercise-item { width: 100%; }
     .roleplay-container .option-group { display:flex; align-items:center; gap:8px; font-weight:600; font-size:0.88rem; }
     .roleplay-container select, .roleplay-container input[type=range] { padding:8px; border-radius:6px; background:var(--card-bg); color:var(--text); border:1px solid var(--border); }
     .roleplay-container .btn { border:none; border-radius:8px; padding:8px 12px; font-weight:700; cursor:pointer; background:linear-gradient(90deg,var(--primary),#4fc3f7); color:#071022; }
     .roleplay-container .btn.ghost { background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--text); }
-    .roleplay-container .exercise-item { background:var(--card-bg); padding:18px; border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid var(--border); }
-    .roleplay-container .question { font-size:1.6rem; font-weight:700; margin-bottom:8px; text-align:center; }
-    .roleplay-container .vietnamese { font-style:italic; color:var(--muted); border-left:3px solid var(--primary); padding-left:10px; margin-bottom:10px; text-align:center; }
+    .roleplay-container .exercise-item {
+      /* Reduced height: smaller padding and top-aligned content */
+      background: var(--card-bg);
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      width: 100%;
+      min-height: 80px;
+      margin: 0 0 20px 0;
+      overflow: visible;
+    }
+    .roleplay-container .question { font-size:1.6rem; font-weight:700; margin-bottom:6px; text-align:center; }
+    .roleplay-container .vietnamese { font-style:italic; color:var(--muted); border-left:3px solid var(--primary); padding-left:10px; margin-bottom:15px; text-align:center; }
     .roleplay-container .translation-hint { color:var(--primary); font-weight:600; font-style:italic; display:block; margin-top:8px; text-align:center; }
     .roleplay-container .feedback { margin-top:10px; padding:10px; border-radius:8px; min-height:20px; font-weight:600; text-align:center; }
     .roleplay-container .feedback.success { color:var(--success); background:rgba(46,204,113,0.06); }
     .roleplay-container .feedback.error { color:var(--error); background:rgba(231,76,60,0.06); }
     .roleplay-container .hide { display:none; }
+    /* Ensure active-mode styling wins over .btn.ghost in roleplay area */
+    .roleplay-container .btn.active-mode {
+      background: linear-gradient(90deg,var(--success),#12c07a) !important;
+      color: white !important;
+      box-shadow: 0 8px 24px rgba(18,160,80,0.12) !important;
+    }
+    /* Ensure RolePlay layout matches other tabs */
+    .roleplay-container main { flex: 1; }
+    .roleplay-container .question { font-size:1.4rem; line-height:1.05; margin:6px 0; text-align:center; }
+    .roleplay-container #rp_ipa, .roleplay-container #rp_vn { font-size:0.98rem; margin-top:6px; text-align:center; }
+    .roleplay-container .control-panel { margin-top:12px; display:flex; flex-direction:column; gap:8px; padding-top:8px; }
+    .roleplay-container { width:100%; padding:0; margin:0; }
+    /* Ensure the rolePlayingArea doesn't add extra gap when shown */
+    #rolePlayingArea { margin-top: 0 !important; padding-top: 0 !important; }
+    /* Pull the roleplay container up to sit directly under the control bar */
+    .roleplay-container { margin-top: 0 !important; }
+    .roleplay-container .rp-page-info { text-align:center; margin-top:12px; font-weight:700; }
   </style>
 
   <script type="module">
@@ -2582,67 +2862,66 @@
           const sessionAccuracyColor = this.getAccuracyColor(accuracyStats.sessionAccuracy);
 
           app.innerHTML = `
-            <div class="roleplay-container container" style="display:flex; flex-direction:column; min-height:auto; align-items:center; text-align:center;">
-              <main style="flex:1;">
-                <div class="exercise-item" style="margin-bottom:6px;">
-                        <div class="question">${scriptLines[currentIndex]?.text ? scriptLines[currentIndex].text : 'Chọn bài học và nhấn Bắt đầu'}</div>
-                        ${scriptLines[currentIndex]?.ipa ? `<div id="rp_ipa" style="font-size:0.98rem; font-style:italic; color:var(--muted); margin-bottom:8px; text-align:center;">${scriptLines[currentIndex].ipa}</div>` : ''}
-                        ${scriptLines[currentIndex]?.translation ? `<div id="rp_vn" style="font-size:0.98rem; color:var(--primary); margin-bottom:8px; text-align:center;">${scriptLines[currentIndex].translation}</div>` : ''}
-                        <div id="feedbackBox" class="feedback${waitingClass}">${(feedback.type==='success' || feedback.type==='error') ? feedback.message : ''}
-                          <div id="interimTranscript" class="transcript-interim">${transcript ? transcript : ''}</div>
-                        </div>
-                      </div>
-                      
+            <div class="roleplay-container">
+              <main>
+                ${scriptLines[currentIndex] && scriptLines[currentIndex].text ? `
+                  <div class="exercise-item">
+                    <div class="question">${scriptLines[currentIndex].text}</div>
+                    ${scriptLines[currentIndex].ipa ? `<div id="rp_ipa">${scriptLines[currentIndex].ipa}</div>` : ''}
+                    ${scriptLines[currentIndex].translation ? `<div id="rp_vn">${scriptLines[currentIndex].translation}</div>` : ''}
+                    <div id="feedbackBox" class="feedback${waitingClass}">${(feedback.type==='success' || feedback.type==='error') ? feedback.message : ''}
+                      <div id="interimTranscript" class="transcript-interim">${transcript ? transcript : ''}</div>
+                    </div>
+                  </div>
+                ` : `
+                  <div class="rp-placeholder">Chọn bài học và nhấn Bắt đầu</div>
+                `}
               </main>
 
-              <div class="control-panel" style="margin-top:8px; display:flex; flex-direction:column; gap:8px; padding-top:8px">
-                  <div style="display:flex; gap:8px; align-items:center;">
-                  <select id="appLessonSelect" style="padding:8px; border-radius:6px; background:var(--card-bg); border:1px solid var(--border); color:var(--text); min-width:220px">
+              <div class="control-panel rp-control">
+                <div class="rp-row">
+                  <select id="appLessonSelect">
                     <option value="">-- Chọn bài học --</option>
                     ${availableLessons.map((l, i) => `<option value="${i}" ${selectedLessonIndex===i? 'selected':''}>${l.name.replace('.json','')}</option>`).join('')}
                   </select>
-                  <select id="voice_ctrl" style="padding:8px; border-radius:6px; background:var(--card-bg); border:1px solid var(--border); color:var(--text)">
+                  <select id="voice_ctrl">
                     <option value="gTTS" ${this.state.voice1 === 'gTTS' ? 'selected' : ''}>gTTS (Female)</option>
                     <option value="Edge" ${this.state.voice1 === 'Edge' ? 'selected' : ''}>Edge (Male)</option>
                   </select>
-                  
                   <button id="rpSaveBookmark" class="btn ghost" title="Lưu bookmark">🔖 Lưu</button>
                   <button id="rpLoadBookmark" class="btn ghost" title="Tải bookmark">📂 Tải</button>
                 </div>
 
-                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                  <div class="option-group" style="display:flex; gap:8px; align-items:center">
-                    <label style="margin-right:8px; font-weight:700;">Chế độ:</label>
+                <div class="rp-row rp-options">
+                  <div class="option-group">
+                    <label>Chế độ:</label>
                     <button id="roleA" class="btn ghost ${userRole==='A' ? 'active-mode':''}">Vai A</button>
-                    <button id="roleB" class="btn ghost ${userRole==='B' ? 'active-mode':''}" style="margin-left:8px">Vai B</button>
+                    <button id="roleB" class="btn ghost ${userRole==='B' ? 'active-mode':''}">Vai B</button>
                   </div>
 
-                  <div class="option-group" style="margin-left:8px;">
-                    <label style="margin-right:6px">Ngưỡng:</label>
+                  <div class="option-group">
+                    <label>Ngưỡng:</label>
                     <input id="matchingThreshold" type="range" min="0" max="95" value="${Math.min(Math.round(this.state.matchingThreshold*100),95)}" />
-                    <span id="matchingThresholdValue" style="margin-left:6px; font-weight:700">${Math.min(Math.round(this.state.matchingThreshold*100),95)}%</span>
+                    <span id="matchingThresholdValue">${Math.min(Math.round(this.state.matchingThreshold*100),95)}%</span>
                   </div>
 
-                      <div class="option-group" style="margin-left:8px;">
-                        <label style="margin-right:6px">Reply delay:</label>
-                        <input id="replyDelayCtrl" type="range" min="50" max="2000" step="25" value="${this.state.userReplyDelay || 50}" />
-                        <span id="replyDelayVal" style="margin-left:6px; font-weight:700">${(this.state.userReplyDelay || 50)}ms</span>
-                      </div>
-
-                      <div class="option-group" style="margin-left:8px;">
-                        <label style="margin-right:6px">Phiên (số cặp):</label>
-                        <input id="sessionPairsCount" type="number" min="1" value="${displayTotalPairs}" style="width:80px; padding:6px; border-radius:6px; background:var(--card-bg); border:1px solid var(--border); color:var(--text);" />
-                        <button id="applySessionPairsBtn" class="btn ghost" style="margin-left:8px">Áp dụng Phiên</button>
-                      </div>
-
-                  <div style="margin-left:auto; display:flex; gap:8px; align-items:center">
+                  <div class="option-group">
+                    <label>Reply delay:</label>
+                    <input id="replyDelayCtrl" type="range" min="50" max="2000" step="25" value="${this.state.userReplyDelay || 50}" />
+                    <span id="replyDelayVal">${(this.state.userReplyDelay || 50)}ms</span>
                   </div>
+
+                  <div class="option-group">
+                    <label>Phiên (số cặp):</label>
+                    <input id="sessionPairsCount" type="number" min="1" value="${displayTotalPairs}" />
+                    <button id="applySessionPairsBtn" class="btn ghost">Áp dụng Phiên</button>
+                  </div>
+
+                  <div class="spacer"></div>
                 </div>
               </div>
 
-              <footer style="margin-top:12px; text-align:center; color:var(--muted); font-size:0.9rem">
-                RolePlay AI • giao diện A1-style
-              </footer>
+              <footer class="rp-footer">RolePlay AI • giao diện A1-style</footer>
             </div>
           `;
 
@@ -2654,7 +2933,7 @@
             if (!rpInfo) {
               rpInfo = document.createElement('div');
               rpInfo.id = 'rpPageInfo';
-              rpInfo.style.cssText = 'text-align:center; margin-top:12px; font-weight:700;';
+              rpInfo.className = 'rp-page-info';
               mainEl.appendChild(rpInfo);
             }
             rpInfo.textContent = `${currentPair} / ${displayTotalPairs} (tổng ${overallTotal})`;
