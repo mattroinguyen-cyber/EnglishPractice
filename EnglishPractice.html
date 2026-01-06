@@ -62,10 +62,14 @@
     .exercise-item { background: var(--card-bg); padding: 26px; border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 20px; border: 1px solid var(--border); animation: fadeIn 0.36s ease; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
     
-    .question { font-size: 1.18rem; font-weight: 700; margin-bottom: 10px; color: var(--text); letter-spacing: 0.2px; }
-    .vietnamese { font-style: italic; color: var(--muted); border-left: 3px solid var(--primary); padding-left: 10px; margin-bottom: 15px; }
-    .translation-hint { color: var(--primary); font-weight: 600; font-style: italic; display: block; margin-top: 8px; font-size: 0.95rem; }
-
+    .question { font-size: 1.18rem; font-weight: 700; margin-bottom: 10px; color: #2563EB; letter-spacing: 0.2px; }
+    .vietnamese { font-style: italic; color: #12C07A; margin-bottom: 15px; }
+    .translation-hint { color: #C586C0; font-weight: 600; font-style: italic; display: block; margin-top: 8px; font-size: 0.95rem; }
+    
+    /* Utility classes matching the three-line color scheme from the screenshot */
+    .title { color: #2563EB; font-weight: 800; font-size: 2rem; line-height: 1.05; }
+    .ipa { color: #C586C0; font-style: normal; font-size: 1.1rem; display: block; margin-top: 6px; }
+    .vn { color: #12C07A; font-style: italic; font-size: 1rem; display: block; margin-top: 6px; }
     input[type="text"] { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03); background: var(--card-bg); color: var(--text); font-size: 1.02rem; outline: none; transition: 0.18s; box-shadow: none; }
     input:focus { border-color: var(--primary); background: var(--card-bg); transform: translateY(-1px); }
     
@@ -1046,9 +1050,9 @@
       const card = document.createElement('div');
       card.className = 'exercise-item';
       card.innerHTML = `
-        <div id="reading_eng" style="font-size:1.6rem; font-weight:700; text-align:center; margin-bottom:6px; line-height:1.05">${currentExIdx+1}. ${item.prompt || item.answer}</div>
-        <div id="reading_ipa" style="font-size:0.98rem; font-style:italic; color:var(--muted); margin-bottom:6px; text-align:center; line-height:1.05">${item.ipa || ''}</div>
-        <div id="reading_vn" style="font-size:0.98rem; color:var(--primary); margin-bottom:6px; text-align:center; line-height:1.05">${item.prompt_vi || ''}</div>
+        <div id="reading_eng" style="font-size:1.6rem; font-weight:700; text-align:center; margin-bottom:6px; line-height:1.05; color:#2563EB;">${currentExIdx+1}. ${item.prompt || item.answer}</div>
+        <div id="reading_ipa" style="font-size:0.98rem; font-style:italic; color:#C586C0; margin-bottom:6px; text-align:center; line-height:1.05">${item.ipa || ''}</div>
+        <div id="reading_vn" style="font-size:0.98rem; color:#12C07A; margin-bottom:6px; text-align:center; line-height:1.05">${item.prompt_vi || ''}</div>
         <div class="feedback" id="fb_reading" style="margin-top:4px;"></div>
       `;
       exerciseArea.appendChild(card);
@@ -1116,9 +1120,9 @@
       card.className = 'exercise-item';
       card.id = 'lp_current_card';
       card.innerHTML = `
-        <div id="lp_eng" style="font-size:1.2rem; font-weight:700; color:var(--text);"></div>
-        <div id="lp_ipa" style="font-size:0.98rem; font-style:italic; color:var(--muted); margin-top:8px;"></div>
-        <div id="lp_vn" style="font-size:0.98rem; color:var(--primary); margin-top:8px;"></div>
+        <div id="lp_eng" style="font-size:1.2rem; font-weight:700; color:#2563EB;"></div>
+        <div id="lp_ipa" style="font-size:0.98rem; font-style:italic; color:#C586C0; margin-top:8px;"></div>
+        <div id="lp_vn" style="font-size:0.98rem; color:#12C07A; margin-top:8px;"></div>
       `;
       exerciseArea.appendChild(card);
       // center content for better readability
@@ -1348,10 +1352,10 @@
       }
     }
 
-    // global keyboard shortcuts for Listening Preview and Role Playing
+    // global keyboard shortcuts for Listening Preview, Reading Test and Role Playing
     window.addEventListener('keydown', (ev) => {
-      // handle keys only when in listeningPreview or roleplaying
-      if (currentMode !== 'listeningPreview' && currentMode !== 'roleplaying') return;
+      // handle keys only when in listeningPreview, reading or roleplaying
+      if (currentMode !== 'listeningPreview' && currentMode !== 'roleplaying' && currentMode !== 'reading') return;
 
       const centralPlayBtn = document.getElementById('centralPlay');
 
@@ -1369,16 +1373,46 @@
         return;
       }
 
+      // Reading Test: map same navigation keys to reading actions
+      if (currentMode === 'reading') {
+        if (ev.key === 'ArrowLeft') {
+          ev.preventDefault(); if (currentExIdx > sessionStart) { currentExIdx--; renderReading(); }
+        } else if (ev.key === 'ArrowRight') {
+          ev.preventDefault(); const lesson = lessons[currentLessonIdx] || {}; const data = (lesson.sentence || []); const maxIdx = Math.min(sessionEnd, data.length - 1); if (currentExIdx < maxIdx) { currentExIdx++; renderReading(); }
+        } else if (ev.code === 'Space' || ev.key === ' ') {
+          ev.preventDefault(); if (centralPlayBtn) centralPlayBtn.click();
+        } else if (ev.key === 'ArrowUp') {
+          ev.preventDefault(); const cRestartBtn = document.getElementById('centralRestart'); if (cRestartBtn) cRestartBtn.click(); currentExIdx = sessionStart; renderReading();
+        } else if (ev.key === 'ArrowDown') {
+          ev.preventDefault(); const cRepeatBtn = document.getElementById('centralRepeat'); if (cRepeatBtn) cRepeatBtn.click(); const lesson = lessons[currentLessonIdx] || {}; const item = (lesson.sentence||[])[currentExIdx]; if (item) playAudioFor(item.answer || item.prompt || '');
+        } else if (ev.key.toLowerCase && ev.key.toLowerCase() === 'r') {
+          ev.preventDefault(); currentExIdx = sessionStart; renderReading(); const pb = document.getElementById('lpPlay'); if (pb) pb.textContent = '⏸ Dừng';
+        }
+        return;
+      }
+
       // Listening Preview shortcuts
       if (ev.key === 'ArrowLeft') {
         ev.preventDefault(); if (listeningIndex > sessionStart) { playPreviewAt(listeningIndex - 1, false); }
       } else if (ev.key === 'ArrowRight') {
         ev.preventDefault(); if (listeningIndex < sessionEnd) { playPreviewAt(listeningIndex + 1, false); }
-      } else if (ev.key === 'ArrowDown' || ev.code === 'Space' || ev.key === ' ') {
+      } else if (ev.code === 'Space' || ev.key === ' ') {
         ev.preventDefault(); // toggle/play via central Play so labels stay in sync
         if (centralPlayBtn) centralPlayBtn.click();
+      } else if (ev.key === 'ArrowUp') {
+        ev.preventDefault(); // Bắt đầu lại: trigger centralRestart
+        const cRestartBtn = document.getElementById('centralRestart'); if (cRestartBtn) cRestartBtn.click();
+        // also reset listeningIndex and start playing from sessionStart
+        listeningIndex = sessionStart;
+        updateListeningCard(listeningIndex);
+        playPreviewAt(listeningIndex, true);
+      } else if (ev.key === 'ArrowDown') {
+        ev.preventDefault(); // Lặp lại: trigger centralRepeat
+        const cRepeatBtn = document.getElementById('centralRepeat'); if (cRepeatBtn) cRepeatBtn.click();
+        // If repeat means replay current item, play current index once
+        playPreviewAt(listeningIndex, false);
       } else if (ev.key.toLowerCase && ev.key.toLowerCase() === 'r') {
-        ev.preventDefault(); // restart session from sessionStart
+        ev.preventDefault(); // legacy: restart session from sessionStart
         listeningIndex = sessionStart;
         updateListeningCard(listeningIndex);
         playPreviewAt(listeningIndex, true);
@@ -1763,9 +1797,9 @@
       margin: 0 0 20px 0;
       overflow: visible;
     }
-    .roleplay-container .question { font-size:1.6rem; font-weight:700; margin-bottom:6px; text-align:center; }
-    .roleplay-container .vietnamese { font-style:italic; color:var(--muted); border-left:3px solid var(--primary); padding-left:10px; margin-bottom:15px; text-align:center; }
-    .roleplay-container .translation-hint { color:var(--primary); font-weight:600; font-style:italic; display:block; margin-top:8px; text-align:center; }
+    .roleplay-container .question { font-size:1.6rem; font-weight:700; margin-bottom:6px; text-align:center; color: #2563EB; }
+    .roleplay-container .vietnamese { font-style:italic; color:#12C07A; margin-bottom:15px; text-align:center; }
+    .roleplay-container .translation-hint { color:#C586C0; font-weight:600; font-style:italic; display:block; margin-top:8px; text-align:center; }
     .roleplay-container .feedback { margin-top:10px; padding:10px; border-radius:8px; min-height:20px; font-weight:600; text-align:center; }
     .roleplay-container .feedback.success { color:var(--success); background:rgba(46,204,113,0.06); }
     .roleplay-container .feedback.error { color:var(--error); background:rgba(231,76,60,0.06); }
@@ -1778,8 +1812,9 @@
     }
     /* Ensure RolePlay layout matches other tabs */
     .roleplay-container main { flex: 1; }
-    .roleplay-container .question { font-size:1.4rem; line-height:1.05; margin:6px 0; text-align:center; }
-    .roleplay-container #rp_ipa, .roleplay-container #rp_vn { font-size:0.98rem; margin-top:6px; text-align:center; }
+    .roleplay-container .question { font-size:1.6rem; line-height:1.05; margin:6px 0; text-align:center; }
+    .roleplay-container #rp_ipa { font-size:0.98rem; margin-top:6px; text-align:center; color: #C586C0; }
+    .roleplay-container #rp_vn { font-size:0.98rem; margin-top:6px; text-align:center; color: #12C07A; }
     .roleplay-container .control-panel { margin-top:12px; display:flex; flex-direction:column; gap:8px; padding-top:8px; }
     .roleplay-container { width:100%; padding:0; margin:0; }
     /* Ensure the rolePlayingArea doesn't add extra gap when shown */
