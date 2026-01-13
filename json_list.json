@@ -1,6 +1,10 @@
 {
     "lessons": [
-        
+        {
+            "name": "100Cau3tuThongDung.json",
+            "mapping": "mapping_100Cau3tuThongDung.json",
+            "audio": "audio_100Cau3tuThongDung"
+        },
         {
             "name": "2000_Daily_English.json",
             "mapping": "mapping_2000_Daily_English.json",
