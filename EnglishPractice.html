@@ -104,21 +104,25 @@
       <div style="display:flex; align-items:center; gap:12px">
         <div class="logo">4S</div>
         <div>
-          <h1 style="margin:0; font-size: 1.5rem;">Conversation Practice</h1>
+          <h1 style="margin:0; font-size: 1.5rem;">English Practice</h1>
           <p style="margin:0; font-size: 0.8rem; color: var(--text);">Listen - Speak - Read - Write</p>
         </div>
       </div>
       <div style="display:flex; gap:10px; align-items:center">
         <!-- Import JSON removed; lessons are loaded from json_list.json / LESSON/ -->
         <button class="btn ghost" id="themeToggle" title="Chuyển giao diện sáng/tối">🌙</button>
-        <a class="btn ghost" href="test_offline.html" title="Mở Học Ngoại Ngữ" style="margin-left:6px">Học Ngoại Ngữ</a>
+        <select id="appSelectorHeader" onchange="if(this.value) window.location.href=this.value;" title="Chọn ứng dụng" style="margin-left:6px; padding:8px 10px; border-radius:8px; background:transparent; color: var(--text); border:1px solid rgba(255,255,255,0.04); font-weight:700;">
+          <option value="">-- Mở ứng dụng --</option>
+          <option value="EnglishPractice.html"selected>English Practice</option>
+          <option value="TranslationTrainer.html">Translation Trainer</option>
+          <option value="test_offline.html">Học Ngoại Ngữ</option>
+        </select>
       </div>
     </header>
 
     <div class="tabs">
       <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
       <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
-      <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Writing Test)">Writing Test</button>
       <button class="tab" id="tabDictation" title="Chế độ: Dictation">Dictation</button>
       <button class="tab" id="tabRolePlaying" title="Role Playing">Role Playing</button>
     </div>
@@ -203,7 +207,7 @@
       </div>
 
       <div class="option-group">
-        <button class="btn ghost" id="toggleSkillMode" title="Bật/tắt chế độ luyện nói">🎙️ Luyện Nói</button>
+        <!-- Luyện Nói đã bị gỡ: nút đã xóa -->
       </div>
       <div class="option-group">
         <span>Phiên:</span>
@@ -360,7 +364,6 @@
     const lessonSelect = document.getElementById('lessonSelect');
     const exerciseArea = document.getElementById('exerciseArea');
     const delayRange = document.getElementById('delayRange');
-    const skillBtn = document.getElementById('toggleSkillMode');
 
     delayRange.addEventListener('input', (e) => {
       document.getElementById('delayVal').textContent = (e.target.value / 1000).toFixed(1) + 's';
@@ -538,45 +541,10 @@
       }
     }
 
+    // Speech recognition removed — provide harmless stub
     function initSpeechRecognition() {
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-      if (!SpeechRecognition) {
-        alert("Trình duyệt này không hỗ trợ luyện nói (Speech Recognition). Vui lòng dùng Google Chrome.");
-        isRecognitionSupported = false;
-        return;
-      }
-      isRecognitionSupported = true;
-      recognition = new SpeechRecognition();
-      recognition.lang = "en-US";
-      recognition.continuous = false;
-      recognition.interimResults = false;
-
-      recognition.onresult = (event) => {
-        const text = event.results[0][0].transcript;
-        if (currentMode === 'reading' && isReadingModeActive) {
-          handleReadingResult(text);
-        } else {
-          handleSpeechResult(text);
-        }
-      };
-
-      recognition.onstart = () => { isRecognitionRunning = true; };
-      recognition.onend = () => {
-        isRecognitionRunning = false;
-        if (isSpeakingMode || isReadingModeActive) {
-          // nếu đang tạm dừng vì playback thì không restart ở đây
-          if (willRestartRecognition) return;
-          try {
-            if (!isRecognitionRunning) recognition.start();
-          } catch (e) {
-            console.log("Cannot restart recognition immediately:", e);
-          }
-        }
-      };
-
-      recognition.onerror = (event) => {
-        console.log("Speech recognition error:", event.error);
-      };
+      isRecognitionSupported = false;
+      recognition = null;
     }
 
     function cleanSpeech(str) {
@@ -624,43 +592,9 @@
       return max === 0 ? 1 : Math.max(0, 1 - dist / max);
     }
 
-    function startSpeechMode() {
-      if (!recognition) {
-        initSpeechRecognition();
-      }
-      if (!isRecognitionSupported) return;
-      isSpeakingMode = true;
-      // ép về chế độ câu đơn để luyện nói theo từng câu
-      if (!isSingleMode) {
-        isSingleMode = true;
-        const viewBtn = document.getElementById('toggleViewMode');
-        viewBtn.textContent = 'Chế độ: Câu đơn';
-        viewBtn.classList.add('active-mode');
-      }
-      currentExIdx = 0;
-      render();
-      try {
-        // For Dictation mode we want to play the sentence first and then start recognition
-        // so defer auto-start of the recognizer to the renderer which handles playback coordination.
-        if (currentMode !== 'dictation') {
-          if (!isRecognitionRunning) recognition.start();
-        }
-      } catch (e) {
-        console.log("Recognition already started:", e);
-      }
-    }
-
-    function stopSpeechMode() {
-      isSpeakingMode = false;
-      if (recognition) {
-        try {
-          recognition.stop();
-        } catch (e) {
-          console.log("Error stopping recognition:", e);
-        }
-      }
-      render();
-    }
+    // Speech mode removed — use stubs to avoid runtime errors
+    function startSpeechMode() { isSpeakingMode = false; setStatus('Chức năng Luyện Nói đã bị vô hiệu hóa', 'var(--muted)'); }
+    function stopSpeechMode() { isSpeakingMode = false; }
 
     function handleSpeechResult(text) {
       if (currentLessonIdx === -1) return;
@@ -766,17 +700,7 @@
       }
     }
 
-    skillBtn.addEventListener('click', () => {
-      if (!isSpeakingMode) {
-        skillBtn.textContent = '🛑 Dừng Luyện Nói';
-        skillBtn.classList.add('speaking-on');
-        startSpeechMode();
-      } else {
-        skillBtn.textContent = '🎙️ Luyện Nói';
-        skillBtn.classList.remove('speaking-on');
-        stopSpeechMode();
-      }
-    });
+    // Luyện Nói đã bị gỡ — no-op (button removed)
 
     const themeToggleBtn = document.getElementById('themeToggle');
     if (themeToggleBtn) {
@@ -808,28 +732,11 @@
     }
 
     // Tab handlers for switching modes
-    document.getElementById('tabSentence').addEventListener('click', () => {
-      currentMode = 'sentence';
-      document.getElementById('tabSentence').classList.add('active');
-      document.getElementById('tabReading').classList.remove('active');
-      const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
-      isReadingModeActive = false;
-      // show main controls, hide RolePlay area
-      const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
-      const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
-      const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.remove('hide');
-      const pg = document.getElementById('pagination'); if (pg) pg.classList.remove('hide');
-      const tRole = document.getElementById('tabRolePlaying'); if (tRole) tRole.classList.remove('active');
-      // stop RolePlay app if active to avoid microphone conflicts
-      try { if (window.rolePlayInstance && typeof window.rolePlayInstance.stopPractice === 'function') window.rolePlayInstance.stopPractice();
-      else if (window.rolePlayInstance && window.rolePlayInstance.speechRecognition) try { window.rolePlayInstance.speechRecognition.stop(); } catch(e) {} } catch(e) {}
-      render();
-    });
 
     document.getElementById('tabReading').addEventListener('click', () => {
       currentMode = 'reading';
       document.getElementById('tabReading').classList.add('active');
-      document.getElementById('tabSentence').classList.remove('active');
+      const tSent = document.getElementById('tabSentence'); if (tSent) tSent.classList.remove('active');
       const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
       // show main controls, hide RolePlay area
       const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
@@ -851,7 +758,7 @@
         // set active states
         tabListeningPreview.classList.add('active');
         document.getElementById('tabReading').classList.remove('active');
-        document.getElementById('tabSentence').classList.remove('active');
+        const tSent = document.getElementById('tabSentence'); if (tSent) tSent.classList.remove('active');
           const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
         // show main controls, hide RolePlay area
         const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
@@ -1053,7 +960,7 @@
         <div id="reading_eng" style="font-size:1.6rem; font-weight:700; text-align:center; margin-bottom:6px; line-height:1.05; color:#2563EB;">${currentExIdx+1}. ${item.prompt || item.answer}</div>
         <div id="reading_ipa" style="font-size:0.98rem; font-style:italic; color:#C586C0; margin-bottom:6px; text-align:center; line-height:1.05">${item.ipa || ''}</div>
         <div id="reading_vn" style="font-size:0.98rem; color:#12C07A; margin-bottom:6px; text-align:center; line-height:1.05">${item.prompt_vi || ''}</div>
-        <div class="feedback" id="fb_reading" style="margin-top:4px;"></div>
+        <div class="feedback" id="fb_reading" style="margin-top:4px; text-align:center;"></div>
       `;
       exerciseArea.appendChild(card);
 
@@ -1273,8 +1180,8 @@
       const card = document.createElement('div');
       card.className = 'exercise-item';
       card.innerHTML = `
-        <input type="text" id="dict_input" style="font-size:1.18rem; padding:14px; margin-top:12px;" placeholder="Gõ câu bạn nghe được..." autocomplete="off">
-        <div class="feedback" id="fb_dict_${currentExIdx}"></div>
+        <input type="text" id="dict_input" style="font-size:1.18rem; padding:14px; margin-top:12px; text-align:center;" placeholder="Gõ câu bạn nghe được..." autocomplete="off">
+        <div class="feedback" id="fb_dict_${currentExIdx}" style="text-align:center;"></div>
       `;
       exerciseArea.appendChild(card);
       document.getElementById('pageInfo').textContent = `${currentExIdx - sessionStart + 1} / ${sessionEnd - sessionStart + 1} (tổng ${total})`;
@@ -1310,7 +1217,7 @@
                 }
               }, parseInt(delayRange.value));
             } else {
-              if (fb) { fb.className = 'feedback error'; fb.innerHTML = `❌ Sai. Đáp án: ${correct}`; }
+              if (fb) { fb.className = 'feedback error'; fb.innerHTML = `${correct}`; }
               playAudioFor(correct);
             }
           }
@@ -1907,6 +1814,9 @@
 
           this.audioContext = null;
           this.speechRecognition = this.initSpeechRecognition();
+          // Manual stop flag: when code intentionally stops recognition we set this to avoid auto-restart
+          this._manualSpeechStop = false;
+          this.speechRestartAttempts = 0;
           this.loadAvailableLessons();
         }
 
@@ -1946,28 +1856,27 @@
             console.warn('Trình duyệt không hỗ trợ Speech Recognition');
             return null;
           }
-          
+
           const recognition = new SpeechRecognition();
           recognition.continuous = false;
           recognition.interimResults = true;
           recognition.lang = 'en-US';
-          
+
           recognition.onstart = () => {
-            // When recognition actually starts, show a clear prompt so user knows mic is ready
             try {
               const showingUserTurn = this.state.waitingForUser || this.state.userRole === 'AB' || this.state.isAutoPlaying;
               if (showingUserTurn) {
                 this.setState({ isListening: true, feedback: { type: 'neutral', message: 'Thử nói lại' } });
               } else {
-                // keep a lightweight flag without re-render when not relevant
                 this.setState({ isListening: true }, true);
               }
             } catch (e) { this.setState({ isListening: true }, true); }
           };
+
           recognition.onresult = (event) => {
             let finalTranscript = '';
             let interimTranscript = '';
-            
+
             for (let i = event.resultIndex; i < event.results.length; ++i) {
               if (event.results[i].isFinal) {
                 finalTranscript += event.results[i][0].transcript;
@@ -1975,23 +1884,56 @@
                 interimTranscript += event.results[i][0].transcript;
               }
             }
-            
-            // Show interim results
-              if (interimTranscript) {
-                // update transcript without triggering a full re-render to avoid UI jitter
-                this.setState({ transcript: interimTranscript }, true);
-              }
-            
+
+            if (interimTranscript) {
+              this.setState({ transcript: interimTranscript }, true);
+            }
+
             if (finalTranscript) {
               this.setState({ transcript: finalTranscript });
               this.checkTranscript(finalTranscript);
             }
           };
-          recognition.onend = () => this.setState({ isListening: false }, true);
+
+          // Auto-restart logic on end: only restart when it was not a manual stop
+          recognition.onend = () => {
+            this.setState({ isListening: false }, true);
+            // if the stop was triggered intentionally by the app, do not auto-restart
+            if (this._manualSpeechStop) {
+              // clear manual flag so subsequent ends can auto-restart
+              this._manualSpeechStop = false;
+              this.speechRestartAttempts = 0;
+              return;
+            }
+
+            // Attempt to auto-restart when app is auto-playing and it's user's turn
+            const shouldRestart = this.state.isAutoPlaying && (this.state.waitingForUser || this.state.isShadowingActive);
+            if (!shouldRestart) return;
+
+            const attemptRestart = () => {
+              if (!this.state.isAutoPlaying) return;
+              if (this.state.isListening) return;
+              try {
+                recognition.start();
+                this.speechRestartAttempts = 0;
+                this.setState({ isListening: true }, true);
+              } catch (e) {
+                this.speechRestartAttempts = (this.speechRestartAttempts || 0) + 1;
+                if (this.speechRestartAttempts < 6) {
+                  setTimeout(attemptRestart, 300 * this.speechRestartAttempts);
+                } else {
+                  this.setState({ feedback: { type: 'error', message: 'Lỗi microphone — vui lòng bật lại mic hoặc tải lại trang.' } });
+                }
+              }
+            };
+
+            setTimeout(attemptRestart, 200);
+          };
+
           recognition.onerror = (event) => {
             console.error('Speech recognition error', event.error);
             this.setState({ isListening: false });
-          
+
             // Auto-advance on no-speech error
             if (event.error === 'no-speech') {
               setTimeout(() => {
@@ -2002,9 +1944,18 @@
                 });
                 this.processCurrentLine();
               }, 2000);
+              return;
+            }
+
+            // For transient errors, try to restart recognition automatically
+            const transient = ['no-match', 'aborted', 'audio-capture', 'network'];
+            if (transient.includes(event.error)) {
+              setTimeout(() => {
+                try { recognition.start(); } catch (e) { /* ignore */ }
+              }, 400);
             }
           };
-          
+
           return recognition;
         }
 
@@ -2146,7 +2097,11 @@
           
           if (combinedScore > threshold) {
             // Success!
-            if (this.speechRecognition) this.speechRecognition.stop();
+              if (this.speechRecognition) {
+                this._manualSpeechStop = true;
+                this._manualSpeechStop = true;
+                try { this.speechRecognition.stop(); } catch(e) { /* ignore */ }
+              }
             
             this.state.accuracyStats.successful++;
             this.updateAccuracy();
@@ -2185,7 +2140,11 @@
             
             if (this.state.attempts >= maxAttempts) {
               // Too many attempts, advance anyway
-              if (this.speechRecognition) this.speechRecognition.stop();
+              if (this.speechRecognition) {
+                this._manualSpeechStop = true;
+                this._manualSpeechStop = true;
+                try { this.speechRecognition.stop(); } catch(e) { /* ignore */ }
+              }
               this.setState({
                 feedback: { type: 'error', message: 'Thử nói lại' },
                 isListening: false,
@@ -2595,9 +2554,43 @@
             const source = audioContext.createBufferSource();
             source.buffer = audioBuffer;
             source.connect(audioContext.destination);
-            
+
+            // Stop rolePlay and global recognizers before playback to avoid capturing played audio
+            const rpRec = this.speechRecognition;
+            const rpWasListening = !!this.state.isListening;
+            const gRec = window.recognition;
+            const gWasRunning = !!window.isRecognitionRunning;
+            try {
+              if (rpRec && rpWasListening) {
+                this._manualSpeechStop = true;
+                try { rpRec.stop(); } catch (e) { /* ignore */ }
+              }
+            } catch (e) {}
+            try {
+              if (gRec && gWasRunning) {
+                window.willRestartRecognition = true;
+                try { gRec.stop(); } catch (e) { /* ignore */ }
+              }
+            } catch (e) {}
+
             return new Promise((resolve) => {
-              source.onended = resolve;
+              source.onended = () => {
+                // small delay to avoid immediate re-capture
+                setTimeout(async () => {
+                  // Resume recognizers that were active
+                  try {
+                    if (rpRec && rpWasListening) {
+                      try { rpRec.start(); } catch (e) { /* ignore */ }
+                    }
+                  } catch (e) {}
+                  try {
+                    if (gRec && gWasRunning) {
+                      try { window.willRestartRecognition = false; gRec.start(); } catch (e) { /* ignore */ }
+                    }
+                  } catch (e) {}
+                  resolve();
+                }, 300);
+              };
               source.start();
             });
           } catch (error) {
@@ -2701,7 +2694,33 @@
               const utter = new SpeechSynthesisUtterance(text);
               if (selected) utter.voice = selected;
               utter.rate = 1;
-              utter.onend = resolve;
+
+              // Stop recognizers before TTS to avoid capturing the spoken synthesis
+              const rpRec = this.speechRecognition;
+              const rpWasListening = !!this.state.isListening;
+              const gRec = window.recognition;
+              const gWasRunning = !!window.isRecognitionRunning;
+              try {
+                if (rpRec && rpWasListening) {
+                  this._manualSpeechStop = true;
+                  try { rpRec.stop(); } catch(e) { /* ignore */ }
+                }
+              } catch(e){}
+              try {
+                if (gRec && gWasRunning) {
+                  window.willRestartRecognition = true;
+                  try { gRec.stop(); } catch(e) { /* ignore */ }
+                }
+              } catch(e){}
+
+              utter.onend = () => {
+                // small delay before restarting recognizers to avoid re-capture
+                setTimeout(() => {
+                  try { if (rpRec && rpWasListening) { try { rpRec.start(); } catch(e){} } } catch(e){}
+                  try { if (gRec && gWasRunning) { try { window.willRestartRecognition = false; gRec.start(); } catch(e){} } } catch(e){}
+                  resolve();
+                }, 300);
+              };
               synth.speak(utter);
             } catch (e) {
               console.warn('TTS lỗi, dùng chờ thay thế', e);
@@ -2741,7 +2760,8 @@
               this.processCurrentLine();
             }
           } else if (!newState && this.speechRecognition) {
-            this.speechRecognition.stop();
+            this._manualSpeechStop = true;
+            try { this.speechRecognition.stop(); } catch(e) { /* ignore */ }
           }
         }
 
@@ -2946,10 +2966,14 @@
                     <span id="replyDelayVal">${(this.state.userReplyDelay || 50)}ms</span>
                   </div>
 
+                  
+
                   <div class="option-group">
-                    <label>Phiên (số cặp):</label>
-                    <input id="sessionPairsCount" type="number" min="1" value="${displayTotalPairs}" />
-                    <button id="applySessionPairsBtn" class="btn ghost">Áp dụng Phiên</button>
+                    <label>Phạm vi cặp:</label>
+                    <input id="rangeStart" type="number" min="1" placeholder="Từ" style="width:80px; padding:6px; border-radius:6px;" />
+                    <span> đến </span>
+                    <input id="rangeEnd" type="number" min="1" placeholder="Đến" style="width:80px; padding:6px; border-radius:6px;" />
+                    <button id="startRangeBtn" class="btn ghost" style="margin-left:6px">Áp dụng</button>
                   </div>
 
                   <div class="spacer"></div>
