@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "en_0",
+    "text": "I eat breakfast.",
+    "file": "audio_100 câu cở bản/gtts_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_0",
+    "text": "I eat breakfast.",
+    "file": "audio_100 câu cở bản/edge_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "She drinks water.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "She drinks water.",
+    "file": "audio_100 câu cở bản/edge_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_1",
+    "text": "They cook dinner.",
+    "file": "audio_100 câu cở bản/gtts_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_1",
+    "text": "They cook dinner.",
+    "file": "audio_100 câu cở bản/edge_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "He makes coffee.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "He makes coffee.",
+    "file": "audio_100 câu cở bản/edge_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_2",
+    "text": "We bake bread.",
+    "file": "audio_100 câu cở bản/gtts_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_2",
+    "text": "We bake bread.",
+    "file": "audio_100 câu cở bản/edge_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "I drink tea.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "I drink tea.",
+    "file": "audio_100 câu cở bản/edge_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_3",
+    "text": "She eats fruit.",
+    "file": "audio_100 câu cở bản/gtts_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_3",
+    "text": "She eats fruit.",
+    "file": "audio_100 câu cở bản/edge_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "They fry eggs.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "They fry eggs.",
+    "file": "audio_100 câu cở bản/edge_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_4",
+    "text": "He buys food.",
+    "file": "audio_100 câu cở bản/gtts_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_4",
+    "text": "He buys food.",
+    "file": "audio_100 câu cở bản/edge_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "We share meals.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "We share meals.",
+    "file": "audio_100 câu cở bản/edge_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_5",
+    "text": "She reads books.",
+    "file": "audio_100 câu cở bản/gtts_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_5",
+    "text": "She reads books.",
+    "file": "audio_100 câu cở bản/edge_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "He writes notes.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "He writes notes.",
+    "file": "audio_100 câu cở bản/edge_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_6",
+    "text": "I study English.",
+    "file": "audio_100 câu cở bản/gtts_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_6",
+    "text": "I study English.",
+    "file": "audio_100 câu cở bản/edge_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "They learn math.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "They learn math.",
+    "file": "audio_100 câu cở bản/edge_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_7",
+    "text": "We read stories.",
+    "file": "audio_100 câu cở bản/gtts_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_7",
+    "text": "We read stories.",
+    "file": "audio_100 câu cở bản/edge_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "She teaches kids.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "She teaches kids.",
+    "file": "audio_100 câu cở bản/edge_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_8",
+    "text": "He draws pictures.",
+    "file": "audio_100 câu cở bản/gtts_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_8",
+    "text": "He draws pictures.",
+    "file": "audio_100 câu cở bản/edge_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "I write emails.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "I write emails.",
+    "file": "audio_100 câu cở bản/edge_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_9",
+    "text": "They use computers.",
+    "file": "audio_100 câu cở bản/gtts_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_9",
+    "text": "They use computers.",
+    "file": "audio_100 câu cở bản/edge_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "We ask questions.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "We ask questions.",
+    "file": "audio_100 câu cở bản/edge_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_10",
+    "text": "She answers calls.",
+    "file": "audio_100 câu cở bản/gtts_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_10",
+    "text": "She answers calls.",
+    "file": "audio_100 câu cở bản/edge_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "He checks papers.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "He checks papers.",
+    "file": "audio_100 câu cở bản/edge_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_11",
+    "text": "I do homework.",
+    "file": "audio_100 câu cở bản/gtts_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_11",
+    "text": "I do homework.",
+    "file": "audio_100 câu cở bản/edge_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "They practice spelling.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "They practice spelling.",
+    "file": "audio_100 câu cở bản/edge_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_12",
+    "text": "We join class.",
+    "file": "audio_100 câu cở bản/gtts_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_12",
+    "text": "We join class.",
+    "file": "audio_100 câu cở bản/edge_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "I clean rooms.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "I clean rooms.",
+    "file": "audio_100 câu cở bản/edge_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_13",
+    "text": "She washes dishes.",
+    "file": "audio_100 câu cở bản/gtts_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_13",
+    "text": "She washes dishes.",
+    "file": "audio_100 câu cở bản/edge_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "He sweeps floors.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "He sweeps floors.",
+    "file": "audio_100 câu cở bản/edge_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_14",
+    "text": "They paint walls.",
+    "file": "audio_100 câu cở bản/gtts_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_14",
+    "text": "They paint walls.",
+    "file": "audio_100 câu cở bản/edge_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "We wash clothes.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "We wash clothes.",
+    "file": "audio_100 câu cở bản/edge_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_15",
+    "text": "I cook rice.",
+    "file": "audio_100 câu cở bản/gtts_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_15",
+    "text": "I cook rice.",
+    "file": "audio_100 câu cở bản/edge_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "She makes beds.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "She makes beds.",
+    "file": "audio_100 câu cở bản/edge_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_16",
+    "text": "He fixes chairs.",
+    "file": "audio_100 câu cở bản/gtts_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_16",
+    "text": "He fixes chairs.",
+    "file": "audio_100 câu cở bản/edge_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "They open windows.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "They open windows.",
+    "file": "audio_100 câu cở bản/edge_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_17",
+    "text": "We close doors.",
+    "file": "audio_100 câu cở bản/gtts_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_17",
+    "text": "We close doors.",
+    "file": "audio_100 câu cở bản/edge_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I water plants.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I water plants.",
+    "file": "audio_100 câu cở bản/edge_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_18",
+    "text": "She folds clothes.",
+    "file": "audio_100 câu cở bản/gtts_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_18",
+    "text": "She folds clothes.",
+    "file": "audio_100 câu cở bản/edge_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "He vacuums carpets.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "He vacuums carpets.",
+    "file": "audio_100 câu cở bản/edge_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_19",
+    "text": "They wash cars.",
+    "file": "audio_100 câu cở bản/gtts_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_19",
+    "text": "They wash cars.",
+    "file": "audio_100 câu cở bản/edge_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "We feed pets.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "We feed pets.",
+    "file": "audio_100 câu cở bản/edge_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_20",
+    "text": "They play soccer.",
+    "file": "audio_100 câu cở bản/gtts_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_20",
+    "text": "They play soccer.",
+    "file": "audio_100 câu cở bản/edge_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "She sings songs.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "She sings songs.",
+    "file": "audio_100 câu cở bản/edge_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_21",
+    "text": "I play guitar.",
+    "file": "audio_100 câu cở bản/gtts_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_21",
+    "text": "I play guitar.",
+    "file": "audio_100 câu cở bản/edge_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "We watch movies.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "We watch movies.",
+    "file": "audio_100 câu cở bản/edge_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_22",
+    "text": "He enjoys music.",
+    "file": "audio_100 câu cở bản/gtts_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_22",
+    "text": "He enjoys music.",
+    "file": "audio_100 câu cở bản/edge_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "They dance well.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "They dance well.",
+    "file": "audio_100 câu cở bản/edge_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_23",
+    "text": "She plays piano.",
+    "file": "audio_100 câu cở bản/gtts_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_23",
+    "text": "She plays piano.",
+    "file": "audio_100 câu cở bản/edge_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "He draws comics.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "He draws comics.",
+    "file": "audio_100 câu cở bản/edge_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_24",
+    "text": "I play chess.",
+    "file": "audio_100 câu cở bản/gtts_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_24",
+    "text": "I play chess.",
+    "file": "audio_100 câu cở bản/edge_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "We ride bikes.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "We ride bikes.",
+    "file": "audio_100 câu cở bản/edge_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_25",
+    "text": "I drink milk.",
+    "file": "audio_100 câu cở bản/gtts_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_25",
+    "text": "I drink milk.",
+    "file": "audio_100 câu cở bản/edge_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "She buys fruit.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "She buys fruit.",
+    "file": "audio_100 câu cở bản/edge_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_26",
+    "text": "He takes photos.",
+    "file": "audio_100 câu cở bản/gtts_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_26",
+    "text": "He takes photos.",
+    "file": "audio_100 câu cở bản/edge_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "We walk home.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "We walk home.",
+    "file": "audio_100 câu cở bản/edge_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_27",
+    "text": "They plant trees.",
+    "file": "audio_100 câu cở bản/gtts_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_27",
+    "text": "They plant trees.",
+    "file": "audio_100 câu cở bản/edge_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "I exercise daily.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "I exercise daily.",
+    "file": "audio_100 câu cở bản/edge_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_28",
+    "text": "She goes jogging.",
+    "file": "audio_100 câu cở bản/gtts_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_28",
+    "text": "She goes jogging.",
+    "file": "audio_100 câu cở bản/edge_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "He swims fast.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "He swims fast.",
+    "file": "audio_100 câu cở bản/edge_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_29",
+    "text": "We visit friends.",
+    "file": "audio_100 câu cở bản/gtts_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_29",
+    "text": "We visit friends.",
+    "file": "audio_100 câu cở bản/edge_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "They travel far.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "They travel far.",
+    "file": "audio_100 câu cở bản/edge_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_30",
+    "text": "I like flowers.",
+    "file": "audio_100 câu cở bản/gtts_en_30.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_30",
+    "text": "I like flowers.",
+    "file": "audio_100 câu cở bản/edge_en_30.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_30",
+    "text": "She hates rain.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_30.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_30",
+    "text": "She hates rain.",
+    "file": "audio_100 câu cở bản/edge_ex_en_30.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_31",
+    "text": "He loves pets.",
+    "file": "audio_100 câu cở bản/gtts_en_31.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_31",
+    "text": "He loves pets.",
+    "file": "audio_100 câu cở bản/edge_en_31.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_31",
+    "text": "We want peace.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_31.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_31",
+    "text": "We want peace.",
+    "file": "audio_100 câu cở bản/edge_ex_en_31.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_32",
+    "text": "They feel happy.",
+    "file": "audio_100 câu cở bản/gtts_en_32.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_32",
+    "text": "They feel happy.",
+    "file": "audio_100 câu cở bản/edge_en_32.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_32",
+    "text": "I tell jokes.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_32.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_32",
+    "text": "I tell jokes.",
+    "file": "audio_100 câu cở bản/edge_ex_en_32.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_33",
+    "text": "She tells stories.",
+    "file": "audio_100 câu cở bản/gtts_en_33.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_33",
+    "text": "She tells stories.",
+    "file": "audio_100 câu cở bản/edge_en_33.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_33",
+    "text": "He sends gifts.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_33.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_33",
+    "text": "He sends gifts.",
+    "file": "audio_100 câu cở bản/edge_ex_en_33.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_34",
+    "text": "We make friends.",
+    "file": "audio_100 câu cở bản/gtts_en_34.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_34",
+    "text": "We make friends.",
+    "file": "audio_100 câu cở bản/edge_en_34.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_34",
+    "text": "They say thanks.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_34.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_34",
+    "text": "They say thanks.",
+    "file": "audio_100 câu cở bản/edge_ex_en_34.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_35",
+    "text": "I read news.",
+    "file": "audio_100 câu cở bản/gtts_en_35.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_35",
+    "text": "I read news.",
+    "file": "audio_100 câu cở bản/edge_en_35.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_35",
+    "text": "She writes poems.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_35.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_35",
+    "text": "She writes poems.",
+    "file": "audio_100 câu cở bản/edge_ex_en_35.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_36",
+    "text": "He plays cards.",
+    "file": "audio_100 câu cở bản/gtts_en_36.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_36",
+    "text": "He plays cards.",
+    "file": "audio_100 câu cở bản/edge_en_36.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_36",
+    "text": "We learn songs.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_36.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_36",
+    "text": "We learn songs.",
+    "file": "audio_100 câu cở bản/edge_ex_en_36.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_37",
+    "text": "They solve problems.",
+    "file": "audio_100 câu cở bản/gtts_en_37.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_37",
+    "text": "They solve problems.",
+    "file": "audio_100 câu cở bản/edge_en_37.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_37",
+    "text": "I help people.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_37.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_37",
+    "text": "I help people.",
+    "file": "audio_100 câu cở bản/edge_ex_en_37.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_38",
+    "text": "She saves money.",
+    "file": "audio_100 câu cở bản/gtts_en_38.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_38",
+    "text": "She saves money.",
+    "file": "audio_100 câu cở bản/edge_en_38.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_38",
+    "text": "He fixes clocks.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_38.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_38",
+    "text": "He fixes clocks.",
+    "file": "audio_100 câu cở bản/edge_ex_en_38.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_39",
+    "text": "We cook pasta.",
+    "file": "audio_100 câu cở bản/gtts_en_39.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_39",
+    "text": "We cook pasta.",
+    "file": "audio_100 câu cở bản/edge_en_39.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_39",
+    "text": "They enjoy life.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_39.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_39",
+    "text": "They enjoy life.",
+    "file": "audio_100 câu cở bản/edge_ex_en_39.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_40",
+    "text": "I wear glasses.",
+    "file": "audio_100 câu cở bản/gtts_en_40.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_40",
+    "text": "I wear glasses.",
+    "file": "audio_100 câu cở bản/edge_en_40.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_40",
+    "text": "She carries bags.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_40.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_40",
+    "text": "She carries bags.",
+    "file": "audio_100 câu cở bản/edge_ex_en_40.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_41",
+    "text": "He drives cars.",
+    "file": "audio_100 câu cở bản/gtts_en_41.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_41",
+    "text": "He drives cars.",
+    "file": "audio_100 câu cở bản/edge_en_41.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_41",
+    "text": "We fly kites.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_41.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_41",
+    "text": "We fly kites.",
+    "file": "audio_100 câu cở bản/edge_ex_en_41.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_42",
+    "text": "They take buses.",
+    "file": "audio_100 câu cở bản/gtts_en_42.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_42",
+    "text": "They take buses.",
+    "file": "audio_100 câu cở bản/edge_en_42.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_42",
+    "text": "I take naps.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_42.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_42",
+    "text": "I take naps.",
+    "file": "audio_100 câu cở bản/edge_ex_en_42.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_43",
+    "text": "She brushes hair.",
+    "file": "audio_100 câu cở bản/gtts_en_43.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_43",
+    "text": "She brushes hair.",
+    "file": "audio_100 câu cở bản/edge_en_43.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_43",
+    "text": "He wears shoes.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_43.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_43",
+    "text": "He wears shoes.",
+    "file": "audio_100 câu cở bản/edge_ex_en_43.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_44",
+    "text": "We watch TV.",
+    "file": "audio_100 câu cở bản/gtts_en_44.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_44",
+    "text": "We watch TV.",
+    "file": "audio_100 câu cở bản/edge_en_44.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_44",
+    "text": "They lock doors.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_44.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_44",
+    "text": "They lock doors.",
+    "file": "audio_100 câu cở bản/edge_ex_en_44.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_45",
+    "text": "I light candles.",
+    "file": "audio_100 câu cở bản/gtts_en_45.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_45",
+    "text": "I light candles.",
+    "file": "audio_100 câu cở bản/edge_en_45.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_45",
+    "text": "She buys clothes.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_45.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_45",
+    "text": "She buys clothes.",
+    "file": "audio_100 câu cở bản/edge_ex_en_45.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_46",
+    "text": "He cuts grass.",
+    "file": "audio_100 câu cở bản/gtts_en_46.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_46",
+    "text": "He cuts grass.",
+    "file": "audio_100 câu cở bản/edge_en_46.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_46",
+    "text": "We build houses.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_46.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_46",
+    "text": "We build houses.",
+    "file": "audio_100 câu cở bản/edge_ex_en_46.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_47",
+    "text": "They catch fish.",
+    "file": "audio_100 câu cở bản/gtts_en_47.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_47",
+    "text": "They catch fish.",
+    "file": "audio_100 câu cở bản/edge_en_47.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_47",
+    "text": "I drink juice.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_47.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_47",
+    "text": "I drink juice.",
+    "file": "audio_100 câu cở bản/edge_ex_en_47.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_48",
+    "text": "She eats salad.",
+    "file": "audio_100 câu cở bản/gtts_en_48.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_48",
+    "text": "She eats salad.",
+    "file": "audio_100 câu cở bản/edge_en_48.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_48",
+    "text": "He paints pictures.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_48.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_48",
+    "text": "He paints pictures.",
+    "file": "audio_100 câu cở bản/edge_ex_en_48.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_49",
+    "text": "We sing loudly.",
+    "file": "audio_100 câu cở bản/gtts_en_49.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_49",
+    "text": "We sing loudly.",
+    "file": "audio_100 câu cở bản/edge_en_49.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_49",
+    "text": "They dance slowly.",
+    "file": "audio_100 câu cở bản/gtts_ex_en_49.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_49",
+    "text": "They dance slowly.",
+    "file": "audio_100 câu cở bản/edge_ex_en_49.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  }
+]

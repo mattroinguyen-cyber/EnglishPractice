@@ -1,0 +1,402 @@
+[
+  [
+    "I eat breakfast.",
+    "aɪ iːt ˈbrɛkfəst.",
+    "Tôi ăn sáng.",
+    "She drinks water.",
+    "ʃi drɪŋks ˈwɔtər.",
+    "Cô ấy uống nước."
+  ],
+  [
+    "They cook dinner.",
+    "ðeɪ kʊk ˈdɪnər.",
+    "Họ nấu bữa tối.",
+    "He makes coffee.",
+    "hi meɪks ˈkɔfi.",
+    "Anh ấy pha cà phê."
+  ],
+  [
+    "We bake bread.",
+    "wi beɪk brɛd.",
+    "Chúng tôi nướng bánh mì.",
+    "I drink tea.",
+    "aɪ drɪŋk ti.",
+    "Tôi uống trà."
+  ],
+  [
+    "She eats fruit.",
+    "ʃi its frut.",
+    "Cô ấy ăn trái cây.",
+    "They fry eggs.",
+    "ðeɪ fraɪ ɛgz.",
+    "Họ chiên trứng."
+  ],
+  [
+    "He buys food.",
+    "hi baɪz fud.",
+    "Anh ấy mua thức ăn.",
+    "We share meals.",
+    "wi ʃɛr milz.",
+    "Chúng tôi chia sẻ bữa ăn."
+  ],
+  [
+    "She reads books.",
+    "ʃi ridz bʊks.",
+    "Cô ấy đọc sách.",
+    "He writes notes.",
+    "hi raɪts noʊts.",
+    "Anh ấy ghi chú."
+  ],
+  [
+    "I study English.",
+    "aɪ ˈstʌdi ˈɪŋglɪʃ.",
+    "Tôi học tiếng Anh.",
+    "They learn math.",
+    "ðeɪ lɜrn mæθ.",
+    "Họ học toán."
+  ],
+  [
+    "We read stories.",
+    "wi rid ˈstɔriz.",
+    "Chúng tôi đọc truyện.",
+    "She teaches kids.",
+    "ʃi ˈtiʧɪz kɪdz.",
+    "Cô ấy dạy trẻ em."
+  ],
+  [
+    "He draws pictures.",
+    "hi drɔz ˈpɪkʧərz.",
+    "Anh ấy vẽ tranh.",
+    "I write emails.",
+    "aɪ raɪt iˈmeɪlz.",
+    "Tôi viết email."
+  ],
+  [
+    "They use computers.",
+    "ðeɪ juz kəmˈpjutərz.",
+    "Họ dùng máy tính.",
+    "We ask questions.",
+    "wi æsk ˈkwɛsʧənz.",
+    "Chúng tôi đặt câu hỏi."
+  ],
+  [
+    "She answers calls.",
+    "ʃi ˈænsərz kɔlz.",
+    "Cô ấy trả lời cuộc gọi.",
+    "He checks papers.",
+    "hi ʧɛks ˈpeɪpərz.",
+    "Anh ấy kiểm tra giấy tờ."
+  ],
+  [
+    "I do homework.",
+    "aɪ du ˈhoʊmˌwɜrk.",
+    "Tôi làm bài tập về nhà.",
+    "They practice spelling.",
+    "ðeɪ ˈpræktɪs ˈspɛlɪŋ.",
+    "Họ luyện đánh vần."
+  ],
+  [
+    "We join class.",
+    "wi ʤɔɪn klæs.",
+    "Chúng tôi tham gia lớp học.",
+    "I clean rooms.",
+    "aɪ klin rumz.",
+    "Tôi dọn phòng."
+  ],
+  [
+    "She washes dishes.",
+    "ʃi ˈwɑʃɪz ˈdɪʃɪz.",
+    "Cô ấy rửa bát.",
+    "He sweeps floors.",
+    "hi swips flɔrz.",
+    "Anh ấy quét sàn."
+  ],
+  [
+    "They paint walls.",
+    "ðeɪ peɪnt wɔlz.",
+    "Họ sơn tường.",
+    "We wash clothes.",
+    "wi wɑʃ kloʊðz.",
+    "Chúng tôi giặt quần áo."
+  ],
+  [
+    "I cook rice.",
+    "aɪ kʊk raɪs.",
+    "Tôi nấu cơm.",
+    "She makes beds.",
+    "ʃi meɪks bɛdz.",
+    "Cô ấy dọn dẹp giường."
+  ],
+  [
+    "He fixes chairs.",
+    "hi ˈfɪksɪz ʧɛrz.",
+    "Anh ấy sửa ghế.",
+    "They open windows.",
+    "ðeɪ ˈoʊpən ˈwɪndoʊz.",
+    "Họ mở cửa sổ."
+  ],
+  [
+    "We close doors.",
+    "wi kloʊz dɔrz.",
+    "Chúng tôi đóng cửa.",
+    "I water plants.",
+    "aɪ ˈwɔtər plænts.",
+    "Tôi tưới cây."
+  ],
+  [
+    "She folds clothes.",
+    "ʃi foʊldz kloʊðz.",
+    "Cô ấy gấp quần áo.",
+    "He vacuums carpets.",
+    "hi ˈvækjuːmz ˈkɑrpəts.",
+    "Anh ấy hút bụi thảm."
+  ],
+  [
+    "They wash cars.",
+    "ðeɪ wɑʃ kɑrz.",
+    "Họ rửa xe hơi.",
+    "We feed pets.",
+    "wi fid pɛts.",
+    "Chúng tôi cho thú cưng ăn."
+  ],
+  [
+    "They play soccer.",
+    "ðeɪ pleɪ ˈsɑkər.",
+    "Họ chơi đá bóng.",
+    "She sings songs.",
+    "ʃi sɪŋz sɔŋz.",
+    "Cô ấy hát những bài hát."
+  ],
+  [
+    "I play guitar.",
+    "aɪ pleɪ gɪˈtɑr.",
+    "Tôi chơi đàn ghi-ta.",
+    "We watch movies.",
+    "wi wɑʧ ˈmuviz.",
+    "Chúng tôi xem phim."
+  ],
+  [
+    "He enjoys music.",
+    "hi ɛnˈʤɔɪz ˈmjuzɪk.",
+    "Anh ấy thích âm nhạc.",
+    "They dance well.",
+    "ðeɪ dæns wɛl.",
+    "Họ khiêu vũ giỏi."
+  ],
+  [
+    "She plays piano.",
+    "ʃi pleɪz piˈænoʊ.",
+    "Cô ấy chơi đàn piano.",
+    "He draws comics.",
+    "hi drɔz ˈkɑmɪks.",
+    "Anh ấy vẽ truyện tranh."
+  ],
+  [
+    "I play chess.",
+    "aɪ pleɪ ʧɛs.",
+    "Tôi chơi cờ vua.",
+    "We ride bikes.",
+    "wi raɪd baɪks.",
+    "Chúng tôi đạp xe."
+  ],
+  [
+    "I drink milk.",
+    "aɪ drɪŋk mɪlk.",
+    "Tôi uống sữa.",
+    "She buys fruit.",
+    "ʃi baɪz frut.",
+    "Cô ấy mua trái cây."
+  ],
+  [
+    "He takes photos.",
+    "hi teɪks ˈfoʊˌtoʊz.",
+    "Anh ấy chụp ảnh.",
+    "We walk home.",
+    "wi wɔk hoʊm.",
+    "Chúng tôi đi bộ về nhà."
+  ],
+  [
+    "They plant trees.",
+    "ðeɪ plænt triz.",
+    "Họ trồng cây.",
+    "I exercise daily.",
+    "aɪ ˈɛksərˌsaɪz ˈdeɪli.",
+    "Tôi tập thể dục hàng ngày."
+  ],
+  [
+    "She goes jogging.",
+    "ʃi goʊz ˈʤɑgɪŋ.",
+    "Cô ấy đi chạy bộ.",
+    "He swims fast.",
+    "hi swɪmz fæst.",
+    "Anh ấy bơi nhanh."
+  ],
+  [
+    "We visit friends.",
+    "wi ˈvɪzət frɛndz.",
+    "Chúng tôi thăm bạn bè.",
+    "They travel far.",
+    "ðeɪ ˈtrævəl fɑr.",
+    "Họ đi du lịch xa."
+  ],
+  [
+    "I like flowers.",
+    "aɪ laɪk ˈflaʊərz.",
+    "Tôi thích hoa.",
+    "She hates rain.",
+    "ʃi heɪts reɪn.",
+    "Cô ấy ghét mưa."
+  ],
+  [
+    "He loves pets.",
+    "hi lʌvz pɛts.",
+    "Anh ấy yêu thú cưng.",
+    "We want peace.",
+    "wi wɑnt pis.",
+    "Chúng tôi muốn hòa bình."
+  ],
+  [
+    "They feel happy.",
+    "ðeɪ fil ˈhæpi.",
+    "Họ cảm thấy hạnh phúc.",
+    "I tell jokes.",
+    "aɪ tɛl ʤoʊks.",
+    "Tôi nói đùa."
+  ],
+  [
+    "She tells stories.",
+    "ʃi tɛlz ˈstɔriz.",
+    "Cô ấy kể chuyện.",
+    "He sends gifts.",
+    "hi sɛndz gɪfts.",
+    "Anh ấy gửi quà."
+  ],
+  [
+    "We make friends.",
+    "wi meɪk frɛndz.",
+    "Chúng tôi kết bạn.",
+    "They say thanks.",
+    "ðeɪ seɪ θæŋks.",
+    "Họ nói lời cảm ơn."
+  ],
+  [
+    "I read news.",
+    "aɪ rid nuz.",
+    "Tôi đọc tin tức.",
+    "She writes poems.",
+    "ʃi raɪts ˈpoʊəmz.",
+    "Cô ấy viết thơ."
+  ],
+  [
+    "He plays cards.",
+    "hi pleɪz kɑrdz.",
+    "Anh ấy chơi bài.",
+    "We learn songs.",
+    "wi lɜrn sɔŋz.",
+    "Chúng tôi học hát."
+  ],
+  [
+    "They solve problems.",
+    "ðeɪ sɑlv ˈprɑbləmz.",
+    "Họ giải quyết vấn đề.",
+    "I help people.",
+    "aɪ hɛlp ˈpipəl.",
+    "Tôi giúp đỡ mọi người."
+  ],
+  [
+    "She saves money.",
+    "ʃi seɪvz ˈmʌni.",
+    "Cô ấy tiết kiệm tiền.",
+    "He fixes clocks.",
+    "hi ˈfɪksɪz klɑks.",
+    "Anh ấy sửa đồng hồ."
+  ],
+  [
+    "We cook pasta.",
+    "wi kʊk ˈpɑstə.",
+    "Chúng tôi nấu mì Ý.",
+    "They enjoy life.",
+    "ðeɪ ɛnˈʤɔɪ laɪf.",
+    "Họ tận hưởng cuộc sống."
+  ],
+  [
+    "I wear glasses.",
+    "aɪ wɛr ˈglæsəz.",
+    "Tôi đeo kính.",
+    "She carries bags.",
+    "ʃi ˈkæriz bægz.",
+    "Cô ấy mang túi xách."
+  ],
+  [
+    "He drives cars.",
+    "hi draɪvz kɑrz.",
+    "Anh ấy lái xe hơi.",
+    "We fly kites.",
+    "wi flaɪ kaɪts.",
+    "Chúng tôi thả diều."
+  ],
+  [
+    "They take buses.",
+    "ðeɪ teɪk ˈbʌsɪz.",
+    "Họ đi xe buýt.",
+    "I take naps.",
+    "aɪ teɪk næps.",
+    "Tôi đi ngủ trưa."
+  ],
+  [
+    "She brushes hair.",
+    "ʃi ˈbrʌʃɪz hɛr.",
+    "Cô ấy chải tóc.",
+    "He wears shoes.",
+    "hi wɛrz ʃuz.",
+    "Anh ấy mang giày."
+  ],
+  [
+    "We watch TV.",
+    "wi wɑʧ ˈtiˈvi.",
+    "Chúng tôi xem tivi.",
+    "They lock doors.",
+    "ðeɪ lɑk dɔrz.",
+    "Họ khóa cửa."
+  ],
+  [
+    "I light candles.",
+    "aɪ laɪt ˈkændəlz.",
+    "Tôi thắp nến.",
+    "She buys clothes.",
+    "ʃi baɪz kloʊðz.",
+    "Cô ấy mua quần áo."
+  ],
+  [
+    "He cuts grass.",
+    "hi kʌts græs.",
+    "Anh ấy cắt cỏ.",
+    "We build houses.",
+    "wi bɪld ˈhaʊzɪz.",
+    "Chúng tôi xây nhà."
+  ],
+  [
+    "They catch fish.",
+    "ðeɪ kæʧ fɪʃ.",
+    "Họ câu cá.",
+    "I drink juice.",
+    "aɪ drɪŋk ʤus.",
+    "Tôi uống nước trái cây."
+  ],
+  [
+    "She eats salad.",
+    "ʃi its ˈsæləd.",
+    "Cô ấy ăn sa-lát.",
+    "He paints pictures.",
+    "hi peɪnts ˈpɪkʧərz.",
+    "Anh ấy vẽ tranh."
+  ],
+  [
+    "We sing loudly.",
+    "wi sɪŋ ˈlaʊdli.",
+    "Chúng tôi hát lớn.",
+    "They dance slowly.",
+    "ðeɪ dæns ˈsloʊli.",
+    "Họ khiêu vũ chậm rãi."
+  ]
+]

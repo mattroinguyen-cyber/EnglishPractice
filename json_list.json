@@ -1,9 +1,9 @@
 {
     "lessons": [
         {
-            "name": "100Cau3tuThongDung.json",
-            "mapping": "mapping_100Cau3tuThongDung.json",
-            "audio": "audio_100Cau3tuThongDung"
+            "name": "100 câu cở bản.json",
+            "mapping": "mapping_100 câu cở bản.json",
+            "audio": "audio_100 câu cở bản"
         },
         {
             "name": "2000_Daily_English.json",
