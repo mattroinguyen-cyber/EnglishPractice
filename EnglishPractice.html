@@ -72,6 +72,10 @@
     .vn { color: #12C07A; font-style: italic; font-size: 1rem; display: block; margin-top: 6px; }
     input[type="text"] { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03); background: var(--card-bg); color: var(--text); font-size: 1.02rem; outline: none; transition: 0.18s; box-shadow: none; }
     input:focus { border-color: var(--primary); background: var(--card-bg); transform: translateY(-1px); }
+
+    /* Dictation: center the typed text inside the input and center dictation feedback */
+    input#dict_input { text-align: center; }
+    .feedback[id^="fb_dict_"] { text-align: center; }
     
     .feedback { margin-top: 15px; padding: 12px; border-radius: 8px; min-height: 20px; font-weight: 600; line-height: 1.5; }
     .feedback.success { color: var(--success); background: rgba(46, 204, 113, 0.1); }
@@ -115,6 +119,7 @@
           <option value="">-- Mở ứng dụng --</option>
           <option value="EnglishPractice.html" selected>English Practice</option>          
           <option value="TranslationTrainer.html">Translation Trainer</option>
+          <option value="RolePlaying.html">Role Playing</option>
           <option value="test_offline.html">Học Ngoại Ngữ</option>
         </select>        
       </div>
@@ -124,7 +129,6 @@
       <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
       <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
       <button class="tab" id="tabDictation" title="Chế độ: Dictation">Dictation</button>
-      <button class="tab" id="tabRolePlaying" title="Role Playing">Role Playing</button>
     </div>
 
     <!-- Unified control bar: keeps main playback/navigation buttons consistent across tabs -->
@@ -142,10 +146,8 @@
 
     <div id="exerciseArea"></div>
 
-    <!-- Role Playing container (hidden until tab selected) -->
-    <div id="rolePlayingArea" class="hide" style="margin-top:8px;">
-      <div id="app"></div>
-    </div>
+    <!-- Role Playing moved to a standalone app -->
+    <!-- Role Playing content extracted to RolePlaying.html -->
 
     <div id="pagination" class="pagination hide">
       <span id="pageInfo" style="font-weight: 600;">1 / 1</span>
@@ -717,8 +719,13 @@
         }, parseInt(delayRange.value));
       } else {
         if (fb) {
-          fb.className = 'feedback error';
-          fb.innerHTML = `❌ Bạn nói: "<span>${text}</span>"<br>Đáp án đúng: ${answer}`;
+          if (fb.id && fb.id.indexOf('fb_dict_') === 0) {
+            fb.className = 'feedback error';
+            fb.innerHTML = `${answer}`;
+          } else {
+            fb.className = 'feedback error';
+            fb.innerHTML = `❌ Bạn nói: "<span>${text}</span>"<br>Đáp án đúng: ${answer}`;
+          }
         }
         // play correct answer for user to repeat
         playAudioFor(answer);
@@ -783,17 +790,38 @@
     });
 
     const themeToggleBtn = document.getElementById('themeToggle');
-    if (themeToggleBtn) {
-      // initialize icon based on current theme
-      const initIsLight = document.body.getAttribute('data-theme') === 'light';
-      themeToggleBtn.textContent = initIsLight ? '☀️' : '🌙';
-      themeToggleBtn.addEventListener('click', () => {
-        const isLight = document.body.getAttribute('data-theme') === 'light';
-        const newTheme = isLight ? 'dark' : 'light';
-        document.body.setAttribute('data-theme', newTheme);
-        themeToggleBtn.textContent = newTheme === 'light' ? '☀️' : '🌙';
+    (function setupThemeToggle(){
+      function applyTheme(t) {
+        document.body.setAttribute('data-theme', t);
+        if (themeToggleBtn) themeToggleBtn.textContent = t === 'light' ? '☀️' : '🌙';
+      }
+
+      // load saved theme (if any) and apply
+      try {
+        const saved = localStorage.getItem('app_theme');
+        if (saved) {
+          applyTheme(saved);
+        } else {
+          const init = document.body.getAttribute('data-theme') || 'light';
+          applyTheme(init);
+          try { localStorage.setItem('app_theme', init); } catch(e){}
+        }
+      } catch (e) { /* ignore localStorage errors */ }
+
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+          const isLight = document.body.getAttribute('data-theme') === 'light';
+          const newTheme = isLight ? 'dark' : 'light';
+          applyTheme(newTheme);
+          try { localStorage.setItem('app_theme', newTheme); } catch(e){}
+        });
+      }
+
+      // Sync across tabs/windows
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'app_theme') applyTheme(e.newValue || 'light');
       });
-    }
+    })();
 
     window.addEventListener('scroll', () => {
       document.getElementById('backToTop').classList.toggle('show', window.scrollY > 200);
@@ -853,53 +881,11 @@
       });
     }
 
-    // Role Playing tab
+    // Role Playing tab now opens standalone app
     const tabRole = document.getElementById('tabRolePlaying');
     if (tabRole) {
       tabRole.addEventListener('click', () => {
-        currentMode = 'roleplaying';
-        tabRole.classList.add('active');
-        const tListen = document.getElementById('tabListeningPreview'); if (tListen) tListen.classList.remove('active');
-        const tRead = document.getElementById('tabReading'); if (tRead) tRead.classList.remove('active');
-        const tSent = document.getElementById('tabSentence'); if (tSent) tSent.classList.remove('active');
-        const tDict = document.getElementById('tabDictation'); if (tDict) tDict.classList.remove('active');
-        // hide main exercise area and pagination
-        const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.add('hide');
-        const pg = document.getElementById('pagination'); if (pg) pg.classList.add('hide');
-        // hide main control panel to avoid duplicate controls when Role Playing app shows its own panel
-        const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.add('hide');
-        // show role playing area
-        const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.remove('hide');
-        // stop main recognition to avoid mic conflicts, then ensure RolePlay app is initialized
-        try { if (recognition && isRecognitionRunning) { try { recognition.stop(); } catch(e) { console.warn('stop main recognition failed', e); } } } catch(e) {}
-        // ensure the embedded RolePlay app is initialized and synced with main lessonSelect
-        try {
-          if (window.rolePlayInstance && typeof window.rolePlayInstance.render === 'function') {
-            // stop any running RolePlay state before re-render to avoid duplicate listeners
-            try { if (window.rolePlayInstance && typeof window.rolePlayInstance.stopPractice === 'function') window.rolePlayInstance.stopPractice(); } catch(e) {}
-            window.rolePlayInstance.render();
-            const v = (lessonSelect && lessonSelect.value) ? lessonSelect.value : '';
-            if (v) {
-              if (v.startsWith('remote:')) {
-                const idx = parseInt(v.split(':')[1], 10);
-                if (!isNaN(idx)) {
-                  window.rolePlayInstance.setState({ selectedLessonIndex: idx });
-                  window.rolePlayInstance.loadSelectedLesson();
-                }
-              } else if (!isNaN(parseInt(v))) {
-                const idx = parseInt(v, 10);
-                window.rolePlayInstance.setState({ selectedLessonIndex: idx });
-                window.rolePlayInstance.loadSelectedLesson();
-              }
-            } else if (typeof currentLessonIdx !== 'undefined' && currentLessonIdx !== -1) {
-              // fallback: if main app already has a loaded lesson, use it for RolePlay
-              try {
-                window.rolePlayInstance.setState({ selectedLessonIndex: currentLessonIdx });
-                window.rolePlayInstance.loadSelectedLesson();
-              } catch (e) { console.warn('RolePlay loadSelectedLesson fallback failed', e); }
-            }
-          }
-        } catch (e) { console.warn('RolePlay sync failed', e); }
+        window.location.href = 'RolePlaying.html';
       });
     }
 
@@ -1297,7 +1283,7 @@
                 }
               }, parseInt(delayRange.value));
             } else {
-              if (fb) { fb.className = 'feedback error'; fb.innerHTML = `❌ Sai. Đáp án: ${correct}`; }
+              if (fb) { fb.className = 'feedback error'; fb.innerHTML = `${correct}`; }
               playAudioFor(correct);
             }
           }
@@ -3152,12 +3138,21 @@
         }
       }
 
-      // Initialize app immediately and also on DOMContentLoaded as a fallback
+      // Initialize RolePlay app only when the RolePlaying page/area is present.
+      // This prevents RolePlay from auto-starting in other tabs/pages.
       try {
-        if (!window.rolePlayInstance) window.rolePlayInstance = new RolePlayApp();
+        const shouldInitRolePlay = (window.location && window.location.pathname && window.location.pathname.endsWith('RolePlaying.html')) || document.getElementById('rolePlayingArea');
+        if (shouldInitRolePlay) {
+          if (!window.rolePlayInstance) window.rolePlayInstance = new RolePlayApp();
+        }
       } catch (e) { console.error('Failed to create RolePlayApp', e); }
       document.addEventListener('DOMContentLoaded', () => {
-        try { if (!window.rolePlayInstance) window.rolePlayInstance = new RolePlayApp(); } catch (e) { console.error('Failed to create RolePlayApp on DOMContentLoaded', e); }
+        try {
+          const shouldInitRolePlay = (window.location && window.location.pathname && window.location.pathname.endsWith('RolePlaying.html')) || document.getElementById('rolePlayingArea');
+          if (shouldInitRolePlay) {
+            if (!window.rolePlayInstance) window.rolePlayInstance = new RolePlayApp();
+          }
+        } catch (e) { console.error('Failed to create RolePlayApp on DOMContentLoaded', e); }
       });
     </script>
 </body>
